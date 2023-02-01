@@ -15,7 +15,7 @@ func get_input():
 	if Input.is_action_pressed("left"):
 		velocity.x -= 1
 	"""
-	Kept this just for completedness - input tests
+	Kept this just for completedness of input tests
 	if Input.is_action_pressed("down"):
 		velocity.y += 1
 	if Input.is_action_pressed("up"):
