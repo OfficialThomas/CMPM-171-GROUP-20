@@ -1,6 +1,10 @@
 extends KinematicBody2D
 
-# https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html
+"""
+Works Cited:
+https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://staffwww.fullcoll.edu/dcraig/gameprog/godot%20lecture%202.pdf
+"""
 
 const GRAVITY = 10
 
@@ -24,9 +28,11 @@ func get_input():
 	
 	# positive is down in a 2d canvas space
 	velocity.y += GRAVITY
-	
+	if is_on_floor():
+		velocity.y = 0
+	# must normalize velocity so player moves smoothly
 	velocity = velocity.normalized() * speed
 
 func _physics_process(delta):
 	get_input()
-	velocity = move_and_slide(velocity)
+	velocity = move_and_slide(velocity, Vector2(0, -1))
