@@ -94,6 +94,13 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
 shape = SubResource( 6 )
 
+[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_enabled = true
+smoothing_speed = 8.0
+offset_v = -0.4
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 5 )
 format = 1
