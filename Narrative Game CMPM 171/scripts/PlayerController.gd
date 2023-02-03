@@ -25,7 +25,7 @@ func get_input():
 		$AnimatedSprite.set_flip_h(true)
 		$AnimatedSprite.play("walk")
 	else:
-		$AnimatedSprite.stop()
+		$AnimatedSprite.play("idle")
 	"""
 	Kept this just for completedness of input tests
 	if Input.is_action_pressed("down"):
