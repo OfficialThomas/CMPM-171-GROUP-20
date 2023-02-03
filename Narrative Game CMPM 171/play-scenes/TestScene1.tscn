@@ -83,13 +83,13 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 128, 0, 128 )
 
 [node name="Doors" type="Node2D" parent="."]
 
-[node name="Door1" parent="Doors" instance=ExtResource( 1 )]
+[node name="DoorA1" parent="Doors" instance=ExtResource( 1 )]
 position = Vector2( 864, 464 )
-target = NodePath("../Door2")
+target = NodePath("../DoorA2")
 
-[node name="Door2" parent="Doors" instance=ExtResource( 1 )]
+[node name="DoorA2" parent="Doors" instance=ExtResource( 1 )]
 position = Vector2( 1247, 464 )
-target = NodePath("../Door1")
+target = NodePath("../DoorA1")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 5 )
