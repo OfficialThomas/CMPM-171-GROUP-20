@@ -4,6 +4,8 @@ extends KinematicBody2D
 Works Cited:
 https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html
 chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://staffwww.fullcoll.edu/dcraig/gameprog/godot%20lecture%202.pdf
+https://godotengine.org/qa/72089/how-do-i-play-animation-using-gdscript
+https://godotengine.org/qa/3953/want-flip-character-the-horizontal-axis-but-whats-the-best-way
 """
 
 const GRAVITY = 10
@@ -16,8 +18,14 @@ func get_input():
 	velocity = Vector2()
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
-	if Input.is_action_pressed("left"):
+		$AnimatedSprite.set_flip_h(false)
+		$AnimatedSprite.play("walk")
+	elif Input.is_action_pressed("left"):
 		velocity.x -= 1
+		$AnimatedSprite.set_flip_h(true)
+		$AnimatedSprite.play("walk")
+	else:
+		$AnimatedSprite.stop()
 	"""
 	Kept this just for completedness of input tests
 	if Input.is_action_pressed("down"):
