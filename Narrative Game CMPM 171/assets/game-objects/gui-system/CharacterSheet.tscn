@@ -13,7 +13,7 @@
 [ext_resource path="res://demo-assets/PNG/Other/blockGreen.png" type="Texture" id=11]
 [ext_resource path="res://demo-assets/PNG/Other/blockGreen_key.png" type="Texture" id=12]
 [ext_resource path="res://demo-assets/PNG/Other/blockGreen_lock.png" type="Texture" id=13]
-[ext_resource path="res://assets/game-objects/gui-system/CharacterSheet.gd" type="Script" id=14]
+[ext_resource path="res://scripts/CharacterSheet.gd" type="Script" id=14]
 
 [node name="CharacterSheet" type="Control"]
 anchor_right = 1.0
@@ -214,7 +214,7 @@ size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 7 )
 text = "Logic"
 
-[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground/Stats"]
+[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground/Stats" groups=["ChangeLabels"]]
 margin_left = 246.0
 margin_top = 6.0
 margin_right = 246.0
@@ -297,7 +297,7 @@ size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 7 )
 text = "Dream"
 
-[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground/Stats"]
+[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground/Stats" groups=["ChangeLabels"]]
 margin_left = 246.0
 margin_top = 6.0
 margin_right = 246.0
@@ -380,7 +380,7 @@ size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 7 )
 text = "Empathy"
 
-[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground/Stats"]
+[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground/Stats" groups=["ChangeLabels"]]
 margin_left = 246.0
 margin_top = 6.0
 margin_right = 246.0
@@ -463,7 +463,7 @@ size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 7 )
 text = "Perception"
 
-[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground/Stats"]
+[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground/Stats" groups=["ChangeLabels"]]
 margin_left = 246.0
 margin_top = 6.0
 margin_right = 246.0
@@ -546,7 +546,7 @@ size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 7 )
 text = "Charisma"
 
-[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground/Stats"]
+[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground/Stats" groups=["ChangeLabels"]]
 margin_left = 246.0
 margin_top = 6.0
 margin_right = 246.0
@@ -629,7 +629,7 @@ size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 7 )
 text = "Culture"
 
-[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground/Stats"]
+[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground/Stats" groups=["ChangeLabels"]]
 margin_left = 246.0
 margin_top = 6.0
 margin_right = 246.0
@@ -712,7 +712,7 @@ size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 7 )
 text = "Composure"
 
-[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground/Stats"]
+[node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground/Stats" groups=["ChangeLabels"]]
 margin_left = 246.0
 margin_top = 6.0
 margin_right = 246.0
@@ -759,3 +759,5 @@ custom_fonts/font = ExtResource( 3 )
 text = "Confirm"
 align = 1
 valign = 1
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/Confirm" to="." method="_on_Confirm_pressed"]
