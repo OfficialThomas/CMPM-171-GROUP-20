@@ -90,3 +90,11 @@ func _on_Confirm_pressed():
 			button.set_disabled(true)
 		for label in get_tree().get_nodes_in_group("ChangeLabels"):
 			label.set_text("")
+
+func _on_Stats_pressed(): # set to stats menu
+	get_node("HBoxContainer/VBoxContainer/Stats").show()
+	get_node("HBoxContainer/VBoxContainer/Exit").hide()
+
+func _on_Exit_pressed(): # set to exit menu
+	get_node("HBoxContainer/VBoxContainer/Exit").show()
+	get_node("HBoxContainer/VBoxContainer/Stats").hide()

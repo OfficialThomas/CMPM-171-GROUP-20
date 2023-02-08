@@ -47,7 +47,7 @@ patch_margin_top = 30
 patch_margin_right = 20
 patch_margin_bottom = 30
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MenuBackground"]
+[node name="Buttons" type="VBoxContainer" parent="HBoxContainer/MenuBackground"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 20.0
@@ -55,7 +55,7 @@ margin_top = 20.0
 margin_right = -20.0
 margin_bottom = -20.0
 
-[node name="TextureButton" type="TextureButton" parent="HBoxContainer/MenuBackground/VBoxContainer"]
+[node name="Stats" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
 margin_right = 290.0
 margin_bottom = 127.0
 rect_min_size = Vector2( 220, 50 )
@@ -64,7 +64,7 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 4 )
 expand = true
 
-[node name="Label" type="Label" parent="HBoxContainer/MenuBackground/VBoxContainer/TextureButton"]
+[node name="Label" type="Label" parent="HBoxContainer/MenuBackground/Buttons/Stats"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 3 )
@@ -72,7 +72,7 @@ text = "Stats"
 align = 1
 valign = 1
 
-[node name="TextureButton2" type="TextureButton" parent="HBoxContainer/MenuBackground/VBoxContainer"]
+[node name="Save" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
 margin_top = 131.0
 margin_right = 290.0
 margin_bottom = 258.0
@@ -82,7 +82,7 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 4 )
 expand = true
 
-[node name="Label" type="Label" parent="HBoxContainer/MenuBackground/VBoxContainer/TextureButton2"]
+[node name="Label" type="Label" parent="HBoxContainer/MenuBackground/Buttons/Save"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 3 )
@@ -90,7 +90,7 @@ text = "Save"
 align = 1
 valign = 1
 
-[node name="TextureButton3" type="TextureButton" parent="HBoxContainer/MenuBackground/VBoxContainer"]
+[node name="System" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
 margin_top = 262.0
 margin_right = 290.0
 margin_bottom = 389.0
@@ -100,7 +100,7 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 4 )
 expand = true
 
-[node name="Label" type="Label" parent="HBoxContainer/MenuBackground/VBoxContainer/TextureButton3"]
+[node name="Label" type="Label" parent="HBoxContainer/MenuBackground/Buttons/System"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 3 )
@@ -108,7 +108,7 @@ text = "System"
 align = 1
 valign = 1
 
-[node name="TextureButton4" type="TextureButton" parent="HBoxContainer/MenuBackground/VBoxContainer"]
+[node name="Exit" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
 margin_top = 393.0
 margin_right = 290.0
 margin_bottom = 520.0
@@ -118,7 +118,7 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 4 )
 expand = true
 
-[node name="Label" type="Label" parent="HBoxContainer/MenuBackground/VBoxContainer/TextureButton4"]
+[node name="Label" type="Label" parent="HBoxContainer/MenuBackground/Buttons/Exit"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 3 )
@@ -137,11 +137,11 @@ margin_right = 630.0
 margin_bottom = 560.0
 size_flags_vertical = 3
 
-[node name="MainStats" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/Stats"]
-margin_right = 450.0
+[node name="MainStats" type="Control" parent="HBoxContainer/VBoxContainer/Stats"]
+margin_right = 630.0
 margin_bottom = 560.0
 rect_min_size = Vector2( 450, 0 )
-custom_constants/separation = 31
+size_flags_horizontal = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats"]
 margin_right = 450.0
@@ -163,8 +163,8 @@ margin_left = -175.0
 margin_top = -30.0
 margin_right = 175.0
 margin_bottom = 10.0
-rect_min_size = Vector2( 350, 40 )
-texture = ExtResource( 2 )
+rect_min_size = Vector2( 500, 40 )
+texture = ExtResource( 5 )
 expand = true
 
 [node name="Min" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground" groups=["MinButtons"]]
@@ -246,8 +246,8 @@ margin_left = -175.0
 margin_top = -30.0
 margin_right = 175.0
 margin_bottom = 10.0
-rect_min_size = Vector2( 350, 40 )
-texture = ExtResource( 2 )
+rect_min_size = Vector2( 500, 40 )
+texture = ExtResource( 5 )
 expand = true
 
 [node name="Min" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground" groups=["MinButtons"]]
@@ -329,8 +329,8 @@ margin_left = -175.0
 margin_top = -30.0
 margin_right = 175.0
 margin_bottom = 10.0
-rect_min_size = Vector2( 350, 40 )
-texture = ExtResource( 2 )
+rect_min_size = Vector2( 500, 40 )
+texture = ExtResource( 5 )
 expand = true
 
 [node name="Min" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground" groups=["MinButtons"]]
@@ -412,8 +412,8 @@ margin_left = -175.0
 margin_top = -30.0
 margin_right = 175.0
 margin_bottom = 10.0
-rect_min_size = Vector2( 350, 40 )
-texture = ExtResource( 2 )
+rect_min_size = Vector2( 500, 40 )
+texture = ExtResource( 5 )
 expand = true
 
 [node name="Min" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground" groups=["MinButtons"]]
@@ -495,8 +495,8 @@ margin_left = -175.0
 margin_top = -30.0
 margin_right = 175.0
 margin_bottom = 10.0
-rect_min_size = Vector2( 350, 40 )
-texture = ExtResource( 2 )
+rect_min_size = Vector2( 500, 40 )
+texture = ExtResource( 5 )
 expand = true
 
 [node name="Min" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground" groups=["MinButtons"]]
@@ -578,8 +578,8 @@ margin_left = -175.0
 margin_top = -30.0
 margin_right = 175.0
 margin_bottom = 10.0
-rect_min_size = Vector2( 350, 40 )
-texture = ExtResource( 2 )
+rect_min_size = Vector2( 500, 40 )
+texture = ExtResource( 5 )
 expand = true
 
 [node name="Min" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground" groups=["MinButtons"]]
@@ -661,8 +661,8 @@ margin_left = -175.0
 margin_top = -30.0
 margin_right = 175.0
 margin_bottom = 10.0
-rect_min_size = Vector2( 350, 40 )
-texture = ExtResource( 2 )
+rect_min_size = Vector2( 500, 40 )
+texture = ExtResource( 5 )
 expand = true
 
 [node name="Min" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground" groups=["MinButtons"]]
@@ -734,18 +734,30 @@ margin_top = 478.0
 margin_right = 450.0
 margin_bottom = 528.0
 
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints"]
+margin_right = 75.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 75, 0 )
+
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints"]
+margin_left = 79.0
 margin_top = 10.0
-margin_right = 226.0
+margin_right = 268.0
 margin_bottom = 40.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 3 )
 text = "Points: 7"
 align = 1
 
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints"]
+margin_left = 272.0
+margin_right = 297.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 25, 0 )
+
 [node name="Confirm" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints"]
-margin_left = 230.0
-margin_right = 450.0
+margin_left = 301.0
+margin_right = 521.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 220, 50 )
 texture_normal = ExtResource( 5 )
@@ -760,4 +772,107 @@ text = "Confirm"
 align = 1
 valign = 1
 
+[node name="Exit" type="Control" parent="HBoxContainer/VBoxContainer"]
+visible = false
+margin_top = 560.0
+margin_right = 630.0
+margin_bottom = 560.0
+
+[node name="Buttons" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/Exit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons"]
+margin_right = 630.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 0, 150 )
+
+[node name="EandS" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons"]
+margin_top = 154.0
+margin_right = 630.0
+margin_bottom = 204.0
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS"]
+margin_right = 50.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 0 )
+
+[node name="ExitAndSave" type="TextureButton" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS"]
+margin_left = 54.0
+margin_right = 576.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 3
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 4 )
+expand = true
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS/ExitAndSave"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -315.0
+margin_top = -25.0
+margin_right = 315.0
+margin_bottom = 25.0
+custom_fonts/font = ExtResource( 3 )
+text = "Exit and Save"
+align = 1
+valign = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS"]
+margin_left = 580.0
+margin_right = 630.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 0 )
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons"]
+margin_top = 208.0
+margin_right = 630.0
+margin_bottom = 258.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="EnoS" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons"]
+margin_top = 262.0
+margin_right = 630.0
+margin_bottom = 312.0
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS"]
+margin_right = 50.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 0 )
+
+[node name="ExitAndSave" type="TextureButton" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS"]
+margin_left = 54.0
+margin_right = 576.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 3
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 4 )
+expand = true
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS/ExitAndSave"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -315.0
+margin_top = -25.0
+margin_right = 315.0
+margin_bottom = 25.0
+custom_fonts/font = ExtResource( 3 )
+text = "Exit without Saving"
+align = 1
+valign = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS"]
+margin_left = 580.0
+margin_right = 630.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 0 )
+
+[connection signal="pressed" from="HBoxContainer/MenuBackground/Buttons/Stats" to="." method="_on_Stats_pressed"]
+[connection signal="pressed" from="HBoxContainer/MenuBackground/Buttons/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/Confirm" to="." method="_on_Confirm_pressed"]
