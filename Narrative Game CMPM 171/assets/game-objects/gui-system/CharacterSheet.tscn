@@ -231,7 +231,7 @@ margin_bottom = 41.0
 custom_fonts/font = ExtResource( 7 )
 text = "10"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground/Stats"]
+[node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground/Stats"]
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -325,7 +325,7 @@ margin_bottom = 41.0
 custom_fonts/font = ExtResource( 7 )
 text = "10"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground/Stats"]
+[node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground/Stats"]
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -419,7 +419,7 @@ margin_bottom = 41.0
 custom_fonts/font = ExtResource( 7 )
 text = "10"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground/Stats"]
+[node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground/Stats"]
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -513,7 +513,7 @@ margin_bottom = 41.0
 custom_fonts/font = ExtResource( 7 )
 text = "10"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground/Stats"]
+[node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground/Stats"]
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -607,7 +607,7 @@ margin_bottom = 41.0
 custom_fonts/font = ExtResource( 7 )
 text = "10"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground/Stats"]
+[node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground/Stats"]
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -701,7 +701,7 @@ margin_bottom = 41.0
 custom_fonts/font = ExtResource( 7 )
 text = "10"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground/Stats"]
+[node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground/Stats"]
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -795,7 +795,7 @@ margin_bottom = 41.0
 custom_fonts/font = ExtResource( 7 )
 text = "10"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground/Stats"]
+[node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground/Stats"]
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -889,7 +889,7 @@ margin_bottom = 41.0
 custom_fonts/font = ExtResource( 7 )
 text = "10"
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Reflex/StatBackground/Stats"]
+[node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Reflex/StatBackground/Stats"]
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0

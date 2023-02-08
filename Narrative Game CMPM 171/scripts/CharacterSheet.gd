@@ -24,6 +24,7 @@ var reflex_add = 0
 
 func _ready():
 	LoadStats()
+	LoadBonuses()
 	available_points = player.stat_points
 	node_stat_points.set_text(str(available_points) + " Points")
 	if available_points == 0:
@@ -46,6 +47,17 @@ func LoadStats():
 	get_node(path_main_stats + "Culture/StatBackground/Stats/Value").set_text(str(player.culture))
 	get_node(path_main_stats + "Composure/StatBackground/Stats/Value").set_text(str(player.composure))
 	get_node(path_main_stats + "Reflex/StatBackground/Stats/Value").set_text(str(player.reflex))
+
+
+func LoadBonuses():
+	get_node(path_main_stats + "Logic/StatBackground/Stats/Bonus").set_text("Bonus:" + "+" + str((player.logic - 10) / 2))
+	get_node(path_main_stats + "Dream/StatBackground/Stats/Bonus").set_text("Bonus:" + "+" + str((player.dream - 10) / 2))
+	get_node(path_main_stats + "Empathy/StatBackground/Stats/Bonus").set_text("Bonus:" + "+" + str((player.empathy - 10) / 2))
+	get_node(path_main_stats + "Perception/StatBackground/Stats/Bonus").set_text("Bonus:" + "+" + str((player.perception - 10) / 2))
+	get_node(path_main_stats + "Charisma/StatBackground/Stats/Bonus").set_text("Bonus:" + "+" + str((player.charisma - 10) / 2))
+	get_node(path_main_stats + "Culture/StatBackground/Stats/Bonus").set_text("Bonus:" + "+" + str((player.culture - 10) / 2))
+	get_node(path_main_stats + "Composure/StatBackground/Stats/Bonus").set_text("Bonus:" + "+" + str((player.composure - 10) / 2))
+	get_node(path_main_stats + "Reflex/StatBackground/Stats/Bonus").set_text("Bonus:" + "+" + str((player.reflex - 10) / 2))
 
 
 func IncreaseStat(stat):
@@ -97,6 +109,7 @@ func _on_Confirm_pressed():
 		composure_add = 0
 		reflex_add = 0
 		LoadStats()
+		LoadBonuses()
 		for button in get_tree().get_nodes_in_group("MinButtons"):
 			button.set_disabled(true)
 		for label in get_tree().get_nodes_in_group("ChangeLabels"):
@@ -135,10 +148,10 @@ func _on_Exit_pressed(): # set to exit menu
 	get_node("HBoxContainer/VBoxContainer/Exit").show()
 
 
-func _on_ExitAndSave_pressed():
+func _on_ExitAndSave_pressed(): # save game and exit game
 	# TODO: add save function here (saves to quicksave)
 	get_tree().quit()
 
-func _on_ExitNoSave_pressed():
+func _on_ExitNoSave_pressed(): # exit game
 	get_tree().quit()
 

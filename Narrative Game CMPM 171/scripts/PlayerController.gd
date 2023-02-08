@@ -10,14 +10,14 @@ https://godotengine.org/qa/3953/want-flip-character-the-horizontal-axis-but-what
 
 # stats
 var stat_points = 9
-var logic = 5
-var dream = 5
-var empathy = 5
-var perception = 5
-var charisma = 5
-var culture = 5
-var composure = 5
-var reflex = 5
+var logic = 10
+var dream = 10
+var empathy = 10
+var perception = 10
+var charisma = 10
+var culture = 10
+var composure = 10
+var reflex = 10
 
 # movement
 const GRAVITY = 10
