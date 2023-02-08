@@ -17,6 +17,7 @@ var perception = 5
 var charisma = 5
 var culture = 5
 var composure = 5
+var reflex = 5
 
 # movement
 const GRAVITY = 10
