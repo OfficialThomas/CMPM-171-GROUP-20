@@ -8,10 +8,20 @@ https://godotengine.org/qa/72089/how-do-i-play-animation-using-gdscript
 https://godotengine.org/qa/3953/want-flip-character-the-horizontal-axis-but-whats-the-best-way
 """
 
+# stats
+var stat_points = 9
+var logic = 10
+var dream = 10
+var empathy = 10
+var perception = 10
+var charisma = 10
+var culture = 10
+var composure = 10
+var reflex = 10
+
+# movement
 const GRAVITY = 10
-
 export (int) var speed = 200
-
 var velocity = Vector2()
 
 func get_input():
@@ -42,5 +52,10 @@ func get_input():
 	velocity = velocity.normalized() * speed
 
 func _physics_process(_delta):
+	
 	get_input()
 	velocity = move_and_slide(velocity, Vector2(0, -1))
+	
+func LevelUp():
+	stat_points += 5
+
