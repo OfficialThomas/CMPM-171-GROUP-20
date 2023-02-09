@@ -84,6 +84,12 @@ config/name="Roadhouse"
 run/main_scene="res://play-scenes/TestScene1.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/resizable=false
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )

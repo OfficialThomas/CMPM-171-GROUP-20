@@ -134,12 +134,12 @@ size_flags_horizontal = 3
 
 [node name="Stats" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
 margin_right = 630.0
-margin_bottom = 556.0
+margin_bottom = 560.0
 size_flags_vertical = 3
 
 [node name="MainStats" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/Stats"]
 margin_right = 630.0
-margin_bottom = 556.0
+margin_bottom = 560.0
 rect_min_size = Vector2( 600, 0 )
 size_flags_horizontal = 3
 
@@ -963,6 +963,7 @@ margin_right = 630.0
 margin_bottom = 556.0
 
 [node name="Exit" type="Control" parent="HBoxContainer/VBoxContainer"]
+visible = false
 margin_top = 560.0
 margin_right = 630.0
 margin_bottom = 560.0

@@ -19,6 +19,9 @@ var culture = 10
 var composure = 10
 var reflex = 10
 
+# rolling
+var rng = RandomNumberGenerator.new()
+
 # movement
 const GRAVITY = 10
 export (int) var speed = 200
@@ -59,3 +62,6 @@ func _physics_process(_delta):
 func LevelUp():
 	stat_points += 5
 
+func ComposureRoll():
+	rng.randomize()
+	var roll = floor(rng.randf_range(0, 13)) + (composure - 10) / 2
