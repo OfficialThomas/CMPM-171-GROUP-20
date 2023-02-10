@@ -8,6 +8,7 @@ https://godotengine.org/qa/72089/how-do-i-play-animation-using-gdscript
 https://godotengine.org/qa/3953/want-flip-character-the-horizontal-axis-but-whats-the-best-way
 """
 
+
 # stats
 var stat_points = 9
 var logic = 10
@@ -28,6 +29,7 @@ export (int) var speed = 200
 var velocity = Vector2()
 
 func get_input():
+	# movement input
 	velocity = Vector2()
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
@@ -53,6 +55,19 @@ func get_input():
 		velocity.y = 0
 	# must normalize velocity so player moves smoothly
 	velocity = velocity.normalized() * speed
+	
+	# interact input
+	if Input.is_action_pressed("interact"):
+		if get_node_or_null('DialogNode') == null:
+			for dMember in get_tree().get_nodes_in_group("Dialogic Event"):
+				print(dMember)
+				print(get_node(dMember).get("d_events")) # error - im trying to find out how to access the string from the tutorial guide
+				if dMember.active:
+					get_tree().paused = true
+					var dialog = Dialogic.start(dMember.d_events[dMember.xpos][dMember.ypos])
+					dialog.pause_mode = Node.PAUSE_MODE_PROCESS
+					dialog.connect('timeline_end', self, 'unpause')
+					add_child(dialog)
 
 func _physics_process(_delta):
 	
@@ -65,3 +80,6 @@ func LevelUp():
 func ComposureRoll():
 	rng.randomize()
 	var roll = floor(rng.randf_range(0, 13)) + (composure - 10) / 2
+
+func unpause(timeline_name):
+	get_tree().paused = false
