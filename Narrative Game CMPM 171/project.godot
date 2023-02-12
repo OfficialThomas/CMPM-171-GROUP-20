@@ -80,7 +80,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Roadhouse"
+config/name="RoadTown USA"
 run/main_scene="res://play-scenes/TestScene1.tscn"
 config/icon="res://icon.png"
 

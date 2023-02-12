@@ -35,12 +35,8 @@
 			"value": ""
 		},
 		{
-			"definition": "1675983761-875",
-			"event_id": "dialogic_014",
-			"operation": "=",
-			"random_upper_limit": 12,
-			"set_random": true,
-			"set_value": ""
+			"emit_signal": "composure_roll",
+			"event_id": "dialogic_040"
 		},
 		{
 			"condition": "<=",
