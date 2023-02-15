@@ -35,6 +35,10 @@
 			"value": ""
 		},
 		{
+			"emit_signal": "composure_set",
+			"event_id": "dialogic_040"
+		},
+		{
 			"emit_signal": "composure_roll",
 			"event_id": "dialogic_040"
 		},
