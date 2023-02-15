@@ -61,13 +61,15 @@ func get_input():
 		if get_node_or_null('DialogNode') == null:
 			for dMember in get_tree().get_nodes_in_group("Dialogic Event"):
 				print(dMember)
+				print(dMember.d_events[dMember.pos_y][dMember.pos_x])
 				if dMember.active:
 					get_tree().paused = true
-					var dialog = Dialogic.start('guide-dialogue')
+					var dialog = Dialogic.start(dMember.d_events[dMember.pos_y][dMember.pos_x])
 					dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 					add_child(dialog)
 					dialog.connect('timeline_end', self, 'unpause')
 					dialog.connect('dialogic_signal', self, 'dialogic_signal')
+
 
 func _physics_process(_delta):
 	get_input()
@@ -104,9 +106,33 @@ func dialogic_signal(arguement):
 		'reflex_roll':
 			dice_roll("reflex", (reflex - 10) / 2)
 			pass
+		'logic_set':
+			set_val("logic", logic)
+			pass
+		'dream_set':
+			set_val("dream", dream) 
+			pass
+		'empathy_set':
+			set_val("empathy", empathy)
+			pass
+		'perception_set':
+			set_val("perception", perception)
+			pass
+		'charisma_set':
+			set_val("charisma", charisma)
+			pass
+		'culture_set':
+			set_val("culture", culture)
+			pass
+		'composure_set':
+			set_val("composure", composure)
+			pass
+		'reflex_set':
+			set_val("reflex", reflex)
+			pass
 
 
-func dice_roll( type, bonus ): # the universal dice roll check
+func dice_roll(type, bonus): # the universal dice roll check
 	print("Rolling for " + str(type))
 	# roll dice
 	rng.randomize()
@@ -117,6 +143,12 @@ func dice_roll( type, bonus ): # the universal dice roll check
 	var sum = roll1 + roll2 + bonus
 	print("Result: " + str(roll1) + " + " + str(roll2) + " + " + str(bonus) + " = " + str(sum))
 	Dialogic.set_variable(type, sum)
+
+
+func set_val(type, value): # the universal dialogic stat access
+	print("Seting stat for: " + str(type))
+	print("Value = " + str(value))
+	Dialogic.set_variable(type, value) 
 
 
 func unpause(timeline_name):
