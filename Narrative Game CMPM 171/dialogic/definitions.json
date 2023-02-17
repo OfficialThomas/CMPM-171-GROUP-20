@@ -4,6 +4,12 @@
 	],
 	"variables": [
 		{
+			"id": "1676157393-483",
+			"name": "culture",
+			"type": 0,
+			"value": "0"
+		},
+		{
 			"id": "1675983761-875",
 			"name": "composure",
 			"type": 0,
@@ -36,12 +42,6 @@
 		{
 			"id": "1676157388-918",
 			"name": "charisma",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1676157393-483",
-			"name": "culture",
 			"type": 0,
 			"value": "0"
 		},
