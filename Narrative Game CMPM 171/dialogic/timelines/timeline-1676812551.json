@@ -1,0 +1,162 @@
+{
+	"events": [
+		{
+			"character": "character-1676811565.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "In your living-room, you see a stranger sitting on the couch. You tense up, frozen, curious as to who the figure is. Hearing your footsteps, they turn to look at you and get up. It’s only then that you see your brother, [NAME], walking sluggishly towards you."
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You were sleeping for a while, got your full 8 hours?"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "A"
+		},
+		{
+			"choice": "How’d you get inside?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Does it really matter? I’m here! That’s all that’s important…"
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Nah, just kiddin’! The doorman let me in. Didn’t take much convincing for him to let me up to your place too- I mean, I was practically able to walk straight up here. This place honestly isn’t as secure as you’d think, given its reputation and all."
+		},
+		{
+			"choice": "Reputation?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "culture_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"emit_signal": "culture_roll",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well..."
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Listen, nobody really likes this place. It’s a money pit! A factory, whatever the hell a “monorail” is, stupid fad tech like telephones and telegraphones, it’s all unfeasible for the long run. Along with all washups getting in here, this place is gonna fall apart someday."
+		},
+		{
+			"condition": ">=",
+			"definition": "1676157393-483",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1676811565.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Honestly, this might be jealousy talking. People still have a roof to sleep under here, unlike a lot of people can say, and you don’t have to deal with all the gang violence or other crazies out there."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Uh.. no offense, of course."
+		},
+		{
+			"choice": "Yeah, I got it.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Long time no see.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah, no kidding. It’s been what, 5 years? I’ve missed you man. I’ve been so consumed by life and haven’t been able to reach you in so long."
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Seems like you have yourself set up nicely here… quite the opposite of how it was when we were kids. I’ll never forget those nights on the road. As traumatic as they were, it bonded us."
+		},
+		{
+			"choice": "What brings you here?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, it’s never a bad time to come see your brother. I won’t lie to you though, I did hear  amazing reviews about this place and remembered you said something about it a while ago. Came to see if you actually live here now and you do! My life has been pretty boring the past few years and seeing you was something I know would bring both of our energy up."
+		},
+		{
+			"choice": "How long are you staying?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I planned on just staying for the day. I hope you didn’t have anything real important to do… Er, if you did I can just tag along. I’ve got nothing to do today if you couldn’t tell."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1676812551.json",
+		"name": "Meeting Brother"
+	}
+}
