@@ -4,24 +4,6 @@
 	],
 	"variables": [
 		{
-			"id": "1675983761-875",
-			"name": "composure",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1676157318-648",
-			"name": "logic",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1676157330-787",
-			"name": "dream",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1676157367-366",
 			"name": "empathy",
 			"type": 0,
@@ -48,6 +30,24 @@
 		{
 			"id": "1676157414-970",
 			"name": "reflex",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1676157318-648",
+			"name": "logic",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1675983761-875",
+			"name": "composure",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1676157330-787",
+			"name": "dream",
 			"type": 0,
 			"value": "0"
 		}

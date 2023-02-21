@@ -1,0 +1,208 @@
+{
+	"events": [
+		{
+			"character": "character-1676811565.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Your eye catches the shadows on the wall shifting as you pass. You turn, startled, but are met with a familiar face."
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cripes ya startled me! Morning, [PLAYER NAME]."
+		},
+		{
+			"character": "character-1676811565.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He continues fiddling with the bolts on the pipeline."
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "So, how’d you sleep?"
+		},
+		{
+			"choice": "Like a rock, Verne.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah, that checks out. Personally haven’t gotten a wink of sleep m’self, but I guess that comes with the job."
+		},
+		{
+			"choice": "You asked me this yesterday, why’re you suddenly so interested in my sleeping habits?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What, I’m not allowed to inquire about my friend’s well-being? Plus, don’t think I don’t notice you walkin’ these halls in the dead of night. I assume it’s just boredom but shit’s creepy."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"emit_signal": "empathy_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"emit_signal": "empathy_roll",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "What’re you up to?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What’s it look like I’m doin’? Doin’ what I always do - keep this shithole runnin’. Pipes and wires need upkeep and door mechanisms ain’t gonna fix themselves, but you should know that just as well as I. Yesterday the turbines in this sector broke down again. Guess who had to fix ‘em?"
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thankfully neither of us gotta handle the com lines, leave that to the eggheads. I hear it’s a mess over there right now"
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Verne laughs slyly, his attention weaving between the pipe, his wrench and his toolbox."
+		},
+		{
+			"choice": "Thanks for looking out for me.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Is that sarcasm? Either way don’t mention it. We’ve been on the workforce together for, what, 4 years now? We’ve gotta look after each other, man. God forbid they crack down on the union someday soon."
+		},
+		{
+			"character": "character-1676811565.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Verne lends you a genuine smile betraying his cynicism, and promptly resumes his work."
+		},
+		{
+			"choice": "Ask him more about his insomnia.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"condition": ">=",
+			"definition": "1676157367-366",
+			"event_id": "dialogic_012",
+			"value": "4"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "They have you burning the midnight oil, huh?"
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nah, you know it’s nothing like that."
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Is it something else then? How about your dreams? I was told that sometimes our dreams can keep us awake."
+		},
+		{
+			"character": "character-1676811565.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This causes him to pause. He stumbles over his words a little bit before regaining his composure."
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "How are my…it’s fine, when I have them. The occasional nightmare but nothing… strange…"
+		},
+		{
+			"character": "character-1676811565.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He shakes his head and picks up his tone."
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I suppose I’ve been having issues getting my ass out of bed as of late. Maybe I should see a physician or something."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1676157367-366",
+			"event_id": "dialogic_012",
+			"value": "4"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You don’t need to me to get a doctor for ya, do you? The foreman will have your ass if he catches you nodding off."
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey, hey. I’m fine, I’m fine. Ya don’t need to watch over me, just a little tired is all."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1676890292.json",
+		"name": "Meeting Worker"
+	}
+}
