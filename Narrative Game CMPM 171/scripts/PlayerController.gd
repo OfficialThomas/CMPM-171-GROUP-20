@@ -33,14 +33,12 @@ func get_input():
 	velocity = Vector2()
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
-		$AnimatedSprite.set_flip_h(false)
-		$AnimatedSprite.play("walk")
+		$AnimatedSprite.play("playerWalkRight")
 	elif Input.is_action_pressed("left"):
 		velocity.x -= 1
-		$AnimatedSprite.set_flip_h(true)
-		$AnimatedSprite.play("walk")
+		$AnimatedSprite.play("PlayerWalkLeft")
 	else:
-		$AnimatedSprite.play("idle")
+		$AnimatedSprite.play("playerIdle")
 	"""
 	Kept this just for completedness of input tests
 	if Input.is_action_pressed("down"):
@@ -60,8 +58,9 @@ func get_input():
 	if Input.is_action_pressed("interact"):
 		if get_node_or_null('DialogNode') == null:
 			for dMember in get_tree().get_nodes_in_group("Dialogic Event"):
-				print(dMember)
-				print(dMember.d_events[dMember.pos_y][dMember.pos_x])
+#				re-add these lines when internal testing
+#				print(dMember)
+#				print(dMember.d_events[dMember.pos_y][dMember.pos_x])
 				if dMember.active:
 					get_tree().paused = true
 					var dialog = Dialogic.start(dMember.d_events[dMember.pos_y][dMember.pos_x])

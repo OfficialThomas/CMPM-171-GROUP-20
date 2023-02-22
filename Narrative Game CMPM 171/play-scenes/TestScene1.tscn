@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/game-objects/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/game-objects/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,10 @@
 [ext_resource path="res://assets/game-objects/NPCTutorialGuide.tscn" type="PackedScene" id=6]
 [ext_resource path="res://demo-assets/PNG/Backgrounds/parallax/parallax-01.png" type="Texture" id=7]
 [ext_resource path="res://demo-assets/PNG/Backgrounds/parallax/parallax-02.png" type="Texture" id=8]
+[ext_resource path="res://assets/game-objects/NPCBrother.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/game-objects/NPCManager.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/game-objects/NPCMechanic.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/game-objects/NPCMobleader.tscn" type="PackedScene" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -125,8 +129,22 @@ target = NodePath("../DoorA1")
 position = Vector2( 350, 490 )
 pos_y = 1
 
+[node name="NPCBrother" parent="." groups=["Dialogic Event"] instance=ExtResource( 9 )]
+position = Vector2( 1444, 463 )
+pos_y = 3
+
+[node name="NPCMechanic" parent="." groups=["Dialogic Event"] instance=ExtResource( 11 )]
+position = Vector2( 1639, 463 )
+pos_y = 4
+
+[node name="NPCManager" parent="." groups=["Dialogic Event"] instance=ExtResource( 10 )]
+position = Vector2( 1830, 463 )
+
+[node name="NPCMobleader" parent="." groups=["Dialogic Event"] instance=ExtResource( 12 )]
+position = Vector2( 2030, 463 )
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 187, 483 )
+position = Vector2( 219, 460 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
