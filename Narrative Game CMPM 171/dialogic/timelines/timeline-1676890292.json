@@ -66,10 +66,6 @@
 			"question": ""
 		},
 		{
-			"emit_signal": "empathy_set",
-			"event_id": "dialogic_040"
-		},
-		{
 			"emit_signal": "empathy_roll",
 			"event_id": "dialogic_040"
 		},
