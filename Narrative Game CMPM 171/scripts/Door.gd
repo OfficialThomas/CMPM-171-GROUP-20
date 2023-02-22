@@ -33,7 +33,7 @@ func _on_NearDoor_body_exited(body):
 		$AnimatedSprite.play("closed")
 		isLocked = true
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	$Icon.visible = active
 	if isOverDoor and Input.is_action_just_pressed("interact"):
 		player.position = target.position

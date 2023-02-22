@@ -4,8 +4,6 @@
 	],
 	"variables": [
 		{
-			"id": "1676157367-366",
-			"name": "empathy",
 			"id": "1676157393-483",
 			"name": "culture",
 			"type": 0,
@@ -14,12 +12,6 @@
 		{
 			"id": "1675983761-875",
 			"name": "composure",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1676157374-146",
-			"name": "perception",
 			"type": 0,
 			"value": "0"
 		},
@@ -54,10 +46,20 @@
 			"value": "0"
 		},
 		{
-			"id": "1676157330-787",
-			"name": "dream",
 			"id": "1676157414-970",
 			"name": "reflex",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1676157374-146",
+			"name": "perception",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1677095932-529",
+			"name": "dream",
 			"type": 0,
 			"value": "0"
 		}

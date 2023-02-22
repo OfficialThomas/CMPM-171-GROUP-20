@@ -18,7 +18,7 @@ func _ready():
 	connect("body_exited", self, '_on_NPC_body_exited')
 
 
-func _process(delta):
+func _process(_delta):
 	$AnimatedSprite.play("idle")
 	$Icon.visible = active
 
