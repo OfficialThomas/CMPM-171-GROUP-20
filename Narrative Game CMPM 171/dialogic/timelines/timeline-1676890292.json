@@ -41,7 +41,7 @@
 			"text": "Yeah, that checks out. Personally haven’t gotten a wink of sleep m’self, but I guess that comes with the job."
 		},
 		{
-			"choice": "You asked me this yesterday, why’re you suddenly so interested in my sleeping habits?",
+			"choice": "You asked me this yesterday, why’re you suddenly so interested?",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -63,7 +63,7 @@
 
 			],
 			"portrait": "",
-			"question": ""
+			"question": "[i]Again, he continues fiddling with the bolts on the pipeline.[/i]"
 		},
 		{
 			"choice": "What’re you up to?",
@@ -124,7 +124,7 @@
 			"condition": ">",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "5"
+			"value": "3"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -175,7 +175,7 @@
 			"condition": "<=",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "5"
+			"value": "3"
 		},
 		{
 			"character": "character-1676811545.json",

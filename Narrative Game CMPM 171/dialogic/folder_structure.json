@@ -10,29 +10,53 @@
 				"character-1676811545.json",
 				"character-1676811565.json",
 				"character-1676812558.json",
-				"character-1676890283.json"
+				"character-1676890283.json",
+				"character-1677176249.json"
 			],
 			"folders": {
 
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Definitions": {
 			"files": [
-				"1675983761-875",
-				"1676157318-648",
-				"1676157388-918",
-				"1676157393-483",
-				"1676157414-970",
-				"1676157374-146",
-				"1677095932-529",
-				"1677168976-483"
+
 			],
 			"folders": {
+				"dialogue gates": {
+					"files": [
+						"1677176778-648"
+					],
+					"folders": {
 
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"player stats": {
+					"files": [
+						"1675983761-875",
+						"1676157318-648",
+						"1676157388-918",
+						"1676157393-483",
+						"1676157414-970",
+						"1676157374-146",
+						"1677095932-529",
+						"1677168976-483"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				}
 			},
 			"metadata": {
 				"color": null,
@@ -57,7 +81,8 @@
 				"timeline-1675983067.json",
 				"timeline-1676811584.json",
 				"timeline-1676812551.json",
-				"timeline-1676890292.json"
+				"timeline-1676890292.json",
+				"timeline-1677175904.json"
 			],
 			"folders": {
 

@@ -140,6 +140,7 @@ pos_y = 4
 
 [node name="NPCManager" parent="." groups=["Dialogic Event"] instance=ExtResource( 10 )]
 position = Vector2( 1830, 463 )
+pos_y = 5
 
 [node name="NPCMobleader" parent="." groups=["Dialogic Event"] instance=ExtResource( 12 )]
 position = Vector2( 2030, 463 )

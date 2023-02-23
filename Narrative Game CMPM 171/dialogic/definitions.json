@@ -4,14 +4,14 @@
 	],
 	"variables": [
 		{
-			"id": "1676157393-483",
-			"name": "culture",
+			"id": "1675983761-875",
+			"name": "composure",
 			"type": 0,
 			"value": "0"
 		},
 		{
-			"id": "1675983761-875",
-			"name": "composure",
+			"id": "1676157318-648",
+			"name": "logic",
 			"type": 0,
 			"value": "0"
 		},
@@ -24,24 +24,6 @@
 		{
 			"id": "1676157393-483",
 			"name": "culture",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1676157414-970",
-			"name": "reflex",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1676157318-648",
-			"name": "logic",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1675983761-875",
-			"name": "composure",
 			"type": 0,
 			"value": "0"
 		},
@@ -66,6 +48,12 @@
 		{
 			"id": "1677168976-483",
 			"name": "empathy",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1677176778-648",
+			"name": "equipment failures?",
 			"type": 0,
 			"value": "0"
 		}
