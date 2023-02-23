@@ -62,6 +62,12 @@
 			"name": "dream",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1677168976-483",
+			"name": "empathy",
+			"type": 0,
+			"value": "0"
 		}
 	]
 }
