@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/couch pixel.png-3d4b1d536f639e350bbc98995cfcbe8f.stex"
+path="res://.import/tilesheet.png-1d45eca8390281a572696604b4877a0e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art-assets/props/couch pixel.png"
-dest_files=[ "res://.import/couch pixel.png-3d4b1d536f639e350bbc98995cfcbe8f.stex" ]
+source_file="res://assets/art-assets/environment/tilesheet.png"
+dest_files=[ "res://.import/tilesheet.png-1d45eca8390281a572696604b4877a0e.stex" ]
 
 [params]
 

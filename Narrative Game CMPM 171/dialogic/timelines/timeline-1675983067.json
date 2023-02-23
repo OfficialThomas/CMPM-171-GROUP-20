@@ -1,92 +1,10 @@
 {
 	"events": [
 		{
-			"character": "character-1675982978.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "As you have figured out, the [color=#efaca5]arrow keys[/color] allow you to [color=#A5EFAC]walk[/color] and the [color=#efaca5]X key[/color] allows you to [color=#A5EFAC]talk[/color]. But did you know you can [color=#A5EFAC]progress through dialogue[/color] with the [color=#efaca5]space bar[/color]?"
-		},
-		{
-			"character": "character-1675982978.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "You can also [color=#A5EFAC]open up the menu[/color] with the [color=#efaca5]C key[/color]."
-		},
-		{
-			"character": "character-1675982978.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Its all pretty cool."
-		},
-		{
-			"character": "character-1675982978.json",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
-			"portrait": "",
-			"question": "What is your opinion on Majong?"
-		},
-		{
-			"choice": "I'm a master!",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"emit_signal": "composure_set",
-			"event_id": "dialogic_040"
-		},
-		{
-			"emit_signal": "composure_roll",
-			"event_id": "dialogic_040"
-		},
-		{
-			"condition": "<=",
-			"definition": "1675983761-875",
-			"event_id": "dialogic_012",
-			"value": "4"
-		},
-		{
-			"character": "character-1675982978.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "RESULT: [composure] It's not okay to lie."
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"condition": ">",
-			"definition": "1675983761-875",
-			"event_id": "dialogic_012",
-			"value": "4"
-		},
-		{
-			"character": "character-1675982978.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "RESULT: [composure] I'm glad to see another skilled player!"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"choice": "Never played it.",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"character": "character-1675982978.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "No worries. Everyone can learn majong sometime in their life!"
-		},
-		{
-			"event_id": "dialogic_013"
+			"text": "On your desk, you find your journal with a message for you.\n[i]Hello there future me. As you have figured out, the [color=#efaca5]arrow keys[/color] allow you to [color=#A5EFAC]walk[/color] and the [color=#efaca5]X key[/color] allows you to [color=#A5EFAC]interact with people and objects[/color].[/i]\n[i]But did you know you can [color=#A5EFAC]progress through dialogue[/color] with the [color=#efaca5]space bar[/color]?[/i]\n[i]I hope this information helps![/i]\n[i]From, Yourself[/i]\n[i]P.S. - Progress in life is always made with [color=#A5EFAC]opening the menu[/color] with the [color=#efaca5]C key[/color].[/i]"
 		},
 		{
 			"event_id": "dialogic_022",
