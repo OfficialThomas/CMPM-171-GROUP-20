@@ -139,13 +139,13 @@ func dice_roll(type, bonus): # the universal dice roll check
 	
 	# resolve
 	var sum = roll1 + roll2 + bonus
-#	print("Result: " + str(roll1) + " + " + str(roll2) + " + " + str(bonus) + " = " + str(sum))
+	print("Result: " + str(roll1) + " + " + str(roll2) + " + " + str(bonus) + " = " + str(sum))
 	Dialogic.set_variable(type, sum)
 
 
 func set_val(type, value): # the universal dialogic stat access
 #	print("Seting stat for: " + str(type))
-#	print("Value = " + str(value))
+	print("Value = " + str(value))
 	Dialogic.set_variable(type, value) 
 
 
