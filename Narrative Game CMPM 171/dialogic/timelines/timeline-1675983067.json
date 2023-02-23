@@ -4,7 +4,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "On your desk, you find your journal with a message for you.\n[i]Hello there future me. As you have figured out, the [color=#efaca5]arrow keys[/color] allow you to [color=#A5EFAC]walk[/color] and the [color=#efaca5]X key[/color] allows you to [color=#A5EFAC]interact with people and objects[/color].[/i]\n[i]But did you know you can [color=#A5EFAC]progress through dialogue[/color] with the [color=#efaca5]space bar[/color]?[/i]\n[i]I hope this information helps![/i]\n[i]From, Yourself[/i]\n[i]P.S. - Progress in life is always made with [color=#A5EFAC]opening the menu[/color] with the [color=#efaca5]C key[/color].[/i]"
+			"text": "[i]On your desk, you find your journal with a message for you.[/i]\n\"Hello there future me. As you have figured out, the [color=#efaca5]arrow keys[/color] allow you to [color=#A5EFAC]walk[/color] and the [color=#efaca5]X key[/color] allows you to [color=#A5EFAC]interact with people and objects[/color].\"\n\"But did you know you can [color=#A5EFAC]progress through dialogue[/color] with the [color=#efaca5]space bar[/color]?\"\n\"I hope this information helps!\"\n\"From, Yourself\"\n\"P.S. - Progress in life is always made with [color=#A5EFAC]opening the menu[/color] with the [color=#efaca5]C key[/color].\""
 		},
 		{
 			"event_id": "dialogic_022",

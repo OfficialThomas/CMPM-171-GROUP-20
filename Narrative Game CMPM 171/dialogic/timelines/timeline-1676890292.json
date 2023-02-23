@@ -4,19 +4,19 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Your eye catches the shadows on the wall shifting as you pass. You turn, startled, but are met with a familiar face."
+			"text": "[i]Your eye catches the shadows on the wall shifting as you pass. You turn, startled, but are met with a familiar face.[/i]"
 		},
 		{
 			"character": "character-1676890283.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Cripes ya startled me! Morning, [PLAYER NAME]."
+			"text": "Cripes ya startled me! Morning."
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "He continues fiddling with the bolts on the pipeline."
+			"text": "[i]He continues fiddling with the bolts on the pipeline.[/i]"
 		},
 		{
 			"character": "character-1676890283.json",
@@ -51,7 +51,7 @@
 			"character": "character-1676890283.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "What, I’m not allowed to inquire about my friend’s well-being? Plus, don’t think I don’t notice you walkin’ these halls in the dead of night. I assume it’s just boredom but shit’s creepy."
+			"text": "What, I’m not allowed to inquire about my friend’s well-being? \nPlus, don’t think I don’t notice you walkin’ these halls in the dead of night. I assume it’s just boredom but shit’s creepy."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -66,10 +66,6 @@
 			"question": ""
 		},
 		{
-			"emit_signal": "empathy_roll",
-			"event_id": "dialogic_040"
-		},
-		{
 			"choice": "What’re you up to?",
 			"condition": "",
 			"definition": "",
@@ -80,25 +76,19 @@
 			"character": "character-1676890283.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "What’s it look like I’m doin’? Doin’ what I always do - keep this shithole runnin’. Pipes and wires need upkeep and door mechanisms ain’t gonna fix themselves, but you should know that just as well as I."
+			"text": "What’s it look like I’m doin’? Doin’ what I always do - keep this shithole runnin’. \nPipes and wires need upkeep and door mechanisms ain’t gonna fix themselves, but you should know that just as well as I.\nYesterday the turbines in this sector broke down again. Guess who had to fix ‘em?"
 		},
 		{
 			"character": "character-1676890283.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Yesterday the turbines in this sector broke down again. Guess who had to fix ‘em?"
+			"text": "Yesterday the turbines in this sector broke down again. Guess who had to fix ‘em?\nThankfully neither of us gotta handle the com lines, leave that to the eggheads. I hear it’s a mess over there right now."
 		},
 		{
-			"character": "character-1676890283.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Thankfully neither of us gotta handle the com lines, leave that to the eggheads. I hear it’s a mess over there right now"
-		},
-		{
-			"character": "character-1676890283.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Verne laughs slyly, his attention weaving between the pipe, his wrench and his toolbox."
+			"text": "[i]Verne laughs slyly, his attention weaving between the pipe, his wrench and his toolbox.[/i]"
 		},
 		{
 			"choice": "Thanks for looking out for me.",
@@ -117,7 +107,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Verne lends you a genuine smile betraying his cynicism, and promptly resumes his work."
+			"text": "[i]Verne lends you a genuine smile betraying his cynicism, and promptly resumes his work.[/i]"
 		},
 		{
 			"choice": "Ask him more about his insomnia.",
@@ -127,10 +117,14 @@
 			"value": ""
 		},
 		{
-			"condition": ">=",
-			"definition": "1676157367-366",
+			"emit_signal": "empathy_roll",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">",
+			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "4"
+			"value": "5"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -154,7 +148,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "This causes him to pause. He stumbles over his words a little bit before regaining his composure."
+			"text": "[i]This causes him to pause. He stumbles over his words a little bit before regaining his composure.[/i]"
 		},
 		{
 			"character": "character-1676890283.json",
@@ -166,7 +160,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "He shakes his head and picks up his tone."
+			"text": "[i]He shakes his head and picks up his tone.[/i]"
 		},
 		{
 			"character": "character-1676890283.json",
@@ -178,10 +172,10 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"condition": "<",
-			"definition": "1676157367-366",
+			"condition": "<=",
+			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "4"
+			"value": "5"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -223,7 +217,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "He nods with an air of finality and returns his full attention to the pipe."
+			"text": "[i]He nods with an air of finality and returns his full attention to the pipe.[/i]"
 		},
 		{
 			"event_id": "dialogic_022",

@@ -22,7 +22,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 13.0
+radius = 20.5
 height = 49.2
 
 [node name="NPCBrother" type="Area2D"]

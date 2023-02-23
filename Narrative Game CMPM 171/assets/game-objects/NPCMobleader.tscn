@@ -37,7 +37,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 13.0
+radius = 23.0
 height = 49.2
 
 [node name="NPCMobleader" type="Area2D"]
