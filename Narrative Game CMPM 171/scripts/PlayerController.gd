@@ -1,12 +1,13 @@
 extends KinematicBody2D
 
-"""
-Works Cited:
-https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://staffwww.fullcoll.edu/dcraig/gameprog/godot%20lecture%202.pdf
-https://godotengine.org/qa/72089/how-do-i-play-animation-using-gdscript
-https://godotengine.org/qa/3953/want-flip-character-the-horizontal-axis-but-whats-the-best-way
-"""
+
+#	Works Cited:
+#	https://www.gdquest.com/tutorial/godot/2d/scene-transition-rect/
+#	https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html
+#	chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://staffwww.fullcoll.edu/dcraig/gameprog/godot%20lecture%202.pdf
+#	https://godotengine.org/qa/72089/how-do-i-play-animation-using-gdscript
+#	https://godotengine.org/qa/3953/want-flip-character-the-horizontal-axis-but-whats-the-best-way
+
 
 
 # stats
@@ -33,21 +34,17 @@ func get_input():
 	velocity = Vector2()
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
-		$AnimatedSprite.set_flip_h(false)
-		$AnimatedSprite.play("walk")
+		$AnimatedSprite.play("playerWalkRight")
 	elif Input.is_action_pressed("left"):
 		velocity.x -= 1
-		$AnimatedSprite.set_flip_h(true)
-		$AnimatedSprite.play("walk")
+		$AnimatedSprite.play("PlayerWalkLeft")
 	else:
-		$AnimatedSprite.play("idle")
-	"""
-	Kept this just for completedness of input tests
-	if Input.is_action_pressed("down"):
-		velocity.y += 1
-	if Input.is_action_pressed("up"):
-		velocity.y -= 1
-	"""
+		$AnimatedSprite.play("playerIdle")
+#	Kept this just for completedness of input tests
+#	if Input.is_action_pressed("down"):
+#		velocity.y += 1
+#	if Input.is_action_pressed("up"):
+#		velocity.y -= 1
 	
 	# positive is down in a 2d canvas space
 	velocity.y += GRAVITY
@@ -60,8 +57,9 @@ func get_input():
 	if Input.is_action_pressed("interact"):
 		if get_node_or_null('DialogNode') == null:
 			for dMember in get_tree().get_nodes_in_group("Dialogic Event"):
-				print(dMember)
-				print(dMember.d_events[dMember.pos_y][dMember.pos_x])
+#				re-add these lines when internal testing
+#				print(dMember)
+#				print(dMember.d_events[dMember.pos_y][dMember.pos_x])
 				if dMember.active:
 					get_tree().paused = true
 					var dialog = Dialogic.start(dMember.d_events[dMember.pos_y][dMember.pos_x])
@@ -133,7 +131,7 @@ func dialogic_signal(arguement):
 
 
 func dice_roll(type, bonus): # the universal dice roll check
-	print("Rolling for " + str(type))
+#	print("Rolling for " + str(type))
 	# roll dice
 	rng.randomize()
 	var roll1 = floor(rng.randf_range(1, 6))
@@ -141,15 +139,15 @@ func dice_roll(type, bonus): # the universal dice roll check
 	
 	# resolve
 	var sum = roll1 + roll2 + bonus
-	print("Result: " + str(roll1) + " + " + str(roll2) + " + " + str(bonus) + " = " + str(sum))
+#	print("Result: " + str(roll1) + " + " + str(roll2) + " + " + str(bonus) + " = " + str(sum))
 	Dialogic.set_variable(type, sum)
 
 
 func set_val(type, value): # the universal dialogic stat access
-	print("Seting stat for: " + str(type))
-	print("Value = " + str(value))
+#	print("Seting stat for: " + str(type))
+#	print("Value = " + str(value))
 	Dialogic.set_variable(type, value) 
 
 
-func unpause(timeline_name):
+func unpause(_timeline_name):
 	get_tree().paused = false

@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"character": "character-1676811565.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "In your living-room, you see a stranger sitting on the couch. You tense up, frozen, curious as to who the figure is. Hearing your footsteps, they turn to look at you and get up. It’s only then that you see your brother, [NAME], walking sluggishly towards you."
@@ -17,7 +17,7 @@
 		},
 		{
 			"event_id": "dialogic_015",
-			"id": "anchor-1634488067",
+			"id": "anchor-1677069473",
 			"index": 0,
 			"name": "A"
 		},
@@ -49,10 +49,6 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"emit_signal": "culture_set",
-			"event_id": "dialogic_040"
 		},
 		{
 			"emit_signal": "culture_roll",
