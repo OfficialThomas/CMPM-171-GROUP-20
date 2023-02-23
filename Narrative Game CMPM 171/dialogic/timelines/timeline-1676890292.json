@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"character": "character-1676811565.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Your eye catches the shadows on the wall shifting as you pass. You turn, startled, but are met with a familiar face."
@@ -13,7 +13,7 @@
 			"text": "Cripes ya startled me! Morning, [PLAYER NAME]."
 		},
 		{
-			"character": "character-1676811565.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "He continues fiddling with the bolts on the pipeline."
@@ -80,7 +80,13 @@
 			"character": "character-1676890283.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "What’s it look like I’m doin’? Doin’ what I always do - keep this shithole runnin’. Pipes and wires need upkeep and door mechanisms ain’t gonna fix themselves, but you should know that just as well as I. Yesterday the turbines in this sector broke down again. Guess who had to fix ‘em?"
+			"text": "What’s it look like I’m doin’? Doin’ what I always do - keep this shithole runnin’. Pipes and wires need upkeep and door mechanisms ain’t gonna fix themselves, but you should know that just as well as I."
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yesterday the turbines in this sector broke down again. Guess who had to fix ‘em?"
 		},
 		{
 			"character": "character-1676890283.json",
@@ -108,7 +114,7 @@
 			"text": "Is that sarcasm? Either way don’t mention it. We’ve been on the workforce together for, what, 4 years now? We’ve gotta look after each other, man. God forbid they crack down on the union someday soon."
 		},
 		{
-			"character": "character-1676811565.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Verne lends you a genuine smile betraying his cynicism, and promptly resumes his work."
@@ -145,7 +151,7 @@
 			"text": "Is it something else then? How about your dreams? I was told that sometimes our dreams can keep us awake."
 		},
 		{
-			"character": "character-1676811565.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "This causes him to pause. He stumbles over his words a little bit before regaining his composure."
@@ -157,7 +163,7 @@
 			"text": "How are my…it’s fine, when I have them. The occasional nightmare but nothing… strange…"
 		},
 		{
-			"character": "character-1676811565.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "He shakes his head and picks up his tone."
@@ -194,6 +200,34 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh yeah, before you head off - fair warnin’ that the Boss is in a heap of shit at the moment. I’ve never seen the man so distressed."
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You should probably get over there ASAP in case it’s as bad as it looks. Take care man."
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You too."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He nods with an air of finality and returns his full attention to the pipe."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {

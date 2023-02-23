@@ -4,7 +4,19 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "In your living-room, you see a stranger sitting on the couch. You tense up, frozen, curious as to who the figure is. Hearing your footsteps, they turn to look at you and get up. It’s only then that you see your brother, [NAME], walking sluggishly towards you."
+			"text": "In your living-room, you see a stranger sitting on the couch. You tense up, frozen, curious as to who the figure is. Hearing your footsteps, they turn to look at you and get up."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s only then that you see your brother, [NAME], walking sluggishly towards you."
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1677069473",
+			"index": 0,
+			"name": "A"
 		},
 		{
 			"character": "character-1676812558.json",
@@ -14,12 +26,6 @@
 			],
 			"portrait": "",
 			"question": "You were sleeping for a while, got your full 8 hours?"
-		},
-		{
-			"event_id": "dialogic_015",
-			"id": "anchor-1677069473",
-			"index": 0,
-			"name": "A"
 		},
 		{
 			"choice": "How’d you get inside?",
@@ -36,12 +42,18 @@
 		},
 		{
 			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nah, just kiddin’! The doorman let me in. Didn’t take much convincing for him to let me up to your place too- I mean, I was practically able to walk straight up here."
+		},
+		{
+			"character": "character-1676812558.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "Nah, just kiddin’! The doorman let me in. Didn’t take much convincing for him to let me up to your place too- I mean, I was practically able to walk straight up here. This place honestly isn’t as secure as you’d think, given its reputation and all."
+			"question": "This place honestly isn’t as secure as you’d think, given its reputation and all."
 		},
 		{
 			"choice": "Reputation?",
@@ -64,7 +76,13 @@
 			"character": "character-1676812558.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Listen, nobody really likes this place. It’s a money pit! A factory, whatever the hell a “monorail” is, stupid fad tech like telephones and telegraphones, it’s all unfeasible for the long run. Along with all washups getting in here, this place is gonna fall apart someday."
+			"text": "Listen, nobody really likes this place. It’s a money pit! A factory, whatever the hell a “monorail” is, stupid fad tech like telephones and telegraphones, it’s all unfeasible for the long run."
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " Along with all washups getting in here, this place is gonna fall apart someday."
 		},
 		{
 			"condition": ">=",
@@ -127,7 +145,13 @@
 			"character": "character-1676812558.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Well, it’s never a bad time to come see your brother. I won’t lie to you though, I did hear  amazing reviews about this place and remembered you said something about it a while ago. Came to see if you actually live here now and you do! My life has been pretty boring the past few years and seeing you was something I know would bring both of our energy up."
+			"text": "Well, it’s never a bad time to come see your brother. I won’t lie to you though, I did hear  amazing reviews about this place and remembered you said something about it a while ago."
+		},
+		{
+			"character": "character-1676812558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Came to see if you actually live here now and you do! My life has been pretty boring the past few years and seeing you was something I know would bring both of our energy up."
 		},
 		{
 			"choice": "How long are you staying?",
@@ -143,10 +167,14 @@
 			"text": "I planned on just staying for the day. I hope you didn’t have anything real important to do… Er, if you did I can just tag along. I’ve got nothing to do today if you couldn’t tell."
 		},
 		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
 			"event_id": "dialogic_013"
 		},
 		{
-			"anchor_id": "anchor-1634488067",
+			"anchor_id": "anchor-1677069473",
 			"event_id": "dialogic_016"
 		}
 	],
