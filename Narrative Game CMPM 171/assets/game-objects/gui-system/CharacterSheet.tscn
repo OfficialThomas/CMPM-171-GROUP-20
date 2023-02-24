@@ -57,7 +57,7 @@ margin_bottom = -20.0
 
 [node name="Stats" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
 margin_right = 290.0
-margin_bottom = 127.0
+margin_bottom = 258.0
 rect_min_size = Vector2( 220, 50 )
 size_flags_vertical = 3
 texture_normal = ExtResource( 5 )
@@ -73,6 +73,7 @@ align = 1
 valign = 1
 
 [node name="Save" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
+visible = false
 margin_top = 131.0
 margin_right = 290.0
 margin_bottom = 258.0
@@ -91,9 +92,10 @@ align = 1
 valign = 1
 
 [node name="System" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
-margin_top = 262.0
+visible = false
+margin_top = 174.0
 margin_right = 290.0
-margin_bottom = 389.0
+margin_bottom = 345.0
 rect_min_size = Vector2( 220, 50 )
 size_flags_vertical = 3
 texture_normal = ExtResource( 5 )
@@ -109,7 +111,7 @@ align = 1
 valign = 1
 
 [node name="Exit" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
-margin_top = 393.0
+margin_top = 262.0
 margin_right = 290.0
 margin_bottom = 520.0
 rect_min_size = Vector2( 220, 50 )
