@@ -1,0 +1,156 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You try to open your eyes, but find the task impossible. Sleep has kept the last of its grip on you, trapping you in the space where dream mixes with reality.[/i]\n[i]Where you can still feel last night’s perfect lover in your arms in the afterglow or the dogs tearing into your limbs at the end of the chase.[/i]\n[i]It’s a feeling you’re not sure you can escape. But you have to.[/i]"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "A"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[i]It’s dawn in Roadtown. Maybe you can ground yourself with the facts.[/i]"
+		},
+		{
+			"choice": "Who am I?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You are a mechanic. Your job here at Roadtown is to keep things running smoothly.[/i]\n[i]From the factory’s machines to the monorail below ground, you have to make sure none of it breaks. If you don’t, millions will suffer.[/i]"
+		},
+		{
+			"choice": "Where am I?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You’re in your bedroom. Rent is cheap, and you were lucky to get a room early.[/i]\n[i]Not many others were as lucky as you trying to move in when the economy went south.[/i]"
+		},
+		{
+			"choice": "What time is it?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]With all this time you’re spending still in bed, it’s most likely sometime around 8 am on May 26, 1933.[/i]\n[i]You were supposed to be up two hours ago for work, and will definitely have to skip breakfast.[/i]"
+		},
+		{
+			"choice": "What is Roadtown?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "dream_roll",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">",
+			"definition": "1677095932-529",
+			"event_id": "dialogic_012",
+			"value": "2"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Roadtown[/i] [b]is[/b] [i]a dream. The kind where things don’t make sense but you still think they do.[/i]\n[i]You could see witches and killers and the dead coming to life and you wouldn’t question it.[/i]\n[i]As long as you stay in Roadtown, you’ll never have to wake up.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]For you and millions of others, Roadtown is home and work. The largest housing project in history.[/i]\n[i]A single building stretching all the way from San Francisco to New York City, like a skyscraper that’s been toppled. It’s been in operation for about a decade now.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]The architects sought a way to make life as convenient as possible.[/i]\n[i]Those who chose to stay here had a house to live in, a factory or farm to work at, telegraphs to contact family, a store to shop at, a monorail to travel in, all without ever leaving Roadtown.[/i]\n[i]For a few dollars as rent, you could live here and never once step foot outside. It sounds impossible.[/i]"
+		},
+		{
+			"choice": "Try to wake up",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "dream_roll",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You feel it.[/i]\n[i]The sun shines, its gentle hand caressing your face with its beams.[/i]\n[i]The machines rumble. Stampeding beasts crashing below you.[/i]"
+		},
+		{
+			"condition": ">",
+			"definition": "1677095932-529",
+			"event_id": "dialogic_012",
+			"value": "4"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]He eyes watch. Judging you from the corners, waiting.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]It’s time to get up.[/i]\n[i]It’s time to go back to Roadtown.[/i]"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1676811584.json",
+		"name": "Opening"
+	}
+}

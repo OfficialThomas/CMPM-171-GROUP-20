@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]On your desk, you find your journal with a message for you.[/i]\n\"Hello there future me. As you have figured out, the [color=#efaca5]arrow keys[/color] allow you to [color=#A5EFAC]walk[/color] and the [color=#efaca5]X key[/color] allows you to [color=#A5EFAC]interact with people and objects[/color].\"\n\"But did you know you can [color=#A5EFAC]progress through dialogue[/color] with the [color=#efaca5]space bar[/color]?\"\n\"I hope this information helps!\"\n\"From, Yourself\"\n\"P.S. - Progress in life is always made with [color=#A5EFAC]opening the menu[/color] with the [color=#efaca5]C key[/color].\""
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675983067.json",
+		"name": "Guide"
+	}
+}

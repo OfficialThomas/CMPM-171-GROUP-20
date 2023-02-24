@@ -1,11 +1,10 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scripts/NpcDialogue.gd" type="Script" id=1]
+[ext_resource path="res://scripts/NPCDialogueSystem.gd" type="Script" id=1]
 [ext_resource path="res://demo-assets/PNG/Other/blockRed.png" type="Texture" id=2]
-[ext_resource path="res://demo-assets/PNG/Players/Player Green/playerGreen_duck.png" type="Texture" id=3]
+[ext_resource path="res://demo-assets/PNG/Players/Player Green/playerGreen_up1.png" type="Texture" id=3]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 54.0093
+[sub_resource type="CapsuleShape2D" id=1]
 
 [node name="NPCTest" type="Area2D"]
 script = ExtResource( 1 )
@@ -14,6 +13,7 @@ script = ExtResource( 1 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 2, 1.5 )
 shape = SubResource( 1 )
 
 [node name="Icon" type="Sprite" parent="."]

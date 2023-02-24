@@ -80,9 +80,15 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Narrative Game CMPM 171"
-run/main_scene="res://play-scenes/TestScene1.tscn"
+config/name="RoadTown USA"
+run/main_scene="res://play-scenes/Intro.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/resizable=false
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
 
 [editor_plugins]
 
@@ -142,6 +148,11 @@ dialogic_default_action={
 interact={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":88,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+MenuScreen={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":67,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 
