@@ -8,7 +8,8 @@ var d_guide = ["Guide"]
 var d_start = ["Opening"]
 var d_brother = ["Meeting Brother"]
 var d_worker = ["Meeting Worker"]
-onready var d_events = [d_default, d_guide, d_start, d_brother, d_worker]
+var d_manager = ["Meeting Manager"]
+onready var d_events = [d_default, d_guide, d_start, d_brother, d_worker, d_manager]
 
 export (int) var pos_x = 0
 export (int) var pos_y = 0
