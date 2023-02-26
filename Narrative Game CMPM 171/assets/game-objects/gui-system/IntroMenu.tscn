@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheetCredits.tres" type="DynamicFont" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://demo-assets/PNG/Backgrounds/set1_background.png" type="Texture" id=5]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet80.tres" type="DynamicFont" id=6]
 [ext_resource path="res://scripts/IntroMenu.gd" type="Script" id=7]
+[ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet30.tres" type="DynamicFont" id=8]
 
 [node name="IntroMenu" type="Control"]
 anchor_right = 1.0
@@ -53,11 +54,12 @@ valign = 1
 margin_top = 325.0
 margin_right = 1024.0
 margin_bottom = 400.0
+custom_constants/separation = 100
 alignment = 1
 
 [node name="Start" type="TextureButton" parent="MenuScreen/VBoxContainer/StartandGuide"]
-margin_left = 258.0
-margin_right = 458.0
+margin_left = 262.0
+margin_right = 462.0
 margin_bottom = 75.0
 rect_min_size = Vector2( 200, 75 )
 texture_normal = ExtResource( 4 )
@@ -79,15 +81,9 @@ text = "Start Game"
 align = 1
 valign = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="MenuScreen/VBoxContainer/StartandGuide"]
-margin_left = 462.0
-margin_right = 562.0
-margin_bottom = 75.0
-rect_min_size = Vector2( 100, 0 )
-
 [node name="Guide" type="TextureButton" parent="MenuScreen/VBoxContainer/StartandGuide"]
-margin_left = 566.0
-margin_right = 766.0
+margin_left = 562.0
+margin_right = 762.0
 margin_bottom = 75.0
 rect_min_size = Vector2( 200, 75 )
 texture_normal = ExtResource( 4 )
@@ -113,11 +109,12 @@ valign = 1
 margin_top = 450.0
 margin_right = 1024.0
 margin_bottom = 525.0
+custom_constants/separation = 100
 alignment = 1
 
 [node name="Credits" type="TextureButton" parent="MenuScreen/VBoxContainer/CreditsandExit"]
-margin_left = 258.0
-margin_right = 458.0
+margin_left = 262.0
+margin_right = 462.0
 margin_bottom = 75.0
 rect_min_size = Vector2( 200, 75 )
 texture_normal = ExtResource( 4 )
@@ -139,15 +136,9 @@ text = "Credits"
 align = 1
 valign = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="MenuScreen/VBoxContainer/CreditsandExit"]
-margin_left = 462.0
-margin_right = 562.0
-margin_bottom = 75.0
-rect_min_size = Vector2( 100, 0 )
-
 [node name="ExitGame" type="TextureButton" parent="MenuScreen/VBoxContainer/CreditsandExit"]
-margin_left = 566.0
-margin_right = 766.0
+margin_left = 562.0
+margin_right = 762.0
 margin_bottom = 75.0
 rect_min_size = Vector2( 200, 75 )
 texture_normal = ExtResource( 4 )
@@ -166,6 +157,98 @@ margin_right = 82.5
 margin_bottom = 11.0
 custom_fonts/font = ExtResource( 3 )
 text = "Exit Game"
+align = 1
+valign = 1
+
+[node name="Guide" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Guide"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 20
+
+[node name="MarginContainer" type="MarginContainer" parent="Guide/VBoxContainer"]
+margin_right = 1024.0
+
+[node name="HowtoPlay" type="Label" parent="Guide/VBoxContainer"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 20.0
+margin_right = 1024.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 1 )
+text = "How to Play"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Guide/VBoxContainer"]
+margin_top = 82.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_vertical = 3
+custom_constants/separation = 100
+alignment = 1
+
+[node name="Directions" type="VBoxContainer" parent="Guide/VBoxContainer/HBoxContainer"]
+margin_left = 83.0
+margin_right = 641.0
+margin_bottom = 518.0
+custom_constants/separation = 15
+alignment = 1
+
+[node name="LeftandRight" type="Label" parent="Guide/VBoxContainer/HBoxContainer/Directions"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 206.0
+margin_right = 558.0
+margin_bottom = 231.0
+custom_fonts/font = ExtResource( 8 )
+text = "Move Left and Right: Arrow Keys"
+
+[node name="Interact" type="Label" parent="Guide/VBoxContainer/HBoxContainer/Directions"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 246.0
+margin_right = 558.0
+margin_bottom = 271.0
+custom_fonts/font = ExtResource( 8 )
+text = "Interact: X Key"
+
+[node name="CharacterMenu" type="Label" parent="Guide/VBoxContainer/HBoxContainer/Directions"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 286.0
+margin_right = 558.0
+margin_bottom = 311.0
+custom_fonts/font = ExtResource( 8 )
+text = "Character Menu: C Key"
+
+[node name="Button" type="VBoxContainer" parent="Guide/VBoxContainer/HBoxContainer"]
+margin_left = 741.0
+margin_right = 941.0
+margin_bottom = 518.0
+alignment = 1
+
+[node name="ReturnFGuide" type="TextureButton" parent="Guide/VBoxContainer/HBoxContainer/Button"]
+margin_top = 221.0
+margin_right = 200.0
+margin_bottom = 296.0
+rect_min_size = Vector2( 200, 75 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="Label" type="Label" parent="Guide/VBoxContainer/HBoxContainer/Button/ReturnFGuide"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -90.0
+margin_top = -21.0
+margin_right = 90.0
+margin_bottom = 21.0
+custom_fonts/font = ExtResource( 1 )
+text = "Return"
 align = 1
 valign = 1
 
@@ -299,7 +382,7 @@ margin_right = 830.0
 margin_bottom = 487.0
 alignment = 1
 
-[node name="Return" type="TextureButton" parent="Credits/VBoxContainer/HBoxContainer/Button"]
+[node name="ReturnFCredits" type="TextureButton" parent="Credits/VBoxContainer/HBoxContainer/Button"]
 margin_top = 206.0
 margin_right = 200.0
 margin_bottom = 281.0
@@ -310,7 +393,7 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 expand = true
 
-[node name="Label" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Button/Return"]
+[node name="Label" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Button/ReturnFCredits"]
 modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -326,3 +409,8 @@ align = 1
 valign = 1
 
 [connection signal="pressed" from="MenuScreen/VBoxContainer/StartandGuide/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="MenuScreen/VBoxContainer/StartandGuide/Guide" to="." method="_on_Guide_pressed"]
+[connection signal="pressed" from="MenuScreen/VBoxContainer/CreditsandExit/Credits" to="." method="_on_Credits_pressed"]
+[connection signal="pressed" from="MenuScreen/VBoxContainer/CreditsandExit/ExitGame" to="." method="_on_ExitGame_pressed"]
+[connection signal="pressed" from="Guide/VBoxContainer/HBoxContainer/Button/ReturnFGuide" to="." method="_on_ReturnFGuide_pressed"]
+[connection signal="pressed" from="Credits/VBoxContainer/HBoxContainer/Button/ReturnFCredits" to="." method="_on_ReturnFCredits_pressed"]

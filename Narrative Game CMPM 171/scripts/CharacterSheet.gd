@@ -118,7 +118,7 @@ func _on_Confirm_pressed():
 
 
 func _on_Stats_pressed(): # set to stats menu
-	print("Stats Button")
+#	print("Stats Button")
 	get_node("HBoxContainer/VBoxContainer/Stats").show()
 	get_node("HBoxContainer/VBoxContainer/Save").hide()
 	get_node("HBoxContainer/VBoxContainer/System").hide()
@@ -126,7 +126,7 @@ func _on_Stats_pressed(): # set to stats menu
 
 
 func _on_Save_pressed(): # set to save menu
-	print("Save Button")
+#	print("Save Button")
 	get_node("HBoxContainer/VBoxContainer/Stats").hide()
 	get_node("HBoxContainer/VBoxContainer/Save").show()
 	get_node("HBoxContainer/VBoxContainer/System").hide()
@@ -134,7 +134,7 @@ func _on_Save_pressed(): # set to save menu
 
 
 func _on_System_pressed(): # set to system menu
-	print("System Button")
+#	print("System Button")
 	get_node("HBoxContainer/VBoxContainer/Stats").hide()
 	get_node("HBoxContainer/VBoxContainer/Save").hide()
 	get_node("HBoxContainer/VBoxContainer/System").show()
@@ -142,7 +142,7 @@ func _on_System_pressed(): # set to system menu
 
 
 func _on_Exit_pressed(): # set to exit menu
-	print("Exit Button")
+#	print("Exit Button")
 	get_node("HBoxContainer/VBoxContainer/Stats").hide()
 	get_node("HBoxContainer/VBoxContainer/Save").hide()
 	get_node("HBoxContainer/VBoxContainer/System").hide()
