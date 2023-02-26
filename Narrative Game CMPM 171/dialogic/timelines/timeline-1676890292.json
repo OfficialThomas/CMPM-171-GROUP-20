@@ -57,6 +57,34 @@
 			"event_id": "dialogic_013"
 		},
 		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1677311467",
+			"index": 0,
+			"name": "A"
+		},
+		{
+			"condition": "",
+			"definition": "1677311396-918",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1677311402-483",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
 			"character": "character-1676811545.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -76,7 +104,7 @@
 			"character": "character-1676890283.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "What’s it look like I’m doin’? Doin’ what I always do - keep this shithole runnin’. \nPipes and wires need upkeep and door mechanisms ain’t gonna fix themselves, but you should know that just as well as I.\nYesterday the turbines in this sector broke down again. Guess who had to fix ‘em?"
+			"text": "What’s it look like I’m doin’? Doin’ what I always do - keep this shithole runnin’. \nPipes and wires need upkeep and door mechanisms ain’t gonna fix themselves, but you should know that just as well as I."
 		},
 		{
 			"character": "character-1676890283.json",
@@ -89,6 +117,14 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]Verne laughs slyly, his attention weaving between the pipe, his wrench and his toolbox.[/i]"
+		},
+		{
+			"definition": "1677311396-918",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
 		},
 		{
 			"choice": "Thanks for looking out for me.",
@@ -110,7 +146,15 @@
 			"text": "[i]Verne lends you a genuine smile betraying his cynicism, and promptly resumes his work.[/i]"
 		},
 		{
-			"choice": "Ask him more about his insomnia.",
+			"definition": "1677311402-483",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"choice": "[Empathy - Medium] Ask him more about his insomnia.",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -194,6 +238,16 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1677311467",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "B"
 		},
 		{
 			"character": "character-1676890283.json",

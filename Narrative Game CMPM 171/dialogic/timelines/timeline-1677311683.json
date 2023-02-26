@@ -1,0 +1,150 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]In front of you lies the door to the switchboard room, Roadtown’s primary method of communication, and latest in communication technology.[/i]\n[i]Here you can contact any of your friends or family, from one end of the country to another, and hear their voice.[/i]\n[i]It is currently blocked by a large, rough-and-tumble looking man in overalls and a work shirt.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You recognize him as one of the factory workers, a hard working cog in the machine named Bobby.[/i]\n[i]He towers over you, and most every other person in your section of the building, and he’s often seen with a scowl on his stubbled face.[/i]\n[i]His build and overall appearance makes you think that were he not here, he would be making it big as a heavyweight boxer.[/i]\n[i]Perhaps he was one at some point, and washed up here nonetheless.[/i]"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "A"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ay, boss said no one’s allowed in, so beat it."
+		},
+		{
+			"choice": "Why aren’t we allowed in?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "empathy_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">",
+			"definition": "1677168976-483",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]He shifts his stance as he begins to speak, eyes darting up as if trying to remember something.[/i]\n[i]He’s going off a script, one he hasn’t had time to commit to memory yet.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hardware got fried ‘cause a some damage. Now the eggheads who actually know how to work this stuff’s gotta get it up and running again.\nThat don’t include you, and boss don’t want them distracted none."
+		},
+		{
+			"choice": "Why aren’t you working?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "perception_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]His brow scrunches, offended that you would insult his honor. He looks at you with an astonished expression.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hardware got fried ‘cause a some damage.\nNow the eggheads who actually know how to work this stuff’s gotta get it up and running again.\nThat don’t include you, and boss don’t want them distracted none."
+		},
+		{
+			"condition": ">",
+			"definition": "1676157374-146",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Operator?"
+		},
+		{
+			"character": "character-1677176249.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What?"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You said operator, as in singular. We have two operators working the room."
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Er, what’s it matter how many operators are in the room? They don’t need no distractions, so get!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I wasn’t going to go in.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]He relaxes a bit at your words, a mixture of regret and calm washing over his face.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh? Ah, well, sorry ‘bout that.\nDidn’t mean ta get on your case. Just that this is gonna take some time, don’t want somebody to come in and ruin it all again.\nSo uh, if you could go and do something else while I do my job here, we can all start using the room sooner."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1677311683.json",
+		"name": "Outside Switchboard"
+	}
+}

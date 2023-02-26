@@ -1,0 +1,468 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]As you take your first step into the switchboard room, you see nothing.Everything is dark.[/i]\n[i]Pitch black. The last beam of light fades as Bobby closes the door behind you. You can barely see in front of you.[/i]"
+		},
+		{
+			"emit_signal": "dream_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">",
+			"definition": "1677095932-529",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You need to get out of here *now*. There is nothing for you here.[/i]\n[i]There is nothing for *anyone* here.[/i]\n[i]Going in here was a mistake and there’s still time to turn around and leave before you see something you can’t unsee.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Find the lightswitch",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "dream_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Like a child trying to sneak past their parent’s bedroom in the middle of the night, not wanting to disturb whatever the silence is hiding.[/i]\n[i]You slowly start walking towards the center of the room with your arm stretched in front of you, keeping your steps light so as to not make a sound.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You feel something brush against your hand. Cold and metallic, it must be the cord to the room’s electric light.[/i]\n[i]Your fingers wrap around the switch, and then you stop.[/i]"
+		},
+		{
+			"condition": ">",
+			"definition": "1677095932-529",
+			"event_id": "dialogic_012",
+			"value": "7"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]This is your last chance.[/i]\n[i]Turn away now.[/i]\n[i]You don’t need to know what’s in here.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Turn on the light",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "dream_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"emit_signal": "perception_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"emit_signal": "logic_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]It’s too late now.[/i]\n[i]You pull the string.[/i]\n[i]The lights flicker on.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]The scene in front of you is a nightmare.[/i]\n[i]Along the walls and on the floor are pools of blood, bathing the room in a charnel house scent.[/i]\n[i]Papers littered across the floor lie stained with the splatter. Nothing moves, not even you, as the staleness of the room sets in.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Across the room, slumped against the wall, is a lump, covered by a stained blanket.[/i]"
+		},
+		{
+			"condition": ">",
+			"definition": "1677095932-529",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You stare at it, almost like you expect it to move at any second, like it’s all some horrible prank just for you.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": ">",
+			"definition": "1676157374-146",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i] The stillness is broken when you notice something on the sheet.[/i]\n[i]A small, black fly crawls along, looking for a way to get to the meat underneath.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": ">",
+			"definition": "1676157318-648",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]The body has already begun decomposing, and the parasites have found a new space to feast and breed.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You walk towards what was one of the building's operators. Someone you’ve passed by everyday you’ve been here.[/i]\n[i]Their face is gone, replaced with white stained with red turning brown.[/i]\n[i]You step in a puddle, creating the smallest of splashes, crimson now dripping from your boot.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[i]You finally stop right in front of the shape.[/i]\n[i]This bedsheet ghost that haunts this room. [/i]\n[i]You reach out your hand to banish it, replace it with the person who belongs here.[/i]"
+		},
+		{
+			"choice": "[Reflexes - Medium] Stop",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "reflex_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": "<=",
+			"definition": "1676157414-970",
+			"event_id": "dialogic_012",
+			"value": "7"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You immediately jolt your hand back from the body.[/i]\n[i]Your better judgment prevails: this is not something you need to take with you.[/i]\n[i] You take a moment, breathe in the putrid air, and decide that the rest of the room warrants more investigation than the form beneath you.[/i]"
+		},
+		{
+			"choice": "Continue",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "B"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]It’s too late to turn back. It became too late when you entered this room. Your hand clasps the sheet, feeling the soaked linen between your fingers.[/i]\n[i]With a jerk, you pull it off.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[i]This was a terrible mistake.[/i]\n[i]This was a terrible mistake.[/i]\n[i]This was a terrible mistake.[/i]"
+		},
+		{
+			"choice": "[Composure - Hard] Try to keep it together",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "composure_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">",
+			"definition": "1675983761-875",
+			"event_id": "dialogic_012",
+			"value": "9"
+		},
+		{
+			"emit_signal": "perception_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You close your eyes.  Try to distance yourself from where you are.[/i]\n[i]Forget about the blood on your hands. Forget about the body by your feet.[/i]\n[i]Forget about the scent in your nose. Pretend you’re anywhere but here.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You open your eyes. The body of Abe Long, one of the telegraph operators, is still there. [/i]\n[i]You’re still in the switchboard room. But it’s different. The stillness is different. It’s calmer. [/i]\n[i]Quieter.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You turn away from the body.[/i]"
+		},
+		{
+			"condition": ">",
+			"definition": "1676157374-146",
+			"event_id": "dialogic_012",
+			"value": "12"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i] But not before you see something. In the rigid right fist of the body, a piece of metal is jutting out.[/i]\n [i]It’s a plug cord, important for connecting calls with the switchboard. A trickle of blood slides down the metal.[/i]\n[i]You kneel, and after struggling against the rigor mortis, you yank the cord away from the corpse. [/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Now it’s time to investigate the rest of the room.[/i]"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<=",
+			"definition": "1675983761-875",
+			"event_id": "dialogic_012",
+			"value": "9"
+		},
+		{
+			"emit_signal": "empathy_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You try to wipe away the image, but it’s burned into your eyes. You try to forget about the blood, but you can feel it on your palms.[/i]\n [i]You try to stop the rot, but its scent is all-consuming.[/i]\n[i]You’re hyperventilating, taking in more of the filth with each breath.[/i]\n[i]There is no end to this that you can see. The bile is rising to your throat. All you can do is let out a scream.[/i]\n// -1 Sanity"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You hear the door slam behind you. Bobby has come rushing in, obviously having heard you.[/i]\n[i]He grabs hold of your shoulders.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jesus, man! Do you want everyone to know about this? Just turn around and walk with me.\nWe’ll step away from all this, and I want you to take a breather, alright?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You do as the man instructs, and walk closer to the door, trying to put as much distance between you and the remains as possible.[/i]\n[i]Taking in some of the less spoiled air, you calm down enough to avoid hysteria.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*sigh* I know. It’s an ugly scene here.\n Poor bastard. Don’t know what drives someone to do that, let alone what they were thinking."
+		},
+		{
+			"condition": ">",
+			"definition": "1677168976-483",
+			"event_id": "dialogic_012",
+			"value": "12"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " [i]There’s a softness in his voice. A moisture in his eyes. He’s been here before.[/i]"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Who was it for you?"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What?"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You’ve seen this type of thing before. Who was it?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]He bristles under the question.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..Nobody. You just see things sometimes."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]That’s as much of an answer as you’re going to get, you assume.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You good? Not gonna freak out again?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You nod. You should be fine now that the worst is over.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alright. I’ll be outside. Hopefully no one else heard ya."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]He opens the door and just as quickly exits it, minimizing the time the room is exposed to those outside.You’re alone in here again. With it.[/i]\n[i]Time to investigate.[/i]"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Leave the switchboard room",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Leave the switchboard room",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1677312462.json",
+		"name": "Inside Switchboard"
+	}
+}
