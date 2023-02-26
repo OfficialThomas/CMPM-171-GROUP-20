@@ -1,0 +1,328 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheetCredits.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet25.tres" type="DynamicFont" id=3]
+[ext_resource path="res://demo-assets/PNG/Backgrounds/set3_background.png" type="Texture" id=4]
+[ext_resource path="res://demo-assets/PNG/Backgrounds/set1_background.png" type="Texture" id=5]
+[ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet80.tres" type="DynamicFont" id=6]
+[ext_resource path="res://scripts/IntroMenu.gd" type="Script" id=7]
+
+[node name="IntroMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+
+[node name="MenuScreen" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuScreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 50
+alignment = 1
+
+[node name="LogoSpot" type="HBoxContainer" parent="MenuScreen/VBoxContainer"]
+margin_top = 75.0
+margin_right = 1024.0
+margin_bottom = 275.0
+alignment = 1
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MenuScreen/VBoxContainer/LogoSpot"]
+margin_left = 112.0
+margin_right = 912.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 800, 200 )
+texture = ExtResource( 5 )
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 30
+patch_margin_bottom = 30
+
+[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/LogoSpot/NinePatchRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 6 )
+text = "Roadtown USA"
+align = 1
+valign = 1
+
+[node name="StartandGuide" type="HBoxContainer" parent="MenuScreen/VBoxContainer"]
+margin_top = 325.0
+margin_right = 1024.0
+margin_bottom = 400.0
+alignment = 1
+
+[node name="Start" type="TextureButton" parent="MenuScreen/VBoxContainer/StartandGuide"]
+margin_left = 258.0
+margin_right = 458.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 200, 75 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/StartandGuide/Start"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -75.0
+margin_top = -11.0
+margin_right = 75.0
+margin_bottom = 11.0
+custom_fonts/font = ExtResource( 3 )
+text = "Start Game"
+align = 1
+valign = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MenuScreen/VBoxContainer/StartandGuide"]
+margin_left = 462.0
+margin_right = 562.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Guide" type="TextureButton" parent="MenuScreen/VBoxContainer/StartandGuide"]
+margin_left = 566.0
+margin_right = 766.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 200, 75 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/StartandGuide/Guide"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -82.5
+margin_top = -11.0
+margin_right = 82.5
+margin_bottom = 11.0
+custom_fonts/font = ExtResource( 3 )
+text = "How to Play"
+align = 1
+valign = 1
+
+[node name="CreditsandExit" type="HBoxContainer" parent="MenuScreen/VBoxContainer"]
+margin_top = 450.0
+margin_right = 1024.0
+margin_bottom = 525.0
+alignment = 1
+
+[node name="Credits" type="TextureButton" parent="MenuScreen/VBoxContainer/CreditsandExit"]
+margin_left = 258.0
+margin_right = 458.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 200, 75 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/CreditsandExit/Credits"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -75.0
+margin_top = -11.0
+margin_right = 75.0
+margin_bottom = 11.0
+custom_fonts/font = ExtResource( 3 )
+text = "Credits"
+align = 1
+valign = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MenuScreen/VBoxContainer/CreditsandExit"]
+margin_left = 462.0
+margin_right = 562.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="ExitGame" type="TextureButton" parent="MenuScreen/VBoxContainer/CreditsandExit"]
+margin_left = 566.0
+margin_right = 766.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 200, 75 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/CreditsandExit/ExitGame"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -82.5
+margin_top = -11.0
+margin_right = 82.5
+margin_bottom = 11.0
+custom_fonts/font = ExtResource( 3 )
+text = "Exit Game"
+align = 1
+valign = 1
+
+[node name="Credits" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 20
+
+[node name="MarginContainer" type="MarginContainer" parent="Credits/VBoxContainer"]
+margin_right = 1024.0
+
+[node name="Credits" type="Label" parent="Credits/VBoxContainer"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 20.0
+margin_right = 1024.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 1 )
+text = "Credits"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Credits/VBoxContainer"]
+margin_top = 82.0
+margin_right = 1024.0
+margin_bottom = 569.0
+custom_constants/separation = 100
+alignment = 1
+
+[node name="Names" type="VBoxContainer" parent="Credits/VBoxContainer/HBoxContainer"]
+margin_left = 194.0
+margin_right = 530.0
+margin_bottom = 487.0
+custom_constants/separation = 25
+alignment = 1
+
+[node name="DarenB" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Names"]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 336.0
+margin_bottom = 39.0
+custom_fonts/font = ExtResource( 2 )
+text = "Daren Bartolucci:
+Director and Lead Writer"
+align = 1
+valign = 1
+
+[node name="ThomasN" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Names"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 64.0
+margin_right = 336.0
+margin_bottom = 103.0
+custom_fonts/font = ExtResource( 2 )
+text = "Thomas Noell:
+Producer and Lead Programmer"
+align = 1
+valign = 1
+
+[node name="DevinW" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Names"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 128.0
+margin_right = 336.0
+margin_bottom = 167.0
+custom_fonts/font = ExtResource( 2 )
+text = "Devin Wear:
+Leader Artist and Writer"
+align = 1
+valign = 1
+
+[node name="ZacharyH" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Names"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 192.0
+margin_right = 336.0
+margin_bottom = 231.0
+custom_fonts/font = ExtResource( 2 )
+text = "Zachary Hollaway:
+Lead Musician"
+align = 1
+valign = 1
+
+[node name="KevinK" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Names"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 256.0
+margin_right = 336.0
+margin_bottom = 295.0
+custom_fonts/font = ExtResource( 2 )
+text = "Kevin Khau:
+Programmer"
+align = 1
+valign = 1
+
+[node name="LucasM" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Names"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 320.0
+margin_right = 336.0
+margin_bottom = 359.0
+custom_fonts/font = ExtResource( 2 )
+text = "Lucas Moore:
+Programmer"
+align = 1
+valign = 1
+
+[node name="IsaiahR" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Names"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 384.0
+margin_right = 336.0
+margin_bottom = 423.0
+custom_fonts/font = ExtResource( 2 )
+text = "Isaiah Roberts:
+Writer and Artist"
+align = 1
+valign = 1
+
+[node name="ZacharyT" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Names"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 448.0
+margin_right = 336.0
+margin_bottom = 487.0
+custom_fonts/font = ExtResource( 2 )
+text = "Zachary Thompson:
+Artist"
+align = 1
+valign = 1
+
+[node name="Button" type="VBoxContainer" parent="Credits/VBoxContainer/HBoxContainer"]
+margin_left = 630.0
+margin_right = 830.0
+margin_bottom = 487.0
+alignment = 1
+
+[node name="Return" type="TextureButton" parent="Credits/VBoxContainer/HBoxContainer/Button"]
+margin_top = 206.0
+margin_right = 200.0
+margin_bottom = 281.0
+rect_min_size = Vector2( 200, 75 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="Label" type="Label" parent="Credits/VBoxContainer/HBoxContainer/Button/Return"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -90.0
+margin_top = -21.0
+margin_right = 90.0
+margin_bottom = 21.0
+custom_fonts/font = ExtResource( 1 )
+text = "Return"
+align = 1
+valign = 1
+
+[connection signal="pressed" from="MenuScreen/VBoxContainer/StartandGuide/Start" to="." method="_on_Start_pressed"]

@@ -16,8 +16,7 @@ export(String, FILE, "*.tscn") var next_scene_path
 # rolling
 var rng = RandomNumberGenerator.new()
 
-
-func _ready():
+func start_game():
 	var dialog = Dialogic.start("Opening")
 	dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 	add_child(dialog)

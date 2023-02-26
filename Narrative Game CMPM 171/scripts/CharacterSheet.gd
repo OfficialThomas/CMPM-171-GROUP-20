@@ -9,7 +9,8 @@ https://www.reddit.com/r/godot/comments/cjigi4/how_do_i_make_hitting_the_esc_key
 """
 
 onready var player = get_node("../../Player")
-onready var node_stat_points = get_node("HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/Label")
+onready var gui = get_node("../../GUI")
+onready var node_stat_points = get_node("HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/AvailablePoints/Label")
 var path_main_stats = "HBoxContainer/VBoxContainer/Stats/MainStats/"
 
 var available_points
@@ -148,10 +149,10 @@ func _on_Exit_pressed(): # set to exit menu
 	get_node("HBoxContainer/VBoxContainer/Exit").show()
 
 
-func _on_ExitAndSave_pressed(): # save game and exit game
+func _on_ExitAndSave_pressed(): # save game and exit game NOTE: THIS HAS BEEN CHANGED TO THE EXIT MENU BUTTON
 	# TODO: add save function here (saves to quicksave)
-	get_tree().quit()
+	gui.get_node("CharacterSheet").queue_free()
 
-func _on_ExitNoSave_pressed(): # exit game
+func _on_ExitNoSave_pressed(): # exit game NOTE: THIS IS THE EXIT GAME BUTTON
 	get_tree().quit()
 
