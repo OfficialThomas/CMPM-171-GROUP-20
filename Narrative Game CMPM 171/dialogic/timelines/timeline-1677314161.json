@@ -1,0 +1,390 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Against the wall lies the telephone switchboard, allowing for everyone’s calls to be redirected and get to the right part of the building.[/i]\n[i]It’s in a sorry state, broken lights and split wires displayed for nobody to see.[/i]\n[i]Unless it’s fixed, no telephone calls are coming in or out.[/i]"
+		},
+		{
+			"emit_signal": "dream_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">",
+			"definition": "1677095932-529",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i] There’s someone waiting to make a call.[/i]\n[i]Someone in a forgotten room. They’re waiting to put in the number and reach the next operator.[/i]\n[i] The only sound being the dial tone mixed with their steady breathing.[/i]\n[i]Growing excited to say the words that will lead to another broken switchboard and white sheet.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Inspect the damage",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "perception_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]He certainly did a number on the device.[/i]\n[i]The smaller bits and pieces are all over the panels.[/i]\n[i]Switches are missing and the small light bulbs have been smashed, covering the floor with tiny shards of glass.[/i]"
+		},
+		{
+			"condition": ">",
+			"definition": "1676157374-146",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You would assume something like this would have to be done with a hammer or wrench or some other tool, but there’s nothing in here that would fit that description.[/i]\n[i]There’s nothing in the room that looks like it could have helped breaking it.[/i]\n[i]There’s no way he did this with his hands, is there?[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]This looks like a tough fix, but it’s doable.[/i]"
+		},
+		{
+			"choice": "[Logic - Hard]  Attempt to fix the switchboard",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "logic_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">",
+			"definition": "1676157318-648",
+			"event_id": "dialogic_012",
+			"value": "12"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Shit. No. Wait, what if…fuck, no. No. No. None of this works."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You’ve severely underestimated the extent of the damages.[/i]\n[i]There are so many missing pieces that cannot be easily replaced with what you have on hand that the idea of it working again anytime soon is laughable.[/i]\n[i]It would be easier to scrap the entire thing and get a replacement, in your opinion.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You should just stop wasting your time with this junk pile and start looking elsewhere.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<=",
+			"definition": "1676157318-648",
+			"event_id": "dialogic_012",
+			"value": "12"
+		},
+		{
+			"emit_signal": "dream_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Let’s see. Just need to reattach these two wires here, place a switch there…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Beautiful. If not for the lightbulbs that still need replacing, you would say it looks brand new. Everything in its place. Phone calls will come rolling back in no time.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Phone: *ring*[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Ah! There’s someone trying to get a call in now. It must be another part of the building. Maybe you should answer it, let them know the telephones should be operational again.[/i]"
+		},
+		{
+			"condition": ">",
+			"definition": "1677095932-529",
+			"event_id": "dialogic_012",
+			"value": "6"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[Dream - Medium] I cannot keep warning you about this. Everything about this room has been a disaster. Don’t even look at the phone. Leave. Now."
+		},
+		{
+			"choice": "Pick it up",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You pick the phone off the receiver.[/i]"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]There’s nothing. Not even the dial tone.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Was the switchboard still broken?[/i]"
+		},
+		{
+			"character": "character-1677373294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello? Hey, is this thing working?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]A voice! You’ve done it.[/i]"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can hear you just fine."
+		},
+		{
+			"character": "character-1677373294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This is the station out near Tonopah. What the hell happened over there? We’ve been trying to send calls down west for hours."
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "There was an incident which left our switchboard out of commision, but I’ve managed to get it under control."
+		},
+		{
+			"character": "character-1677373294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A busted up switchboard? Damn, we’re lucky it didn’t take the whole day for y’all to fix it up. Mighty impressive job to get done in a few hours."
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Honestly, it feels like it only took maybe 20 minutes."
+		},
+		{
+			"character": "character-1677373294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No kidding? With skills like that, how is it you’re working here in Roadtown and not over at Edison or something?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]…[/i]\n[i]…[/i]\n[i]…[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You know exactly why.[/i]\n[i]You could have done that.[/i]\n[i]You could have made all the money you would ever need.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You could be out there instead of this slum house.[/i]\n[i]There were good schools lined up for you.[/i]\n[i]A promising future.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[i]And then it all went to shit.[/i]\n[i]You can’t even blame it on the Crash.[/i]\n[i]You know *exactly* who to blame.[/i]"
+		},
+		{
+			"choice": "[Composure - Impossible] Calm down and hang up",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "composure_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">=",
+			"definition": "1675983761-875",
+			"event_id": "dialogic_012",
+			"value": "15"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]...[/i]\n[i]You hang the phone back on the receiver.[/i]\n[i]You should find something to do before you start to cry.[/i]"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1675983761-875",
+			"event_id": "dialogic_012",
+			"value": "15"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]It’s because of *her*.[/i]\n[i]She promised you she would help you. That she would help cover the costs. That your future was just as important to her as it was to you.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]And instead she pissed all that money away on liquor and suitors.[/i]\n[i]Crying every night about how she just wanted to run away and leave all her problems behind.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]The unspoken words being how *you* were one of them.[/i]\n[i]And then she did. She left you with *nothing*. With *less than nothing*. You couldn’t go to school anymore. You had to take shit job after shit job, clinging to every scrap you could get your hands on.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]She didn’t even say goodbye. All she left you was hate.[/i]\n[i]…[/i]\n[i]It’s all ruined.[/i]\n[i]Everything.[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]And you have to settle for this now.[/i]\n[i]…[/i]"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You don’t even put the phone back on the receiver. You just let it hang.[/i]\n[i]There’s nothing for you to do.[/i]\n[i]Even the hate has died for you.[/i]\n(-1 Sanity)"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Leave it",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Look at something else",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1677314161.json",
+		"name": "Investigating Switchboard"
+	}
+}
