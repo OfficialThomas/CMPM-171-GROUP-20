@@ -13,6 +13,50 @@
 			"name": "A"
 		},
 		{
+			"condition": "",
+			"definition": "1677384914-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1677384920-787",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1677384928-366",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1677384934-146",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"definition": "1677384966-918",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
@@ -35,6 +79,14 @@
 			"text": "[i]You are a mechanic. Your job here at Roadtown is to keep things running smoothly.[/i]\n[i]From the factory’s machines to the monorail below ground, you have to make sure none of it breaks. If you don’t, millions will suffer.[/i]"
 		},
 		{
+			"definition": "1677384914-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
 			"choice": "Where am I?",
 			"condition": "",
 			"definition": "",
@@ -48,6 +100,14 @@
 			"text": "[i]You’re in your bedroom. Rent is cheap, and you were lucky to get a room early.[/i]\n[i]Not many others were as lucky as you trying to move in when the economy went south.[/i]"
 		},
 		{
+			"definition": "1677384920-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
 			"choice": "What time is it?",
 			"condition": "",
 			"definition": "",
@@ -59,6 +119,14 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]With all this time you’re spending still in bed, it’s most likely sometime around 8 am on May 26, 1933.[/i]\n[i]You were supposed to be up two hours ago for work, and will definitely have to skip breakfast.[/i]"
+		},
+		{
+			"definition": "1677384928-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
 		},
 		{
 			"choice": "What is Roadtown?",
@@ -99,11 +167,19 @@
 			"text": "[i]The architects sought a way to make life as convenient as possible.[/i]\n[i]Those who chose to stay here had a house to live in, a factory or farm to work at, telegraphs to contact family, a store to shop at, a monorail to travel in, all without ever leaving Roadtown.[/i]\n[i]For a few dollars as rent, you could live here and never once step foot outside. It sounds impossible.[/i]"
 		},
 		{
+			"definition": "1677384934-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
 			"choice": "Try to wake up",
 			"condition": "",
-			"definition": "",
+			"definition": "1677384966-918",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "1"
 		},
 		{
 			"emit_signal": "dream_roll",
@@ -125,7 +201,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]He eyes watch. Judging you from the corners, waiting.[/i]"
+			"text": "[i]The eyes watch. Judging you from the corners, waiting.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
