@@ -9,7 +9,8 @@ https://www.reddit.com/r/godot/comments/cjigi4/how_do_i_make_hitting_the_esc_key
 """
 
 onready var player = get_node("../../Player")
-onready var node_stat_points = get_node("HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/Label")
+onready var gui = get_node("../../GUI")
+onready var node_stat_points = get_node("HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/AvailablePoints/Label")
 var path_main_stats = "HBoxContainer/VBoxContainer/Stats/MainStats/"
 
 var available_points
@@ -117,7 +118,7 @@ func _on_Confirm_pressed():
 
 
 func _on_Stats_pressed(): # set to stats menu
-	print("Stats Button")
+#	print("Stats Button")
 	get_node("HBoxContainer/VBoxContainer/Stats").show()
 	get_node("HBoxContainer/VBoxContainer/Save").hide()
 	get_node("HBoxContainer/VBoxContainer/System").hide()
@@ -125,7 +126,7 @@ func _on_Stats_pressed(): # set to stats menu
 
 
 func _on_Save_pressed(): # set to save menu
-	print("Save Button")
+#	print("Save Button")
 	get_node("HBoxContainer/VBoxContainer/Stats").hide()
 	get_node("HBoxContainer/VBoxContainer/Save").show()
 	get_node("HBoxContainer/VBoxContainer/System").hide()
@@ -133,7 +134,7 @@ func _on_Save_pressed(): # set to save menu
 
 
 func _on_System_pressed(): # set to system menu
-	print("System Button")
+#	print("System Button")
 	get_node("HBoxContainer/VBoxContainer/Stats").hide()
 	get_node("HBoxContainer/VBoxContainer/Save").hide()
 	get_node("HBoxContainer/VBoxContainer/System").show()
@@ -141,17 +142,17 @@ func _on_System_pressed(): # set to system menu
 
 
 func _on_Exit_pressed(): # set to exit menu
-	print("Exit Button")
+#	print("Exit Button")
 	get_node("HBoxContainer/VBoxContainer/Stats").hide()
 	get_node("HBoxContainer/VBoxContainer/Save").hide()
 	get_node("HBoxContainer/VBoxContainer/System").hide()
 	get_node("HBoxContainer/VBoxContainer/Exit").show()
 
 
-func _on_ExitAndSave_pressed(): # save game and exit game
+func _on_ExitAndSave_pressed(): # save game and exit game NOTE: THIS HAS BEEN CHANGED TO THE EXIT MENU BUTTON
 	# TODO: add save function here (saves to quicksave)
-	get_tree().quit()
+	gui.get_node("CharacterSheet").queue_free()
 
-func _on_ExitNoSave_pressed(): # exit game
+func _on_ExitNoSave_pressed(): # exit game NOTE: THIS IS THE EXIT GAME BUTTON
 	get_tree().quit()
 

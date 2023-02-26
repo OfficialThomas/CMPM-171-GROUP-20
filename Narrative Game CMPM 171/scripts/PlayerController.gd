@@ -1,14 +1,11 @@
 extends KinematicBody2D
 
-
 #	Works Cited:
 #	https://www.gdquest.com/tutorial/godot/2d/scene-transition-rect/
 #	https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html
 #	chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://staffwww.fullcoll.edu/dcraig/gameprog/godot%20lecture%202.pdf
 #	https://godotengine.org/qa/72089/how-do-i-play-animation-using-gdscript
 #	https://godotengine.org/qa/3953/want-flip-character-the-horizontal-axis-but-whats-the-best-way
-
-
 
 # stats
 var stat_points = 9
