@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/dream_sequence.mp3-37bbcc0b75dc298056cb90ae60128edd.mp3str"
+
+[deps]
+
+source_file="res://assets/Music/dream_sequence.mp3"
+dest_files=[ "res://.import/dream_sequence.mp3-37bbcc0b75dc298056cb90ae60128edd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
