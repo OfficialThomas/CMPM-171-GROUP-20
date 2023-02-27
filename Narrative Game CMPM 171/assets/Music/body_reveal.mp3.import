@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/body_reveal.mp3-a35018604c937430dfecbd067f40ea40.mp3str"
+
+[deps]
+
+source_file="res://assets/Music/body_reveal.mp3"
+dest_files=[ "res://.import/body_reveal.mp3-a35018604c937430dfecbd067f40ea40.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
