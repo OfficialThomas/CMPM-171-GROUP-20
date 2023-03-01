@@ -141,6 +141,18 @@ position = Vector2( 1830, 463 )
 [node name="NPCMobleader" parent="." groups=["Dialogic Event"] instance=ExtResource( 12 )]
 position = Vector2( 2030, 463 )
 
+[node name="Placeholder1" parent="." groups=["Dialogic Event"] instance=ExtResource( 12 )]
+position = Vector2( 2183, 463 )
+pos_y = 6
+
+[node name="Placeholder2" parent="." groups=["Dialogic Event"] instance=ExtResource( 12 )]
+position = Vector2( 2329, 462 )
+pos_y = 7
+
+[node name="Placeholder3" parent="." groups=["Dialogic Event"] instance=ExtResource( 12 )]
+position = Vector2( 2461, 460 )
+pos_y = 8
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 219, 460 )
 

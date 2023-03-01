@@ -48,7 +48,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]He shifts his stance as he begins to speak, eyes darting up as if trying to remember something.[/i]\n[i]He’s going off a script, one he hasn’t had time to commit to memory yet.[/i]"
+			"text": "[i][Empathy - Easy] He shifts his stance as he begins to speak, eyes darting up as if trying to remember something.[/i]\n[i]He’s going off a script, one he hasn’t had time to commit to memory yet.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -92,7 +92,7 @@
 			"character": "character-1676811545.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Operator?"
+			"text": "[Perception - Medium] Operator?"
 		},
 		{
 			"character": "character-1677176249.json",
@@ -133,6 +133,141 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Oh? Ah, well, sorry ‘bout that.\nDidn’t mean ta get on your case. Just that this is gonna take some time, don’t want somebody to come in and ruin it all again.\nSo uh, if you could go and do something else while I do my job here, we can all start using the room sooner."
+		},
+		{
+			"choice": "[Persuasion - Medium] Convince him to let you in",
+			"condition": "==",
+			"definition": "1677663088-648",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"emit_signal": "charisma_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">",
+			"definition": "1676157388-918",
+			"event_id": "dialogic_012",
+			"value": "8"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[PASS] The guys in there are good operators, but are they good mechanics?\nIf the problem’s something larger with the switchboard, they might not have the ability to fix it all on their own."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Bobby rubs the back of his neck awkwardly as you say this, not wanting to make direct eye contact.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Look, the problem in here isn’t strictly *technical* if you know what I mean.\nThere’s uh, there’s been an accident. An ugly one. And boss doesn’t want people panicking and all that, so keep quiet about it, alright?"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So there isn’t anything that needs fixing in there?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You swear you can hear him mumble “There’s a helluvalot of fixing that needs done in there,” before he turns to you.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The telephone lines actually are caput. Can’t get a word in or out. If I let you in the room, promise you won’t freak out and go causin’ a panic?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You give your word.[/i]\n[i]He sighs and steps aside, opening the door for you.[/i]"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[FAIL] Come on. As if those glorified secretaries know what they’re doing. Let me in, and I’ll show them how professional gets work done."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You say with a sly grin[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You barely see him pull his arm back before he thrusts it up into your stomach.[/i]\n[-1 Health]\n[i]You kneel over, trying your best to breathe again.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Get the fuck out of here."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "Boss let me know all about what happened",
+			"condition": "",
+			"definition": "1677663088-648",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What are you talkin' about?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]You tell him what the boss said. About the attack and the body. You already know what to expect in there.[/i]"
+		},
+		{
+			"character": "character-1677311804.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "…Shit. Alright. Get in and do what you need to do. Just keep it quiet."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]He steps aside and opens the door for you.[/i]"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		},
 		{
 			"event_id": "dialogic_013"
