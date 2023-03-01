@@ -2,7 +2,7 @@ extends Area2D
 
 var active = false
 
-# the 2x2 list of dialogue
+# the 2d list of dialogue
 var d_default = ["Test"]
 var d_guide = ["Guide"]
 var d_start = ["Opening"]
