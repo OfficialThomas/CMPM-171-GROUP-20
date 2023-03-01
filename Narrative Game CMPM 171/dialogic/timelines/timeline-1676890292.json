@@ -174,7 +174,7 @@
 			"character": "character-1676811545.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "They have you burning the midnight oil, huh?"
+			"text": "[PASS] They have you burning the midnight oil, huh?"
 		},
 		{
 			"character": "character-1676890283.json",
@@ -225,7 +225,7 @@
 			"character": "character-1676811545.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You don’t need to me to get a doctor for ya, do you? The foreman will have your ass if he catches you nodding off."
+			"text": "[FAIL] You don’t need to me to get a doctor for ya, do you? The foreman will have your ass if he catches you nodding off."
 		},
 		{
 			"character": "character-1676890283.json",

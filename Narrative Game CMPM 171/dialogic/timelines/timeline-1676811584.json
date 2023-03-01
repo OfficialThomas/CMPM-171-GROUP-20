@@ -68,9 +68,9 @@
 		{
 			"choice": "Who am I?",
 			"condition": "",
-			"definition": "",
+			"definition": "1677384914-648",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "0"
 		},
 		{
 			"character": "",
@@ -89,9 +89,9 @@
 		{
 			"choice": "Where am I?",
 			"condition": "",
-			"definition": "",
+			"definition": "1677384920-787",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "0"
 		},
 		{
 			"character": "",
@@ -110,9 +110,9 @@
 		{
 			"choice": "What time is it?",
 			"condition": "",
-			"definition": "",
+			"definition": "1677384928-366",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "0"
 		},
 		{
 			"character": "",
@@ -131,12 +131,16 @@
 		{
 			"choice": "What is Roadtown?",
 			"condition": "",
-			"definition": "",
+			"definition": "1677384934-146",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "0"
 		},
 		{
 			"emit_signal": "dream_roll",
+			"event_id": "dialogic_040"
+		},
+		{
+			"emit_signal": "logic_set",
 			"event_id": "dialogic_040"
 		},
 		{
@@ -149,7 +153,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]Roadtown[/i] [b]is[/b] [i]a dream. The kind where things don’t make sense but you still think they do.[/i]\n[i]You could see witches and killers and the dead coming to life and you wouldn’t question it.[/i]\n[i]As long as you stay in Roadtown, you’ll never have to wake up.[/i]"
+			"text": "[i] [Dream - Easy] Roadtown *is* a dream. The kind where things don’t make sense but you still think they do.[/i]\n[i]You could see witches and killers and the dead coming to life and you wouldn’t question it.[/i]\n[i]As long as you stay in Roadtown, you’ll never have to wake up.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -161,10 +165,40 @@
 			"text": "[i]For you and millions of others, Roadtown is home and work. The largest housing project in history.[/i]\n[i]A single building stretching all the way from San Francisco to New York City, like a skyscraper that’s been toppled. It’s been in operation for about a decade now.[/i]"
 		},
 		{
+			"condition": ">",
+			"definition": "1676157318-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i][Logic - Trivial] Though given how planning only began thirty years ago, you can’t figure out how it’s even been open for that long.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]The architects sought a way to make life as convenient as possible.[/i]\n[i]Those who chose to stay here had a house to live in, a factory or farm to work at, telegraphs to contact family, a store to shop at, a monorail to travel in, all without ever leaving Roadtown.[/i]\n[i]For a few dollars as rent, you could live here and never once step foot outside. It sounds impossible.[/i]"
+		},
+		{
+			"condition": ">",
+			"definition": "1676157318-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i][Logic] And that’s probably because it is.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"definition": "1677384934-146",
@@ -201,7 +235,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]The eyes watch. Judging you from the corners, waiting.[/i]"
+			"text": "[i][Dream - Medium] The eyes watch. Judging you from the corners, waiting.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"

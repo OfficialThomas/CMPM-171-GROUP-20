@@ -48,7 +48,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]He shifts his stance as he begins to speak, eyes darting up as if trying to remember something.[/i]\n[i]He’s going off a script, one he hasn’t had time to commit to memory yet.[/i]"
+			"text": "[i][Empathy - Easy] He shifts his stance as he begins to speak, eyes darting up as if trying to remember something.[/i]\n[i]He’s going off a script, one he hasn’t had time to commit to memory yet.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -92,7 +92,7 @@
 			"character": "character-1676811545.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Operator?"
+			"text": "[Perception - Medium] Operator?"
 		},
 		{
 			"character": "character-1677176249.json",
@@ -133,6 +133,13 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Oh? Ah, well, sorry ‘bout that.\nDidn’t mean ta get on your case. Just that this is gonna take some time, don’t want somebody to come in and ruin it all again.\nSo uh, if you could go and do something else while I do my job here, we can all start using the room sooner."
+		},
+		{
+			"choice": "[Persuasion - Medium] Convince him to let you in",
+			"condition": ">",
+			"definition": "1676157388-918",
+			"event_id": "dialogic_011",
+			"value": "7"
 		},
 		{
 			"event_id": "dialogic_013"
