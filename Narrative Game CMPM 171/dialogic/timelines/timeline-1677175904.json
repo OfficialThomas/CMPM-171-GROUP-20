@@ -247,6 +247,14 @@
 			"text": "[i]He shakes his head. No use continuing this line of questioning.[/i]"
 		},
 		{
+			"definition": "1677663088-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
 			"event_id": "dialogic_013"
 		},
 		{
