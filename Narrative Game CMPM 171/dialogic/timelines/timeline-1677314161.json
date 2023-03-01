@@ -20,7 +20,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i] There’s someone waiting to make a call.[/i]\n[i]Someone in a forgotten room. They’re waiting to put in the number and reach the next operator.[/i]\n[i] The only sound being the dial tone mixed with their steady breathing.[/i]\n[i]Growing excited to say the words that will lead to another broken switchboard and white sheet.[/i]"
+			"text": "[i][Dream - Medium] There’s someone waiting to make a call.[/i]\n[i]Someone in a forgotten room. They’re waiting to put in the number and reach the next operator.[/i]\n[i] The only sound being the dial tone mixed with their steady breathing.[/i]\n[i]Growing excited to say the words that will lead to another broken switchboard and white sheet.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -61,7 +61,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]You would assume something like this would have to be done with a hammer or wrench or some other tool, but there’s nothing in here that would fit that description.[/i]\n[i]There’s nothing in the room that looks like it could have helped breaking it.[/i]\n[i]There’s no way he did this with his hands, is there?[/i]"
+			"text": "[i][Perception - Medium] You would assume something like this would have to be done with a hammer or wrench or some other tool, but there’s nothing in here that would fit that description.[/i]\n[i]There’s nothing in the room that looks like it could have helped breaking it.[/i]\n[i]There’s no way he did this with his hands, is there?[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -93,7 +93,7 @@
 			"character": "character-1676811545.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Shit. No. Wait, what if…fuck, no. No. No. None of this works."
+			"text": "[PASS] Shit. No. Wait, what if…fuck, no. No. No. None of this works."
 		},
 		{
 			"character": "",
@@ -124,7 +124,7 @@
 			"character": "character-1676811545.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Let’s see. Just need to reattach these two wires here, place a switch there…"
+			"text": "[FAIL] Let’s see. Just need to reattach these two wires here, place a switch there…"
 		},
 		{
 			"character": "",
@@ -286,7 +286,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]...[/i]\n[i]You hang the phone back on the receiver.[/i]\n[i]You should find something to do before you start to cry.[/i]"
+			"text": "[i][PASS] ...[/i]\n[i]You hang the phone back on the receiver.[/i]\n[i]You should find something to do before you start to cry.[/i]"
 		},
 		{
 			"event_id": "dialogic_022",
@@ -305,7 +305,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]It’s because of *her*.[/i]\n[i]She promised you she would help you. That she would help cover the costs. That your future was just as important to her as it was to you.[/i]"
+			"text": "[i][FAIL] It’s because of *her*.[/i]\n[i]She promised you she would help you. That she would help cover the costs. That your future was just as important to her as it was to you.[/i]"
 		},
 		{
 			"character": "",

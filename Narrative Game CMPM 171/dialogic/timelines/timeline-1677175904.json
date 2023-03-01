@@ -14,13 +14,13 @@
 			"condition": ">",
 			"definition": "1676157374-146",
 			"event_id": "dialogic_012",
-			"value": "10"
+			"value": "2"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]But this morning, he is obviously disheveled.[/i]\n[i]His shirt is only partly tucked in. The lower buttons of his jacket are undone. His hair looks like it was done with only his hands, no comb or even a mirror.[/i]"
+			"text": "[i][Perception - Easy] But this morning, he is obviously disheveled.[/i]\n[i]His shirt is only partly tucked in. The lower buttons of his jacket are undone. His hair looks like it was done with only his hands, no comb or even a mirror.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -33,13 +33,13 @@
 			"condition": ">",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "11"
+			"value": "6"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]This was a bad morning for him, and you feel like it’s not going to be much better for you, either.[/i]"
+			"text": "[i][Empathy] This was a bad morning for him, and you feel like it’s not going to be much better for you, either.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -147,7 +147,7 @@
 
 			],
 			"portrait": "",
-			"question": "[i]That last bit there. The change in the tone of his voice. The light in his eyes subtly dimming. The smallest crack in his professional demeanor. There’s something wrong with the telegraph room, and it’s worse than he’s letting you know.[/i]"
+			"question": "[i][Empathy - Medium] That last bit there. The change in the tone of his voice. The light in his eyes subtly dimming. The smallest crack in his professional demeanor. There’s something wrong with the telegraph room, and it’s worse than he’s letting you know.[/i]"
 		},
 		{
 			"choice": "When was the last time a telephone call went through?",
@@ -169,7 +169,7 @@
 			"text": "[i]It seems as though that’s all he’s willing to say.[/i]"
 		},
 		{
-			"choice": "Convince him to let you into the switchboard room.",
+			"choice": "[Charisma - Medium] Convince him to let you into the switchboard room.",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -189,7 +189,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]“There’s only one or two guys who work the switchboards here, and even then they were only hired to operate them, not fix them. I’m sure they’d appreciate the hand” you say with a winning smile.[/i]\nHis expression only gets grimmer."
+			"text": "[i][PASS] There’s only one or two guys who work the switchboards here, and even then they were only hired to operate them, not fix them. I’m sure they’d appreciate the hand” you say with a winning smile.[/i]\nHis expression only gets grimmer."
 		},
 		{
 			"character": "character-1677176249.json",
@@ -235,7 +235,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]The kinds of things that could be sending those messages.[/i]"
+			"text": "[i][Dream - Medium] The kinds of things that could be sending those messages.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -245,6 +245,14 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]He shakes his head. No use continuing this line of questioning.[/i]"
+		},
+		{
+			"definition": "1677663088-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -259,7 +267,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]\"Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.[/i]\n[i]The manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare.[/i]"
+			"text": "[i][FAIL] Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.[/i]\n[i]The manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare.[/i]"
 		},
 		{
 			"character": "character-1677176249.json",
@@ -318,7 +326,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]Almost a quarter of the country is unemployed, and it’s only looking worse from here.[/i]"
+			"text": "[i][Culture - Easy] Almost a quarter of the country is unemployed, and it’s only looking worse from here.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -333,7 +341,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]Forget a riot. These are the conditions for a revolt.[/i]"
+			"text": "[i][Logic] Forget a riot. These are the conditions for a revolt.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"

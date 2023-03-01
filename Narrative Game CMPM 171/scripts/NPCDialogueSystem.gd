@@ -9,7 +9,10 @@ var d_start = ["Opening"]
 var d_brother = ["Meeting Brother"]
 var d_worker = ["Meeting Worker"]
 var d_manager = ["Meeting Manager"]
-onready var d_events = [d_default, d_guide, d_start, d_brother, d_worker, d_manager]
+var d_outside = ["Outside Switchboard"]
+var d_inside = ["Inside Switchboard"]
+var d_investigate = ["Investigating Switchboard"]
+onready var d_events = [d_default, d_guide, d_start, d_brother, d_worker, d_manager, d_outside, d_inside, d_investigate]
 
 export (int) var pos_x = 0
 export (int) var pos_y = 0
