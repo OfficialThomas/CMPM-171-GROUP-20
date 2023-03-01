@@ -26,7 +26,7 @@ func start_game():
 
 func unpause(_timeline_name):
 	#TO DO  - Add transition when we end the dialogue
-	_transition_rect.transition_to("res://play-scenes/TestScene1.tscn")
+	_transition_rect.transition_to("res://play-scenes/Main.tscn")
 
 
 func dialogic_signal(arguement):
