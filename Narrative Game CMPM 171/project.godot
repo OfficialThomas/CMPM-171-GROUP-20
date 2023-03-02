@@ -94,6 +94,10 @@ window/stretch/aspect="keep_height"
 
 enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
 
+[global]
+
+motion=false
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
