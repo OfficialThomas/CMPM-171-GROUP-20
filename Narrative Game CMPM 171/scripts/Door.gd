@@ -37,3 +37,4 @@ func _physics_process(_delta):
 	$Icon.visible = active
 	if isOverDoor and Input.is_action_just_pressed("interact"):
 		player.position = target.position
+		player.get_node("Camera2D").reset_smoothing()
