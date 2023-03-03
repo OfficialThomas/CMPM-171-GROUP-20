@@ -6,7 +6,7 @@ https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html
 """
 
 var active = false
-
+onready var transition_rect = get_node("../../GUI/SceneTransitionRect")
 export(NodePath) onready var target = get_node(target)
 var isOverDoor := false
 var isLocked := true
@@ -36,5 +36,7 @@ func _on_NearDoor_body_exited(body):
 func _physics_process(_delta):
 	$Icon.visible = active
 	if isOverDoor and Input.is_action_just_pressed("interact"):
+		transition_rect.fade()
 		player.position = target.position
 		player.get_node("Camera2D").reset_smoothing()
+		transition_rect.unfade()

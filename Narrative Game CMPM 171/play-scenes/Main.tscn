@@ -813,3 +813,6 @@ tile_data = PoolIntArray( -2228298, -2147483642, 0, -2228297, -2147483642, 0, -2
 script = ExtResource( 12 )
 
 [node name="SceneTransitionRect" parent="GUI" instance=ExtResource( 11 )]
+__meta__ = {
+"_edit_use_anchors_": true
+}
