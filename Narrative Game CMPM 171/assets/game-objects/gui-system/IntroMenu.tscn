@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheetCredits.tres" type="DynamicFont" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet80.tres" type="DynamicFont" id=6]
 [ext_resource path="res://scripts/IntroMenu.gd" type="Script" id=7]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet30.tres" type="DynamicFont" id=8]
+[ext_resource path="res://demo-assets/PNG/Backgrounds/set2_background.png" type="Texture" id=9]
 
 [node name="IntroMenu" type="Control"]
 anchor_right = 1.0
@@ -18,19 +19,33 @@ script = ExtResource( 7 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MenuScreen"]
+[node name="NinePatchRect" type="NinePatchRect" parent="MenuScreen"]
+self_modulate = Color( 1, 1, 1, 0.784314 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 9 )
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuScreen/NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 custom_constants/separation = 50
 alignment = 1
 
-[node name="LogoSpot" type="HBoxContainer" parent="MenuScreen/VBoxContainer"]
+[node name="LogoSpot" type="HBoxContainer" parent="MenuScreen/NinePatchRect/VBoxContainer"]
 margin_top = 75.0
 margin_right = 1024.0
 margin_bottom = 275.0
 alignment = 1
 
-[node name="NinePatchRect" type="NinePatchRect" parent="MenuScreen/VBoxContainer/LogoSpot"]
+[node name="NinePatchRect" type="NinePatchRect" parent="MenuScreen/NinePatchRect/VBoxContainer/LogoSpot"]
 margin_left = 112.0
 margin_right = 912.0
 margin_bottom = 200.0
@@ -41,7 +56,7 @@ patch_margin_top = 30
 patch_margin_right = 30
 patch_margin_bottom = 30
 
-[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/LogoSpot/NinePatchRect"]
+[node name="Label" type="Label" parent="MenuScreen/NinePatchRect/VBoxContainer/LogoSpot/NinePatchRect"]
 modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -50,14 +65,14 @@ text = "Roadtown USA"
 align = 1
 valign = 1
 
-[node name="StartandGuide" type="HBoxContainer" parent="MenuScreen/VBoxContainer"]
+[node name="StartandGuide" type="HBoxContainer" parent="MenuScreen/NinePatchRect/VBoxContainer"]
 margin_top = 325.0
 margin_right = 1024.0
 margin_bottom = 400.0
 custom_constants/separation = 100
 alignment = 1
 
-[node name="Start" type="TextureButton" parent="MenuScreen/VBoxContainer/StartandGuide"]
+[node name="Start" type="TextureButton" parent="MenuScreen/NinePatchRect/VBoxContainer/StartandGuide"]
 margin_left = 262.0
 margin_right = 462.0
 margin_bottom = 75.0
@@ -66,7 +81,7 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 expand = true
 
-[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/StartandGuide/Start"]
+[node name="Label" type="Label" parent="MenuScreen/NinePatchRect/VBoxContainer/StartandGuide/Start"]
 modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -81,7 +96,7 @@ text = "Start Game"
 align = 1
 valign = 1
 
-[node name="Guide" type="TextureButton" parent="MenuScreen/VBoxContainer/StartandGuide"]
+[node name="Guide" type="TextureButton" parent="MenuScreen/NinePatchRect/VBoxContainer/StartandGuide"]
 margin_left = 562.0
 margin_right = 762.0
 margin_bottom = 75.0
@@ -90,7 +105,7 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 expand = true
 
-[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/StartandGuide/Guide"]
+[node name="Label" type="Label" parent="MenuScreen/NinePatchRect/VBoxContainer/StartandGuide/Guide"]
 modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -105,14 +120,14 @@ text = "How to Play"
 align = 1
 valign = 1
 
-[node name="CreditsandExit" type="HBoxContainer" parent="MenuScreen/VBoxContainer"]
+[node name="CreditsandExit" type="HBoxContainer" parent="MenuScreen/NinePatchRect/VBoxContainer"]
 margin_top = 450.0
 margin_right = 1024.0
 margin_bottom = 525.0
 custom_constants/separation = 100
 alignment = 1
 
-[node name="Credits" type="TextureButton" parent="MenuScreen/VBoxContainer/CreditsandExit"]
+[node name="Credits" type="TextureButton" parent="MenuScreen/NinePatchRect/VBoxContainer/CreditsandExit"]
 margin_left = 262.0
 margin_right = 462.0
 margin_bottom = 75.0
@@ -121,7 +136,7 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 expand = true
 
-[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/CreditsandExit/Credits"]
+[node name="Label" type="Label" parent="MenuScreen/NinePatchRect/VBoxContainer/CreditsandExit/Credits"]
 modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -136,7 +151,7 @@ text = "Credits"
 align = 1
 valign = 1
 
-[node name="ExitGame" type="TextureButton" parent="MenuScreen/VBoxContainer/CreditsandExit"]
+[node name="ExitGame" type="TextureButton" parent="MenuScreen/NinePatchRect/VBoxContainer/CreditsandExit"]
 margin_left = 562.0
 margin_right = 762.0
 margin_bottom = 75.0
@@ -145,7 +160,7 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 expand = true
 
-[node name="Label" type="Label" parent="MenuScreen/VBoxContainer/CreditsandExit/ExitGame"]
+[node name="Label" type="Label" parent="MenuScreen/NinePatchRect/VBoxContainer/CreditsandExit/ExitGame"]
 modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -408,9 +423,9 @@ text = "Return"
 align = 1
 valign = 1
 
-[connection signal="pressed" from="MenuScreen/VBoxContainer/StartandGuide/Start" to="." method="_on_Start_pressed"]
-[connection signal="pressed" from="MenuScreen/VBoxContainer/StartandGuide/Guide" to="." method="_on_Guide_pressed"]
-[connection signal="pressed" from="MenuScreen/VBoxContainer/CreditsandExit/Credits" to="." method="_on_Credits_pressed"]
-[connection signal="pressed" from="MenuScreen/VBoxContainer/CreditsandExit/ExitGame" to="." method="_on_ExitGame_pressed"]
+[connection signal="pressed" from="MenuScreen/NinePatchRect/VBoxContainer/StartandGuide/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="MenuScreen/NinePatchRect/VBoxContainer/StartandGuide/Guide" to="." method="_on_Guide_pressed"]
+[connection signal="pressed" from="MenuScreen/NinePatchRect/VBoxContainer/CreditsandExit/Credits" to="." method="_on_Credits_pressed"]
+[connection signal="pressed" from="MenuScreen/NinePatchRect/VBoxContainer/CreditsandExit/ExitGame" to="." method="_on_ExitGame_pressed"]
 [connection signal="pressed" from="Guide/VBoxContainer/HBoxContainer/Button/ReturnFGuide" to="." method="_on_ReturnFGuide_pressed"]
 [connection signal="pressed" from="Credits/VBoxContainer/HBoxContainer/Button/ReturnFCredits" to="." method="_on_ReturnFCredits_pressed"]
