@@ -24,3 +24,10 @@ func transition_to(_next_scene := next_scene_path) -> void:
 	yield(_anim_player, "animation_finished")
 	# Changes the scene
 	get_tree().change_scene(_next_scene)
+
+func fade() -> void:
+	_anim_player.play("Fade")
+	yield(_anim_player, "animation_finished")
+	
+func unfade() -> void:
+	_anim_player.play_backwards("Fade")
