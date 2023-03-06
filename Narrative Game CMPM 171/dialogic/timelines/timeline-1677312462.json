@@ -14,7 +14,7 @@
 			"condition": ">",
 			"definition": "1677095932-529",
 			"event_id": "dialogic_012",
-			"value": "1"
+			"value": "10"
 		},
 		{
 			"character": "",
@@ -58,10 +58,10 @@
 			"text": "[i]You feel something brush against your hand. Cold and metallic, it must be the cord to the room’s electric light.[/i]\n[i]Your fingers wrap around the switch, and then you stop.[/i]"
 		},
 		{
-			"condition": ">",
+			"condition": ">=",
 			"definition": "1677095932-529",
 			"event_id": "dialogic_012",
-			"value": "7"
+			"value": "12"
 		},
 		{
 			"character": "",
@@ -122,7 +122,7 @@
 			"condition": ">",
 			"definition": "1677095932-529",
 			"event_id": "dialogic_012",
-			"value": "1"
+			"value": "10"
 		},
 		{
 			"character": "",
@@ -137,7 +137,7 @@
 			"condition": ">",
 			"definition": "1676157374-146",
 			"event_id": "dialogic_012",
-			"value": "5"
+			"value": "12"
 		},
 		{
 			"character": "",
@@ -152,7 +152,7 @@
 			"condition": ">",
 			"definition": "1676157318-648",
 			"event_id": "dialogic_012",
-			"value": "5"
+			"value": "12"
 		},
 		{
 			"character": "",
@@ -186,11 +186,11 @@
 			"value": ""
 		},
 		{
-			"emit_signal": "reflex_set",
+			"emit_signal": "reflex_roll",
 			"event_id": "dialogic_040"
 		},
 		{
-			"condition": "<=",
+			"condition": "<",
 			"definition": "1676157414-970",
 			"event_id": "dialogic_012",
 			"value": "7"
@@ -250,14 +250,14 @@
 			"value": ""
 		},
 		{
-			"emit_signal": "composure_set",
+			"emit_signal": "composure_roll",
 			"event_id": "dialogic_040"
 		},
 		{
-			"condition": ">",
+			"condition": ">=",
 			"definition": "1675983761-875",
 			"event_id": "dialogic_012",
-			"value": "9"
+			"value": "10"
 		},
 		{
 			"emit_signal": "perception_set",
@@ -282,10 +282,10 @@
 			"text": "[i]You turn away from the body.[/i]"
 		},
 		{
-			"condition": ">",
+			"condition": ">=",
 			"definition": "1676157374-146",
 			"event_id": "dialogic_012",
-			"value": "12"
+			"value": "13"
 		},
 		{
 			"character": "",
@@ -310,10 +310,10 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"condition": "<=",
+			"condition": "<",
 			"definition": "1675983761-875",
 			"event_id": "dialogic_012",
-			"value": "9"
+			"value": "10"
 		},
 		{
 			"emit_signal": "empathy_set",
@@ -350,10 +350,10 @@
 			"text": "*sigh* I know. It’s an ugly scene here.\n Poor bastard. Don’t know what drives someone to do that, let alone what they were thinking."
 		},
 		{
-			"condition": ">",
+			"condition": ">=",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "12"
+			"value": "13"
 		},
 		{
 			"character": "",

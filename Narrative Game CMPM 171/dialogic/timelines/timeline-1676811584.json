@@ -147,7 +147,7 @@
 			"condition": ">",
 			"definition": "1677095932-529",
 			"event_id": "dialogic_012",
-			"value": "2"
+			"value": "4"
 		},
 		{
 			"character": "",
@@ -168,7 +168,7 @@
 			"condition": ">",
 			"definition": "1676157318-648",
 			"event_id": "dialogic_012",
-			"value": "1"
+			"value": "8"
 		},
 		{
 			"character": "",
@@ -189,7 +189,7 @@
 			"condition": ">",
 			"definition": "1676157318-648",
 			"event_id": "dialogic_012",
-			"value": "1"
+			"value": "11"
 		},
 		{
 			"character": "",
@@ -229,7 +229,7 @@
 			"condition": ">",
 			"definition": "1677095932-529",
 			"event_id": "dialogic_012",
-			"value": "4"
+			"value": "7"
 		},
 		{
 			"character": "",

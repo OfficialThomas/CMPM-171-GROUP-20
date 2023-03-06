@@ -11,10 +11,10 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"condition": ">",
+			"condition": ">=",
 			"definition": "1677095932-529",
 			"event_id": "dialogic_012",
-			"value": "5"
+			"value": "12"
 		},
 		{
 			"character": "",
@@ -52,10 +52,10 @@
 			"text": "[i]He certainly did a number on the device.[/i]\n[i]The smaller bits and pieces are all over the panels.[/i]\n[i]Switches are missing and the small light bulbs have been smashed, covering the floor with tiny shards of glass.[/i]"
 		},
 		{
-			"condition": ">",
+			"condition": ">=",
 			"definition": "1676157374-146",
 			"event_id": "dialogic_012",
-			"value": "5"
+			"value": "12"
 		},
 		{
 			"character": "",
@@ -80,14 +80,14 @@
 			"value": ""
 		},
 		{
-			"emit_signal": "logic_set",
+			"emit_signal": "logic_roll",
 			"event_id": "dialogic_040"
 		},
 		{
-			"condition": ">",
+			"condition": ">=",
 			"definition": "1676157318-648",
 			"event_id": "dialogic_012",
-			"value": "12"
+			"value": "10"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -111,10 +111,10 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"condition": "<=",
+			"condition": "<",
 			"definition": "1676157318-648",
 			"event_id": "dialogic_012",
-			"value": "12"
+			"value": "10"
 		},
 		{
 			"emit_signal": "dream_set",
@@ -148,7 +148,7 @@
 			"condition": ">",
 			"definition": "1677095932-529",
 			"event_id": "dialogic_012",
-			"value": "6"
+			"value": "12"
 		},
 		{
 			"character": "",
@@ -273,7 +273,7 @@
 			"value": ""
 		},
 		{
-			"emit_signal": "composure_set",
+			"emit_signal": "composure_roll",
 			"event_id": "dialogic_040"
 		},
 		{
