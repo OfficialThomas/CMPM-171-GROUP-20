@@ -6,6 +6,7 @@ extends KinematicBody2D
 #	chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://staffwww.fullcoll.edu/dcraig/gameprog/godot%20lecture%202.pdf
 #	https://godotengine.org/qa/72089/how-do-i-play-animation-using-gdscript
 #	https://godotengine.org/qa/3953/want-flip-character-the-horizontal-axis-but-whats-the-best-way
+#	https://godotengine.org/qa/88590/correct-way-to-load-and-play-sounds-from-code
 
 # stats
 var stat_points = 9
@@ -24,7 +25,8 @@ export (int) var speed = 200
 var velocity = Vector2()
 
 # audio sfx
-var walkSound = preload("res://assets/sound/Walking_V3.wav");
+var walkSound = preload("res://assets/sound/Walking_V3.wav")
+var squishSound = preload("res://assets/sound/Walking_Squish_V2.wav")
 var walking = false
 
 func get_input():
