@@ -329,9 +329,6 @@
 			"text": "[i][Culture - Easy] Almost a quarter of the country is unemployed, and it’s only looking worse from here.[/i]"
 		},
 		{
-			"event_id": "dialogic_013"
-		},
-		{
 			"condition": ">",
 			"definition": "1676157318-648",
 			"event_id": "dialogic_012",
@@ -342,6 +339,9 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i][Logic] Forget a riot. These are the conditions for a revolt.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"

@@ -533,13 +533,14 @@ position = Vector2( 901, -473 )
 position = Vector2( 1025, -497 )
 
 [node name="NPCMechanic" parent="." instance=ExtResource( 9 )]
-position = Vector2( 249, 271 )
+position = Vector2( 239, 273 )
 
 [node name="NPCManager" parent="." instance=ExtResource( 8 )]
 position = Vector2( -478, 1231 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 770, -505 )
+speed = 100
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true

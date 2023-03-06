@@ -6,6 +6,7 @@ extends KinematicBody2D
 #	chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://staffwww.fullcoll.edu/dcraig/gameprog/godot%20lecture%202.pdf
 #	https://godotengine.org/qa/72089/how-do-i-play-animation-using-gdscript
 #	https://godotengine.org/qa/3953/want-flip-character-the-horizontal-axis-but-whats-the-best-way
+#	https://godotengine.org/qa/88590/correct-way-to-load-and-play-sounds-from-code
 
 # stats
 var stat_points = 9
@@ -18,13 +19,15 @@ var culture = 10
 var composure = 10
 var reflex = 10
 
-# rolling
-var rng = RandomNumberGenerator.new()
-
 # movement
 const GRAVITY = 10
 export (int) var speed = 200
 var velocity = Vector2()
+
+# audio sfx
+var walkSound = preload("res://assets/sound/Walking_V3.wav")
+var squishSound = preload("res://assets/sound/Walking_Squish_V2.wav")
+var walking = false
 
 func get_input():
 	# movement input
@@ -32,16 +35,25 @@ func get_input():
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
 		$AnimatedSprite.play("playerWalkRight")
+		walking = true
 	elif Input.is_action_pressed("left"):
 		velocity.x -= 1
 		$AnimatedSprite.play("PlayerWalkLeft")
+		walking = true
 	else:
 		$AnimatedSprite.play("playerIdle")
+		$AudioStreamPlayer2D.stop()
+		walking = false
 #	Kept this just for completedness of input tests
 #	if Input.is_action_pressed("down"):
 #		velocity.y += 1
 #	if Input.is_action_pressed("up"):
 #		velocity.y -= 1
+	
+	if walking:
+		if !$AudioStreamPlayer2D.is_playing():
+			$AudioStreamPlayer2D.stream = walkSound
+			$AudioStreamPlayer2D.play()
 	
 	# positive is down in a 2d canvas space
 	velocity.y += GRAVITY
