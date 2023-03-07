@@ -82,7 +82,7 @@ _global_script_class_icons={
 
 config/name="RoadTown USA"
 run/main_scene="res://play-scenes/Intro.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/art-assets/logos/thumbnailicon.png"
 
 [display]
 

@@ -1,0 +1,45 @@
+extends Area2D
+
+"""
+Works Cited:
+https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html
+"""
+
+var active = false
+export var disabled = false
+onready var transition_rect = get_node("../../GUI/SceneTransitionRect")
+export(NodePath) onready var target = get_node(target)
+var isOverDoor := false
+var isLocked := true
+var player = null
+
+func _on_Door_body_entered(body):
+	isOverDoor = true
+	player = body
+	if body.name == 'Player' and not disabled:
+		active = true
+
+func _on_Door_body_exited(body):
+	isOverDoor = false
+	if body.name == 'Player' and not disabled:
+		active = false
+
+func _on_NearDoor_body_entered(body):
+	if (body.name == "Player"):
+		$AnimatedSprite.play("open")
+		isLocked = false
+		
+func _on_NearDoor_body_exited(body):
+	if (body.name == "Player"):
+		$AnimatedSprite.play("closed")
+		isLocked = true
+
+func _physics_process(_delta):
+	if disabled:
+		return
+	$Icon.visible = active
+	if isOverDoor and Input.is_action_just_pressed("interact"):
+		transition_rect.fade()
+		player.position = target.position
+		player.get_node("Camera2D").reset_smoothing()
+		transition_rect.unfade()

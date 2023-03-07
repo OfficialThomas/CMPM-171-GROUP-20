@@ -3,8 +3,8 @@
 [ext_resource path="res://demo-assets/PNG/Backgrounds/parallax/parallax-00.png" type="Texture" id=1]
 [ext_resource path="res://demo-assets/PNG/Backgrounds/parallax/parallax-01.png" type="Texture" id=2]
 [ext_resource path="res://demo-assets/PNG/Backgrounds/parallax/parallax-02.png" type="Texture" id=3]
-[ext_resource path="res://scripts/Intro.gd" type="Script" id=4]
-[ext_resource path="res://assets/game-objects/transition/Transition.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/game-objects/scripts/Intro.gd" type="Script" id=4]
+[ext_resource path="res://assets/game-objects/gui-system/transition/Transition.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/game-objects/gui-system/IntroMenu.tscn" type="PackedScene" id=6]
 
 [node name="World" type="Node2D"]
