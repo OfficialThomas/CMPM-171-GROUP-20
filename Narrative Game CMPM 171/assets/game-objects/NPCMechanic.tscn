@@ -28,12 +28,17 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
+"name": "stand",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
 "name": "talk",
 "speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 21.5
+radius = 26.0
 height = 49.2
 
 [node name="NPCMechanic" type="Area2D"]
@@ -41,13 +46,11 @@ script = ExtResource( 1 )
 pos_y = 4
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0.5, 0 )
 frames = SubResource( 2 )
 animation = "idle"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1, 2 )
 scale = Vector2( 2, 1.25 )
 shape = SubResource( 1 )
 
