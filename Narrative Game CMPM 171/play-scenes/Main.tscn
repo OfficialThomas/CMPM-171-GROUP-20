@@ -11,7 +11,7 @@
 [ext_resource path="res://assets/game-objects/NPCBrother.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/game-objects/NPCManager.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/game-objects/gui-system/transition/Transition.tscn" type="PackedScene" id=11]
-[ext_resource path="res://assets/game-objects/scripts/GUI.gd" type="Script" id=12]
+[ext_resource path="res://scripts/GUI.gd" type="Script" id=12]
 
 
 [sub_resource type="TileSet" id=12]
