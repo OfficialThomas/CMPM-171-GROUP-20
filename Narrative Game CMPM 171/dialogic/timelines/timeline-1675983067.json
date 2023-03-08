@@ -1,10 +1,28 @@
 {
 	"events": [
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/wake_up.mp3",
+			"volume": -10
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]On your desk, you find your journal with a message for you.[/i]\n\"Hello there future me. As you have figured out, the [color=#efaca5]arrow keys[/color] allow you to [color=#A5EFAC]walk[/color] and the [color=#efaca5]X key[/color] allows you to [color=#A5EFAC]interact with people and objects[/color].\"\n\"But did you know you can [color=#A5EFAC]progress through dialogue[/color] with the [color=#efaca5]space bar[/color]?\"\n\"I hope this information helps!\"\n\"From, Yourself\"\n\"P.S. - Progress in life is always made with [color=#A5EFAC]opening the menu[/color] with the [color=#efaca5]C key[/color].\""
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"event_id": "dialogic_022",
