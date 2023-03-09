@@ -29,7 +29,7 @@ onready var _sfx_output := $SFXPlayer
 onready var _bgm_output := $BGMPlayer
 var walkSound = preload("res://assets/sound/Walking_V3.wav")
 var squishSound = preload("res://assets/sound/Walking_Squish_V2.wav")
-var startBGM = preload("res://assets/Music/wake_up.mp3")
+var startBGM = preload("res://assets/sound/Machines_V2.wav")
 var walking = false
 
 func _ready():

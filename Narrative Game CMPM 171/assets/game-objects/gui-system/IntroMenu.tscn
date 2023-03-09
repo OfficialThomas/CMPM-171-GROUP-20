@@ -204,39 +204,42 @@ custom_constants/separation = 100
 alignment = 1
 
 [node name="Directions" type="VBoxContainer" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer"]
-margin_left = 83.0
-margin_right = 641.0
+margin_left = 200.0
+margin_right = 524.0
 margin_bottom = 518.0
 custom_constants/separation = 15
 alignment = 1
 
 [node name="LeftandRight" type="Label" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer/Directions"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 206.0
-margin_right = 558.0
-margin_bottom = 231.0
+margin_top = 164.0
+margin_right = 324.0
+margin_bottom = 217.0
 custom_fonts/font = ExtResource( 8 )
-text = "Move Left and Right: Arrow Keys"
+text = "Movement: 
+Arrow Keys or WASD"
 
 [node name="Interact" type="Label" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer/Directions"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 246.0
-margin_right = 558.0
-margin_bottom = 271.0
+margin_top = 232.0
+margin_right = 324.0
+margin_bottom = 285.0
 custom_fonts/font = ExtResource( 8 )
-text = "Interact: X Key"
+text = "Interact: 
+X Key or E Key"
 
 [node name="CharacterMenu" type="Label" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer/Directions"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 286.0
-margin_right = 558.0
-margin_bottom = 311.0
+margin_top = 300.0
+margin_right = 324.0
+margin_bottom = 353.0
 custom_fonts/font = ExtResource( 8 )
-text = "Character Menu: C Key"
+text = "Character Menu: 
+C Key or Q Key"
 
 [node name="Button" type="VBoxContainer" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer"]
-margin_left = 741.0
-margin_right = 941.0
+margin_left = 624.0
+margin_right = 824.0
 margin_bottom = 518.0
 alignment = 1
 
