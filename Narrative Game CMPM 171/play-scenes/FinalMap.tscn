@@ -641,7 +641,8 @@ tile_data = PoolIntArray( -720930, 6, 0, -720929, 6, 0, -720928, 6, 0, -720927, 
 [node name="GUI" type="CanvasLayer" parent="."]
 script = ExtResource( 7 )
 
-[node name="TransitionLayer" type="CanvasLayer" parent="."]
+[node name="TransitionBox" type="CanvasLayer" parent="."]
+process_priority = 2
 layer = 2
 
-[node name="SceneTransitionRect" parent="TransitionLayer" instance=ExtResource( 6 )]
+[node name="SceneTransitionRect" parent="TransitionBox" instance=ExtResource( 6 )]
