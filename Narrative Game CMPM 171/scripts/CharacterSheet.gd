@@ -19,7 +19,7 @@ onready var _audio_output := $AudioStreamPlayer2D
 var buttonSound = preload("res://assets/sound/Button_Press_V1.wav")
 
 #scene transition
-onready var _transition_rect = get_node("../../TransitionLayer/SceneTransitionRect")
+onready var _transition_rect = get_node("../../TransitionBox/SceneTransitionRect")
 export(String, FILE, "*.tscn") var next_scene_path
 
 # stat changes
