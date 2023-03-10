@@ -157,35 +157,10 @@
 			"value": "1"
 		},
 		{
-			"emit_signal": "dream_roll",
-			"event_id": "dialogic_040"
-		},
-		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]You feel it.[/i]\n[i]The sun shines, its gentle hand caressing your face with its beams.[/i]\n[i]The machines rumble. Stampeding beasts crashing below you.[/i]"
-		},
-		{
-			"condition": ">",
-			"definition": "1677095932-529",
-			"event_id": "dialogic_012",
-			"value": "7"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i][Dream - Medium] The eyes watch. Judging you from the corners, waiting.[/i]"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i]It’s time to get up.[/i]\n[i]It’s time to go back to Roadtown.[/i]"
+			"text": "[i]You feel it.[/i]\n[i]The sun shines, its gentle hand caressing your face with its beams.[/i]\n[i]The machines rumble. Stampeding beasts crashing below you.[/i]\n[i]The eyes watch. Judging you from the corners, waiting.[/i]\n[i]It’s time to get up.[/i]\n[i]It’s time to go back to Roadtown.[/i]"
 		},
 		{
 			"event_id": "dialogic_022",
