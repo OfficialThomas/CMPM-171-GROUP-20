@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/wake_up.mp3-58982c24caff18a9bc0f98fc231f8af6.mp3str"
+path="res://.import/wake_up.mp3-d24868357e506dca27f024cb86c75bae.mp3str"
 
 [deps]
 
-source_file="res://assets/Music/wake_up.mp3"
-dest_files=[ "res://.import/wake_up.mp3-58982c24caff18a9bc0f98fc231f8af6.mp3str" ]
+source_file="res://assets/music/wake_up.mp3"
+dest_files=[ "res://.import/wake_up.mp3-d24868357e506dca27f024cb86c75bae.mp3str" ]
 
 [params]
 
