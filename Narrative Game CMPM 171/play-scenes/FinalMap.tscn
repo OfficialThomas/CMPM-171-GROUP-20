@@ -511,8 +511,8 @@ target = NodePath("../Door18")
 
 [node name="Door18" parent="Doors" instance=ExtResource( 3 )]
 position = Vector2( -1312, 272 )
-disabled = true
 target = NodePath("../Door17")
+disabled = true
 
 [node name="Door19" parent="Doors" instance=ExtResource( 3 )]
 position = Vector2( -1120, -174 )
