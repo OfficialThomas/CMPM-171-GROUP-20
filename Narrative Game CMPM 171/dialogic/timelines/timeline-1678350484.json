@@ -1,0 +1,37 @@
+{
+	"events": [
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/wake_up.mp3",
+			"volume": -10
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]On your desk lies a copy of the handbook all engineers are given when they start work here.[/i]\n“Engineers are to [color=#A5EFAC]walk[/color] carefully using the [color=#efaca5]arrow keys or WASD[/color] so as to avoid damage to Roadtown property.”\n“Engineers are to keep in regular [color=#A5EFAC]contact[/color] with fellow engineers and other Roadtown inhabitants by [color=#efaca5]pressing X or E[/color], using [color=#efaca5]Space Bar, Enter, X, or the mouse[/color] to learn all necessary information”\n“Engineers are to [color=#A5EFAC]interact with important parts[/color] of Roadtown by [color=#efaca5]pressing X or E[/color]”\n“Engineers are to [color=#A5EFAC]keep track of their progress and skill work[/color] by [color=#efaca5]pressing C or Q[/color] to open the menu”\n“Remember: You become more skilled by learning from those around you, and the more skilled you are, the more you can learn”\n“Engineers are to begin work each day by heading to the engineering floor separate from the living quarters and attending to any mechanical problems or needs”\n“Any issues or complaints can be discussed with the manager in the first floor office”"
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1678350484.json",
+		"name": "GuideNew"
+	}
+}

@@ -7,7 +7,7 @@ var rng = RandomNumberGenerator.new()
 
 # the 2d list of dialogue
 var d_default = ["Test"]
-var d_guide = ["Guide"]
+var d_guide = ["GuideNew"]
 var d_start = ["Opening"]
 var d_brother = ["Meeting Brother"]
 var d_worker = ["Meeting Worker"]

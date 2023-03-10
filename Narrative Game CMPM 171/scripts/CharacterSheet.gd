@@ -8,13 +8,21 @@ https://youtu.be/nskVFc3tJgY
 https://www.reddit.com/r/godot/comments/cjigi4/how_do_i_make_hitting_the_esc_key_exit_the_game/
 """
 
+# ui elements
 onready var player = get_node("../../Player")
 onready var gui = get_node("../../GUI")
 onready var node_stat_points = get_node("HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/AvailablePoints/Label")
 var path_main_stats = "HBoxContainer/VBoxContainer/Stats/MainStats/"
+
+# audio
 onready var _audio_output := $AudioStreamPlayer2D 
 var buttonSound = preload("res://assets/sound/Button_Press_V1.wav")
 
+#scene transition
+onready var _transition_rect = get_node("../../GUI/SceneTransitionRect")
+export(String, FILE, "*.tscn") var next_scene_path
+
+# stat changes
 var available_points
 var logic_add = 0
 var dream_add = 0
@@ -179,5 +187,5 @@ func _on_ExitNoSave_pressed(): # exit game NOTE: THIS IS THE EXIT GAME BUTTON
 	_audio_output.stream = buttonSound
 	_audio_output.play()
 	yield(_audio_output, "finished")
-	get_tree().quit()
+	_transition_rect.transition_to("res://play-scenes/EndCard.tscn")
 
