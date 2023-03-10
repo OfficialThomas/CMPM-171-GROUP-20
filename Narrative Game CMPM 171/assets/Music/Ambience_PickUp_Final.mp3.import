@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ambience_PickUp_Final.mp3-f6a7cbaa43f745fc2f2cd3dc38518d22.mp3str"
+
+[deps]
+
+source_file="res://assets/Music/Ambience_PickUp_Final.mp3"
+dest_files=[ "res://.import/Ambience_PickUp_Final.mp3-f6a7cbaa43f745fc2f2cd3dc38518d22.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
