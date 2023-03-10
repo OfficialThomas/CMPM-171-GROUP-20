@@ -2,8 +2,12 @@ extends Area2D
 
 var active = false
 onready var player = get_node("../Player")
+
 # rolling
 var rng = RandomNumberGenerator.new()
+
+# door open for sequence
+onready var doorUnlock = get_node("../Doors/Door5")
 
 # the 2d list of dialogue
 var d_default = ["Test"]
@@ -104,6 +108,8 @@ func dialogic_signal(arguement):
 		'reflex_set':
 			set_val("reflex", player.reflex)
 			pass
+		'unlock_room':
+			change_door()
 
 func dice_roll(type, bonus): # the universal dice roll check
 #	print("Rolling for " + str(type))
@@ -119,6 +125,12 @@ func dice_roll(type, bonus): # the universal dice roll check
 
 
 func set_val(type, value): # the universal dialogic stat access
-#	print("Seting stat for: " + str(type))
+	print("Seting stat for: " + str(type))
 	print("Value = " + str(value))
 	Dialogic.set_variable(type, value) 
+
+func change_door():
+	if doorUnlock.disabled:
+		doorUnlock.disabled = false
+	else:
+		doorUnlock.disabled = true

@@ -203,6 +203,10 @@
 			"text": "[i]You give your word.[/i]\n[i]He sighs and steps aside, opening the door for you.[/i]"
 		},
 		{
+			"emit_signal": "unlock_room",
+			"event_id": "dialogic_040"
+		},
+		{
 			"audio_bus": "Master",
 			"background-music": "play",
 			"event_id": "dialogic_031",
@@ -291,6 +295,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]He steps aside and opens the door for you.[/i]"
+		},
+		{
+			"emit_signal": "unlock_room",
+			"event_id": "dialogic_040"
 		},
 		{
 			"audio_bus": "Master",
