@@ -224,6 +224,12 @@
 			"event_id": "dialogic_040"
 		},
 		{
+			"condition": ">",
+			"definition": "1677168976-483",
+			"event_id": "dialogic_012",
+			"value": "11"
+		},
+		{
 			"condition": ">=",
 			"definition": "1676157388-918",
 			"event_id": "dialogic_012",
@@ -299,28 +305,37 @@
 			"set_value": "1"
 		},
 		{
+			"definition": "1677176778-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "3"
+		},
+		{
+			"anchor_id": "anchor-1677179286",
+			"event_id": "dialogic_016"
+		},
+		{
 			"event_id": "dialogic_013"
 		},
 		{
 			"condition": "<",
 			"definition": "1676157388-918",
 			"event_id": "dialogic_012",
-			"value": "7"
+			"value": "9"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][FAIL] Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.[/i]\n[i]The manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare.[/i]"
+			"text": "“Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.\nThe manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare."
 		},
 		{
 			"character": "character-1677176249.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Absolutely not. I have good people working on it. I just need you to do your job before I kick you out of this building myself."
-		},
-		{
-			"event_id": "dialogic_013"
+			"text": "Absolutely. Not. I have good people working on it. I just need you to do your job before I kick you out of this building myself."
 		},
 		{
 			"definition": "1677176778-648",
@@ -331,49 +346,20 @@
 			"set_value": "3"
 		},
 		{
-			"condition": "<=",
+			"anchor_id": "anchor-1677179286",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "7"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
-			"portrait": "",
-			"question": ""
-		},
-		{
-			"choice": "When was the last time a telephone call went through? ",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"character": "character-1677176249.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "This morning. Then it all went to shit."
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i]It seems as though that’s all he’s willing to say.[/i]"
-		},
-		{
-			"choice": "[Charisma - Medium] Convince him to let you into the switchboard room.",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"emit_signal": "charisma_roll",
-			"event_id": "dialogic_040"
+			"value": "12"
 		},
 		{
 			"condition": ">",
@@ -451,38 +437,55 @@
 			"set_value": "1"
 		},
 		{
+			"definition": "1677176778-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "3"
+		},
+		{
+			"anchor_id": "anchor-1677179286",
+			"event_id": "dialogic_016"
+		},
+		{
 			"event_id": "dialogic_013"
 		},
 		{
-			"condition": "<=",
+			"condition": "<",
 			"definition": "1676157388-918",
 			"event_id": "dialogic_012",
-			"value": "10"
+			"value": "11"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][FAIL] Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.[/i]\n[i]The manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare.[/i]"
+			"text": "“Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.\nThe manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare."
 		},
 		{
 			"character": "character-1677176249.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Absolutely not. I have good people working on it. I just need you to do your job before I kick you out of this building myself."
+			"text": "Absolutely. Not. I have good people working on it. I just need you to do your job before I kick you out of this building myself."
 		},
 		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
+			"definition": "1677176778-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "3"
 		},
 		{
 			"anchor_id": "anchor-1677179286",
 			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"choice": "What do you need me to do?",

@@ -149,12 +149,6 @@
 		},
 		{
 			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i]Ah! There’s someone trying to get a call in now. It must be another part of the building. Maybe you should answer it, let them know the telephones should be operational again.[/i]"
-		},
-		{
-			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
 
