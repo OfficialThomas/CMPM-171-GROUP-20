@@ -394,10 +394,6 @@
 			"text": "[i]You hear the door slam behind you. Bobby has come rushing in, obviously having heard you.[/i]\n[i]He grabs hold of your shoulders.[/i]"
 		},
 		{
-			"emit_signal": "reposition_bobby",
-			"event_id": "dialogic_040"
-		},
-		{
 			"character": "character-1677311804.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -492,10 +488,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Alright. I’ll be outside. Hopefully no one else heard ya."
-		},
-		{
-			"emit_signal": "reset_bobby",
-			"event_id": "dialogic_040"
 		},
 		{
 			"character": "",

@@ -10,7 +10,7 @@ export(NodePath) onready var target = get_node(target)
 export var disabled = false
 
 # interaction
-onready var transition_rect = get_node("../../TransitionBox/SceneTransitionRect")
+onready var transition_rect = get_node("../../TransitionLayer/SceneTransitionRect")
 var isOverDoor := false
 var player = null
 
