@@ -104,6 +104,9 @@ func dialogic_signal(arguement):
 		'reflex_set':
 			set_val("reflex", player.reflex)
 			pass
+		'level_up':
+			player.level_up()
+			pass
 
 func dice_roll(type, bonus): # the universal dice roll check
 #	print("Rolling for " + str(type))
