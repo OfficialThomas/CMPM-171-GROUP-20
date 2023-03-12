@@ -77,7 +77,7 @@ func _physics_process(_delta):
 
 
 func level_up():
-	stat_points += 5
+	stat_points += 3
 
 
 func unpause(_timeline_name):
