@@ -2,6 +2,7 @@ extends Area2D
 
 var active = false
 onready var player = get_node("../Player")
+onready var border = get_node("../Border")
 # rolling
 var rng = RandomNumberGenerator.new()
 
@@ -106,6 +107,9 @@ func dialogic_signal(arguement):
 			pass
 		'level_up':
 			player.level_up()
+			pass
+		'enable_border':
+			border.toggle_enable()
 			pass
 
 func dice_roll(type, bonus): # the universal dice roll check
