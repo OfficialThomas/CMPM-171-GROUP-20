@@ -136,69 +136,10 @@
 			"value": "0"
 		},
 		{
-			"emit_signal": "dream_roll",
-			"event_id": "dialogic_040"
-		},
-		{
-			"emit_signal": "logic_set",
-			"event_id": "dialogic_040"
-		},
-		{
-			"condition": ">",
-			"definition": "1677095932-529",
-			"event_id": "dialogic_012",
-			"value": "4"
-		},
-		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i] [Dream - Easy] Roadtown *is* a dream. The kind where things don’t make sense but you still think they do.[/i]\n[i]You could see witches and killers and the dead coming to life and you wouldn’t question it.[/i]\n[i]As long as you stay in Roadtown, you’ll never have to wake up.[/i]"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i]For you and millions of others, Roadtown is home and work. The largest housing project in history.[/i]\n[i]A single building stretching all the way from San Francisco to New York City, like a skyscraper that’s been toppled. It’s been in operation for about a decade now.[/i]"
-		},
-		{
-			"condition": ">",
-			"definition": "1676157318-648",
-			"event_id": "dialogic_012",
-			"value": "8"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i][Logic - Trivial] Though given how planning only began thirty years ago, you can’t figure out how it’s even been open for that long.[/i]"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i]The architects sought a way to make life as convenient as possible.[/i]\n[i]Those who chose to stay here had a house to live in, a factory or farm to work at, telegraphs to contact family, a store to shop at, a monorail to travel in, all without ever leaving Roadtown.[/i]\n[i]For a few dollars as rent, you could live here and never once step foot outside. It sounds impossible.[/i]"
-		},
-		{
-			"condition": ">",
-			"definition": "1676157318-648",
-			"event_id": "dialogic_012",
-			"value": "11"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i][Logic] And that’s probably because it is.[/i]"
-		},
-		{
-			"event_id": "dialogic_013"
+			"text": "[i]Roadtown[/i] [b]is[/b] [i]a dream. The kind where things don’t make sense but you still think they do.[/i]\n[i]You could see witches and killers and the dead coming to life and you wouldn’t question it.[/i]\n[i]As long as you stay in Roadtown, you’ll never have to wake up.[/i]\n[i]For you and millions of others, Roadtown is home and work. The largest housing project in history.[/i]\n[i]A single building stretching all the way from San Francisco to New York City, like a skyscraper that’s been toppled. It’s been in operation for about a decade now.[/i]\n[i]Though given how planning only began thirty years ago, you can’t figure out how it’s even been open for that long.[/i]\n[i]The architects sought a way to make life as convenient as possible.[/i]\n[i]Those who chose to stay here had a house to live in, a factory or farm to work at, telegraphs to contact family, a store to shop at, a monorail to travel in, all without ever leaving Roadtown.[/i]\n[i]For a few dollars as rent, you could live here and never once step foot outside.[/i] \n[i]It sounds impossible.[/i]\n[i]And that’s probably because it is.[/i]"
 		},
 		{
 			"definition": "1677384934-146",
@@ -216,35 +157,10 @@
 			"value": "1"
 		},
 		{
-			"emit_signal": "dream_roll",
-			"event_id": "dialogic_040"
-		},
-		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]You feel it.[/i]\n[i]The sun shines, its gentle hand caressing your face with its beams.[/i]\n[i]The machines rumble. Stampeding beasts crashing below you.[/i]"
-		},
-		{
-			"condition": ">",
-			"definition": "1677095932-529",
-			"event_id": "dialogic_012",
-			"value": "7"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i][Dream - Medium] The eyes watch. Judging you from the corners, waiting.[/i]"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i]It’s time to get up.[/i]\n[i]It’s time to go back to Roadtown.[/i]"
+			"text": "[i]You feel it.[/i]\n[i]The sun shines, its gentle hand caressing your face with its beams.[/i]\n[i]The machines rumble. Stampeding beasts crashing below you.[/i]\n[i]The eyes watch. Judging you from the corners, waiting.[/i]\n[i]It’s time to get up.[/i]\n[i]It’s time to go back to Roadtown.[/i]"
 		},
 		{
 			"event_id": "dialogic_022",

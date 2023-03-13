@@ -12,7 +12,8 @@
 [ext_resource path="res://assets/game-objects/NPCManager.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/game-objects/NPCMechanic.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/game-objects/NPCMobleader.tscn" type="PackedScene" id=12]
-[ext_resource path="res://assets/game-objects/transition/Transition.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/game-objects/gui-system/transition/Transition.tscn" type="PackedScene" id=13]
+
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -128,19 +129,15 @@ target = NodePath("../DoorA1")
 
 [node name="NPCTutorialGuide" parent="." groups=["Dialogic Event"] instance=ExtResource( 6 )]
 position = Vector2( 359, 486 )
-pos_y = 1
 
 [node name="NPCBrother" parent="." groups=["Dialogic Event"] instance=ExtResource( 9 )]
 position = Vector2( 618, 463 )
-pos_y = 3
 
 [node name="NPCMechanic" parent="." groups=["Dialogic Event"] instance=ExtResource( 11 )]
 position = Vector2( 1639, 463 )
-pos_y = 4
 
 [node name="NPCManager" parent="." groups=["Dialogic Event"] instance=ExtResource( 10 )]
 position = Vector2( 1830, 463 )
-pos_y = 5
 
 [node name="NPCMobleader" parent="." groups=["Dialogic Event"] instance=ExtResource( 12 )]
 position = Vector2( 2030, 463 )

@@ -75,12 +75,13 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Themes": {
 			"files": [
-				"default-theme.cfg"
+				"default-theme.cfg",
+				"theme-1678421399.cfg"
 			],
 			"folders": {
 
@@ -100,7 +101,9 @@
 				"timeline-1677175904.json",
 				"timeline-1677311683.json",
 				"timeline-1677312462.json",
-				"timeline-1677314161.json"
+				"timeline-1677314161.json",
+				"timeline-1678214474.json",
+				"timeline-1678350484.json"
 			],
 			"folders": {
 

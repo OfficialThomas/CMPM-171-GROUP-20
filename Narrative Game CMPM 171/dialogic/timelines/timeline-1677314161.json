@@ -1,6 +1,15 @@
 {
 	"events": [
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/dream_sequence.mp3",
+			"volume": -6
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -140,24 +149,12 @@
 		},
 		{
 			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i]Ah! There’s someone trying to get a call in now. It must be another part of the building. Maybe you should answer it, let them know the telephones should be operational again.[/i]"
-		},
-		{
-			"condition": ">",
-			"definition": "1677095932-529",
-			"event_id": "dialogic_012",
-			"value": "12"
-		},
-		{
-			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "[Dream - Medium] I cannot keep warning you about this. Everything about this room has been a disaster. Don’t even look at the phone. Leave. Now."
+			"question": "[i]Ah! There’s someone trying to get a call in now. It must be another part of the building. Maybe you should answer it, let them know the telephones should be operational again.[/i]"
 		},
 		{
 			"choice": "Pick it up",
@@ -289,6 +286,15 @@
 			"text": "[i][PASS] ...[/i]\n[i]You hang the phone back on the receiver.[/i]\n[i]You should find something to do before you start to cry.[/i]"
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		},
@@ -338,6 +344,15 @@
 			"text": "[i]You don’t even put the phone back on the receiver. You just let it hang.[/i]\n[i]There’s nothing for you to do.[/i]\n[i]Even the hate has died for you.[/i]\n(-1 Sanity)"
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		},
@@ -355,11 +370,17 @@
 			"value": ""
 		},
 		{
-			"event_id": "dialogic_022",
-			"transition_duration": 1
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
-			"event_id": "dialogic_013"
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		},
 		{
 			"event_id": "dialogic_013"
@@ -373,6 +394,15 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"event_id": "dialogic_022",

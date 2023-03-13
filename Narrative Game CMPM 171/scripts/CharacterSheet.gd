@@ -8,10 +8,21 @@ https://youtu.be/nskVFc3tJgY
 https://www.reddit.com/r/godot/comments/cjigi4/how_do_i_make_hitting_the_esc_key_exit_the_game/
 """
 
+# ui elements
 onready var player = get_node("../../Player")
-onready var node_stat_points = get_node("HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/Label")
+onready var gui = get_node("../../GUI")
+onready var node_stat_points = get_node("HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/AvailablePoints/Label")
 var path_main_stats = "HBoxContainer/VBoxContainer/Stats/MainStats/"
 
+# audio
+onready var _audio_output := $AudioStreamPlayer2D 
+var buttonSound = preload("res://assets/sound/Button_Press_V1.wav")
+
+#scene transition
+onready var _transition_rect = get_node("../../TransitionLayer/SceneTransitionRect")
+export(String, FILE, "*.tscn") var next_scene_path
+
+# stat changes
 var available_points
 var logic_add = 0
 var dream_add = 0
@@ -88,6 +99,9 @@ func DecreaseStat(stat):
 
 
 func _on_Confirm_pressed():
+	_audio_output.stop()
+	_audio_output.stream = buttonSound
+	_audio_output.play()
 	if logic_add + dream_add + empathy_add + perception_add + charisma_add + culture_add + composure_add + reflex_add == 0:
 		print("Nothing to confirm, add a pop-up here maybe?")
 	else:
@@ -117,7 +131,10 @@ func _on_Confirm_pressed():
 
 
 func _on_Stats_pressed(): # set to stats menu
-	print("Stats Button")
+#	print("Stats Button")
+	_audio_output.stop()
+	_audio_output.stream = buttonSound
+	_audio_output.play()
 	get_node("HBoxContainer/VBoxContainer/Stats").show()
 	get_node("HBoxContainer/VBoxContainer/Save").hide()
 	get_node("HBoxContainer/VBoxContainer/System").hide()
@@ -125,7 +142,10 @@ func _on_Stats_pressed(): # set to stats menu
 
 
 func _on_Save_pressed(): # set to save menu
-	print("Save Button")
+#	print("Save Button")
+	_audio_output.stop()
+	_audio_output.stream = buttonSound
+	_audio_output.play()
 	get_node("HBoxContainer/VBoxContainer/Stats").hide()
 	get_node("HBoxContainer/VBoxContainer/Save").show()
 	get_node("HBoxContainer/VBoxContainer/System").hide()
@@ -133,7 +153,10 @@ func _on_Save_pressed(): # set to save menu
 
 
 func _on_System_pressed(): # set to system menu
-	print("System Button")
+#	print("System Button")
+	_audio_output.stop()
+	_audio_output.stream = buttonSound
+	_audio_output.play()
 	get_node("HBoxContainer/VBoxContainer/Stats").hide()
 	get_node("HBoxContainer/VBoxContainer/Save").hide()
 	get_node("HBoxContainer/VBoxContainer/System").show()
@@ -141,17 +164,28 @@ func _on_System_pressed(): # set to system menu
 
 
 func _on_Exit_pressed(): # set to exit menu
-	print("Exit Button")
+#	print("Exit Button")
+	_audio_output.stop()
+	_audio_output.stream = buttonSound
+	_audio_output.play()
 	get_node("HBoxContainer/VBoxContainer/Stats").hide()
 	get_node("HBoxContainer/VBoxContainer/Save").hide()
 	get_node("HBoxContainer/VBoxContainer/System").hide()
 	get_node("HBoxContainer/VBoxContainer/Exit").show()
 
 
-func _on_ExitAndSave_pressed(): # save game and exit game
+func _on_ExitAndSave_pressed(): # save game and exit game NOTE: THIS HAS BEEN CHANGED TO THE EXIT MENU BUTTON
 	# TODO: add save function here (saves to quicksave)
-	get_tree().quit()
+	_audio_output.stop()
+	_audio_output.stream = buttonSound
+	_audio_output.play()
+	yield(_audio_output, "finished")
+	gui.get_node("CharacterSheet").queue_free()
 
-func _on_ExitNoSave_pressed(): # exit game
-	get_tree().quit()
+func _on_ExitNoSave_pressed(): # exit game NOTE: THIS IS THE EXIT GAME BUTTON
+	_audio_output.stop()
+	_audio_output.stream = buttonSound
+	_audio_output.play()
+	yield(_audio_output, "finished")
+	_transition_rect.transition_to("res://play-scenes/EndCard.tscn")
 

@@ -1,26 +1,30 @@
 [gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://demo-assets/PNG/Backgrounds/set4_background.png" type="Texture" id=1]
-[ext_resource path="res://demo-assets/PNG/Backgrounds/set2_background.png" type="Texture" id=2]
+[ext_resource path="res://assets/art-assets/UI/background.png" type="Texture" id=1]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet.tres" type="DynamicFont" id=3]
 [ext_resource path="res://demo-assets/PNG/Backgrounds/set1_background.png" type="Texture" id=4]
 [ext_resource path="res://demo-assets/PNG/Backgrounds/set3_background.png" type="Texture" id=5]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet25Red.tres" type="DynamicFont" id=6]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet25.tres" type="DynamicFont" id=7]
-[ext_resource path="res://demo-assets/PNG/Other/blockRed_key.png" type="Texture" id=8]
-[ext_resource path="res://demo-assets/PNG/Other/blockRed_lock.png" type="Texture" id=9]
-[ext_resource path="res://demo-assets/PNG/Other/blockRed.png" type="Texture" id=10]
-[ext_resource path="res://demo-assets/PNG/Other/blockGreen.png" type="Texture" id=11]
-[ext_resource path="res://demo-assets/PNG/Other/blockGreen_key.png" type="Texture" id=12]
-[ext_resource path="res://demo-assets/PNG/Other/blockGreen_lock.png" type="Texture" id=13]
+[ext_resource path="res://assets/art-assets/UI/buttonminuspressed.png" type="Texture" id=8]
+[ext_resource path="res://assets/art-assets/UI/buttonminus.png" type="Texture" id=9]
 [ext_resource path="res://scripts/CharacterSheet.gd" type="Script" id=14]
+[ext_resource path="res://assets/art-assets/UI/buttonlock.png" type="Texture" id=15]
+[ext_resource path="res://assets/art-assets/UI/menubutton.png" type="Texture" id=16]
+[ext_resource path="res://assets/art-assets/UI/buttonplus.png" type="Texture" id=17]
+[ext_resource path="res://assets/art-assets/UI/menubuttonpressed.png" type="Texture" id=18]
+[ext_resource path="res://assets/art-assets/UI/buttonpluspressed.png" type="Texture" id=19]
 
 [node name="CharacterSheet" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 14 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 512, 300 )
+
 [node name="Background" type="NinePatchRect" parent="."]
+self_modulate = Color( 0.709804, 0.690196, 0.690196, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
@@ -38,10 +42,11 @@ margin_right = -30.0
 margin_bottom = -20.0
 
 [node name="MenuBackground" type="NinePatchRect" parent="HBoxContainer"]
+self_modulate = Color( 0.65098, 0.65098, 0.65098, 1 )
 margin_right = 330.0
 margin_bottom = 560.0
 rect_min_size = Vector2( 330, 440 )
-texture = ExtResource( 2 )
+texture = ExtResource( 18 )
 patch_margin_left = 20
 patch_margin_top = 30
 patch_margin_right = 20
@@ -54,17 +59,20 @@ margin_left = 20.0
 margin_top = 20.0
 margin_right = -20.0
 margin_bottom = -20.0
+custom_constants/separation = 90
+alignment = 1
 
 [node name="Stats" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
+margin_top = 115.0
 margin_right = 290.0
-margin_bottom = 127.0
-rect_min_size = Vector2( 220, 50 )
-size_flags_vertical = 3
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 4 )
+margin_bottom = 215.0
+rect_min_size = Vector2( 220, 100 )
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 18 )
 expand = true
 
 [node name="Label" type="Label" parent="HBoxContainer/MenuBackground/Buttons/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 3 )
@@ -73,6 +81,7 @@ align = 1
 valign = 1
 
 [node name="Save" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
+visible = false
 margin_top = 131.0
 margin_right = 290.0
 margin_bottom = 258.0
@@ -91,9 +100,10 @@ align = 1
 valign = 1
 
 [node name="System" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
-margin_top = 262.0
+visible = false
+margin_top = 174.0
 margin_right = 290.0
-margin_bottom = 389.0
+margin_bottom = 345.0
 rect_min_size = Vector2( 220, 50 )
 size_flags_vertical = 3
 texture_normal = ExtResource( 5 )
@@ -101,6 +111,7 @@ texture_pressed = ExtResource( 4 )
 expand = true
 
 [node name="Label" type="Label" parent="HBoxContainer/MenuBackground/Buttons/System"]
+modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 3 )
@@ -109,16 +120,16 @@ align = 1
 valign = 1
 
 [node name="Exit" type="TextureButton" parent="HBoxContainer/MenuBackground/Buttons"]
-margin_top = 393.0
+margin_top = 305.0
 margin_right = 290.0
-margin_bottom = 520.0
-rect_min_size = Vector2( 220, 50 )
-size_flags_vertical = 3
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 4 )
+margin_bottom = 405.0
+rect_min_size = Vector2( 220, 100 )
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 18 )
 expand = true
 
 [node name="Label" type="Label" parent="HBoxContainer/MenuBackground/Buttons/Exit"]
+modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 3 )
@@ -175,9 +186,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 10 )
-texture_disabled = ExtResource( 9 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Plus" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground" groups=["PlusButtons"]]
@@ -190,9 +201,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 11 )
-texture_disabled = ExtResource( 13 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Stats" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground"]
@@ -207,6 +218,7 @@ margin_bottom = 30.0
 rect_min_size = Vector2( 400, 60 )
 
 [node name="Name" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_top = 19.0
 margin_right = 208.0
 margin_bottom = 41.0
@@ -215,6 +227,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "Logic"
 
 [node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground/Stats" groups=["ChangeLabels"]]
+modulate = Color( 0.815686, 0.137255, 0.137255, 1 )
 margin_left = 212.0
 margin_top = 6.0
 margin_right = 212.0
@@ -224,6 +237,7 @@ text = "
 "
 
 [node name="Value" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 216.0
 margin_top = 19.0
 margin_right = 246.0
@@ -232,6 +246,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "10"
 
 [node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -269,9 +284,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 10 )
-texture_disabled = ExtResource( 9 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Plus" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground" groups=["PlusButtons"]]
@@ -284,9 +299,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 11 )
-texture_disabled = ExtResource( 13 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Stats" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground"]
@@ -301,6 +316,7 @@ margin_bottom = 30.0
 rect_min_size = Vector2( 400, 60 )
 
 [node name="Name" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_top = 19.0
 margin_right = 208.0
 margin_bottom = 41.0
@@ -309,6 +325,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "Dream"
 
 [node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground/Stats" groups=["ChangeLabels"]]
+modulate = Color( 0.815686, 0.137255, 0.137255, 1 )
 margin_left = 212.0
 margin_top = 6.0
 margin_right = 212.0
@@ -318,6 +335,7 @@ text = "
 "
 
 [node name="Value" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 216.0
 margin_top = 19.0
 margin_right = 246.0
@@ -326,6 +344,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "10"
 
 [node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -363,9 +382,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 10 )
-texture_disabled = ExtResource( 9 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Plus" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground" groups=["PlusButtons"]]
@@ -378,9 +397,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 11 )
-texture_disabled = ExtResource( 13 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Stats" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground"]
@@ -395,6 +414,7 @@ margin_bottom = 30.0
 rect_min_size = Vector2( 400, 60 )
 
 [node name="Name" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_top = 19.0
 margin_right = 208.0
 margin_bottom = 41.0
@@ -403,6 +423,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "Empathy"
 
 [node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground/Stats" groups=["ChangeLabels"]]
+modulate = Color( 0.815686, 0.137255, 0.137255, 1 )
 margin_left = 212.0
 margin_top = 6.0
 margin_right = 212.0
@@ -412,6 +433,7 @@ text = "
 "
 
 [node name="Value" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 216.0
 margin_top = 19.0
 margin_right = 246.0
@@ -420,6 +442,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "10"
 
 [node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -457,9 +480,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 10 )
-texture_disabled = ExtResource( 9 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Plus" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground" groups=["PlusButtons"]]
@@ -472,9 +495,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 11 )
-texture_disabled = ExtResource( 13 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Stats" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground"]
@@ -489,6 +512,7 @@ margin_bottom = 30.0
 rect_min_size = Vector2( 400, 60 )
 
 [node name="Name" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_top = 19.0
 margin_right = 208.0
 margin_bottom = 41.0
@@ -497,6 +521,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "Perception"
 
 [node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground/Stats" groups=["ChangeLabels"]]
+modulate = Color( 0.815686, 0.137255, 0.137255, 1 )
 margin_left = 212.0
 margin_top = 6.0
 margin_right = 212.0
@@ -506,6 +531,7 @@ text = "
 "
 
 [node name="Value" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 216.0
 margin_top = 19.0
 margin_right = 246.0
@@ -514,6 +540,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "10"
 
 [node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -551,9 +578,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 10 )
-texture_disabled = ExtResource( 9 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Plus" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground" groups=["PlusButtons"]]
@@ -566,9 +593,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 11 )
-texture_disabled = ExtResource( 13 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Stats" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground"]
@@ -583,6 +610,7 @@ margin_bottom = 30.0
 rect_min_size = Vector2( 400, 60 )
 
 [node name="Name" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_top = 19.0
 margin_right = 208.0
 margin_bottom = 41.0
@@ -591,6 +619,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "Charisma"
 
 [node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground/Stats" groups=["ChangeLabels"]]
+modulate = Color( 0.815686, 0.137255, 0.137255, 1 )
 margin_left = 212.0
 margin_top = 6.0
 margin_right = 212.0
@@ -600,6 +629,7 @@ text = "
 "
 
 [node name="Value" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 216.0
 margin_top = 19.0
 margin_right = 246.0
@@ -608,6 +638,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "10"
 
 [node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -645,9 +676,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 10 )
-texture_disabled = ExtResource( 9 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Plus" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground" groups=["PlusButtons"]]
@@ -660,9 +691,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 11 )
-texture_disabled = ExtResource( 13 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Stats" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground"]
@@ -677,6 +708,7 @@ margin_bottom = 30.0
 rect_min_size = Vector2( 400, 60 )
 
 [node name="Name" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_top = 19.0
 margin_right = 208.0
 margin_bottom = 41.0
@@ -685,6 +717,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "Culture"
 
 [node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground/Stats" groups=["ChangeLabels"]]
+modulate = Color( 0.815686, 0.137255, 0.137255, 1 )
 margin_left = 212.0
 margin_top = 6.0
 margin_right = 212.0
@@ -694,6 +727,7 @@ text = "
 "
 
 [node name="Value" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 216.0
 margin_top = 19.0
 margin_right = 246.0
@@ -702,6 +736,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "10"
 
 [node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -739,9 +774,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 10 )
-texture_disabled = ExtResource( 9 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Plus" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground" groups=["PlusButtons"]]
@@ -754,9 +789,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 11 )
-texture_disabled = ExtResource( 13 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Stats" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground"]
@@ -771,6 +806,7 @@ margin_bottom = 30.0
 rect_min_size = Vector2( 400, 60 )
 
 [node name="Name" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_top = 19.0
 margin_right = 208.0
 margin_bottom = 41.0
@@ -779,6 +815,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "Composure"
 
 [node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground/Stats" groups=["ChangeLabels"]]
+modulate = Color( 0.815686, 0.137255, 0.137255, 1 )
 margin_left = 212.0
 margin_top = 6.0
 margin_right = 212.0
@@ -788,6 +825,7 @@ text = "
 "
 
 [node name="Value" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 216.0
 margin_top = 19.0
 margin_right = 246.0
@@ -796,6 +834,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "10"
 
 [node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -833,9 +872,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 10 )
-texture_disabled = ExtResource( 9 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Plus" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Reflex/StatBackground" groups=["PlusButtons"]]
@@ -848,9 +887,9 @@ margin_top = -25.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 50 )
 disabled = true
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 11 )
-texture_disabled = ExtResource( 13 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 15 )
 expand = true
 
 [node name="Stats" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Reflex/StatBackground"]
@@ -865,6 +904,7 @@ margin_bottom = 30.0
 rect_min_size = Vector2( 400, 60 )
 
 [node name="Name" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Reflex/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_top = 19.0
 margin_right = 208.0
 margin_bottom = 41.0
@@ -873,6 +913,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "Reflex"
 
 [node name="Change" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Reflex/StatBackground/Stats" groups=["ChangeLabels"]]
+modulate = Color( 0.815686, 0.137255, 0.137255, 1 )
 margin_left = 212.0
 margin_top = 6.0
 margin_right = 212.0
@@ -882,6 +923,7 @@ text = "
 "
 
 [node name="Value" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Reflex/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 216.0
 margin_top = 19.0
 margin_right = 246.0
@@ -890,6 +932,7 @@ custom_fonts/font = ExtResource( 7 )
 text = "10"
 
 [node name="Bonus" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Reflex/StatBackground/Stats"]
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 250.0
 margin_top = 19.0
 margin_right = 400.0
@@ -905,38 +948,42 @@ margin_top = 496.0
 margin_right = 630.0
 margin_bottom = 546.0
 rect_min_size = Vector2( 0, 50 )
+custom_constants/separation = 50
+alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints"]
-margin_right = 100.0
+[node name="AvailablePoints" type="NinePatchRect" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints"]
+margin_left = 127.0
+margin_right = 302.0
 margin_bottom = 50.0
-rect_min_size = Vector2( 100, 0 )
+rect_min_size = Vector2( 175, 0 )
+texture = ExtResource( 18 )
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints"]
-margin_left = 104.0
-margin_top = 14.0
-margin_right = 239.0
-margin_bottom = 36.0
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/AvailablePoints"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -67.5
+margin_top = -11.0
+margin_right = 67.5
+margin_bottom = 11.0
 custom_fonts/font = ExtResource( 7 )
 text = "Points: 7"
 align = 1
 valign = 1
 
-[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints"]
-margin_left = 243.0
-margin_right = 268.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 25, 0 )
-
 [node name="Confirm" type="TextureButton" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints"]
-margin_left = 272.0
-margin_right = 492.0
+margin_left = 352.0
+margin_right = 502.0
 margin_bottom = 50.0
-rect_min_size = Vector2( 220, 50 )
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 4 )
+rect_min_size = Vector2( 150, 50 )
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 18 )
 expand = true
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/Confirm"]
+modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -964,86 +1011,65 @@ margin_bottom = 556.0
 
 [node name="Exit" type="Control" parent="HBoxContainer/VBoxContainer"]
 visible = false
-margin_top = 560.0
 margin_right = 630.0
 margin_bottom = 560.0
+size_flags_vertical = 3
 
 [node name="Buttons" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/Exit"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons"]
-margin_right = 630.0
-margin_bottom = 150.0
-rect_min_size = Vector2( 0, 150 )
+size_flags_vertical = 3
+custom_constants/separation = 50
+alignment = 1
 
 [node name="EandS" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons"]
-margin_top = 154.0
+margin_top = 155.0
 margin_right = 630.0
-margin_bottom = 204.0
+margin_bottom = 255.0
+alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS"]
-margin_right = 50.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 50, 0 )
-
-[node name="ExitAndSave" type="TextureButton" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS"]
-margin_left = 54.0
-margin_right = 576.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 0, 50 )
-size_flags_horizontal = 3
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 4 )
+[node name="ExitMenu" type="TextureButton" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS"]
+margin_left = 165.0
+margin_right = 465.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 300, 100 )
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 18 )
 expand = true
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS/ExitAndSave"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -315.0
-margin_top = -25.0
-margin_right = 315.0
-margin_bottom = 25.0
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS/ExitMenu"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_vertical = 1
 custom_fonts/font = ExtResource( 3 )
-text = "Exit and Save"
+text = "Exit Menu"
 align = 1
 valign = 1
 
-[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EandS"]
-margin_left = 580.0
-margin_right = 630.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 50, 0 )
-
-[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons"]
-margin_top = 208.0
-margin_right = 630.0
-margin_bottom = 258.0
-rect_min_size = Vector2( 0, 50 )
-
 [node name="EnoS" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons"]
-margin_top = 262.0
+margin_top = 305.0
 margin_right = 630.0
-margin_bottom = 312.0
+margin_bottom = 405.0
+alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS"]
-margin_right = 50.0
-margin_bottom = 50.0
+margin_left = 111.0
+margin_right = 161.0
+margin_bottom = 100.0
 rect_min_size = Vector2( 50, 0 )
 
-[node name="ExitNoSave" type="TextureButton" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS"]
-margin_left = 54.0
-margin_right = 576.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 0, 50 )
-size_flags_horizontal = 3
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 4 )
+[node name="ExitGame" type="TextureButton" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS"]
+margin_left = 165.0
+margin_right = 465.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 300, 100 )
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 18 )
 expand = true
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS/ExitNoSave"]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS/ExitGame"]
+modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1053,14 +1079,14 @@ margin_top = -25.0
 margin_right = 315.0
 margin_bottom = 25.0
 custom_fonts/font = ExtResource( 3 )
-text = "Exit without Saving"
+text = "End Demo"
 align = 1
 valign = 1
 
 [node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS"]
-margin_left = 580.0
-margin_right = 630.0
-margin_bottom = 50.0
+margin_left = 469.0
+margin_right = 519.0
+margin_bottom = 100.0
 rect_min_size = Vector2( 50, 0 )
 
 [connection signal="pressed" from="HBoxContainer/MenuBackground/Buttons/Stats" to="." method="_on_Stats_pressed"]
@@ -1068,5 +1094,5 @@ rect_min_size = Vector2( 50, 0 )
 [connection signal="pressed" from="HBoxContainer/MenuBackground/Buttons/System" to="." method="_on_System_pressed"]
 [connection signal="pressed" from="HBoxContainer/MenuBackground/Buttons/Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Stats/MainStats/StatPoints/Confirm" to="." method="_on_Confirm_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Exit/Buttons/EandS/ExitAndSave" to="." method="_on_ExitAndSave_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS/ExitNoSave" to="." method="_on_ExitNoSave_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Exit/Buttons/EandS/ExitMenu" to="." method="_on_ExitAndSave_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Exit/Buttons/EnoS/ExitGame" to="." method="_on_ExitNoSave_pressed"]

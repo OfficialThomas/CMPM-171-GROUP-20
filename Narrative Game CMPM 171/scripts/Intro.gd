@@ -16,8 +16,16 @@ export(String, FILE, "*.tscn") var next_scene_path
 # rolling
 var rng = RandomNumberGenerator.new()
 
+#BGM
+onready var _audio_output := $AudioStreamPlayer2D 
+var dreamBGM = preload("res://assets/Music/dream_sequence.mp3")
 
 func _ready():
+	_audio_output.stop()
+	_audio_output.stream = dreamBGM
+	_audio_output.play()
+
+func start_game():
 	var dialog = Dialogic.start("Opening")
 	dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 	add_child(dialog)
@@ -27,7 +35,7 @@ func _ready():
 
 func unpause(_timeline_name):
 	#TO DO  - Add transition when we end the dialogue
-	_transition_rect.transition_to("res://play-scenes/TestScene1.tscn")
+	_transition_rect.transition_to("res://play-scenes/FinalMap.tscn")
 
 
 func dialogic_signal(arguement):

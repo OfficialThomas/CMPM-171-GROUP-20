@@ -23,6 +23,7 @@ height = 0.0
 
 [node name="NPCTutorialGuide" type="Area2D"]
 script = ExtResource( 1 )
+pos_y = 1
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
