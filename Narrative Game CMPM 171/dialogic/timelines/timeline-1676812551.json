@@ -114,7 +114,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i] [Culture - Easy] Honestly, this might be jealousy talking. [/i]\n[i] People still have a roof to sleep under here, unlike a lot of people can say, and you don’t have to deal with all the gang violence or other crazies out there.[/i]"
+			"text": "[Culture - Easy] [i] Honestly, this might be jealousy talking. [/i]\n[i] People still have a roof to sleep under here, unlike a lot of people can say, and you don’t have to deal with all the gang violence or other crazies out there.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
