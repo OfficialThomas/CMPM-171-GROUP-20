@@ -96,9 +96,9 @@
 		{
 			"choice": "What’re you up to?",
 			"condition": "",
-			"definition": "",
+			"definition": "1677311396-918",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "0"
 		},
 		{
 			"character": "character-1676890283.json",
@@ -127,48 +127,21 @@
 			"set_value": "1"
 		},
 		{
-			"choice": "Thanks for looking out for me.",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"character": "character-1676890283.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Is that sarcasm? Either way don’t mention it. We’ve been on the workforce together for, what, 4 years now? We’ve gotta look after each other, man. God forbid they crack down on the union someday soon."
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i]Verne lends you a genuine smile betraying his cynicism, and promptly resumes his work.[/i]"
-		},
-		{
-			"definition": "1677311402-483",
-			"event_id": "dialogic_014",
-			"operation": "=",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "1"
-		},
-		{
 			"choice": "[Empathy - Medium] Ask him more about his insomnia.",
 			"condition": "",
-			"definition": "",
+			"definition": "1677311402-483",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "0"
 		},
 		{
 			"emit_signal": "empathy_roll",
 			"event_id": "dialogic_040"
 		},
 		{
-			"condition": ">",
+			"condition": ">=",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "3"
+			"value": "7"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -216,10 +189,10 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"condition": "<=",
+			"condition": "<",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "3"
+			"value": "7"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -235,6 +208,41 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"definition": "1677311402-483",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"choice": "Thanks for looking out for me.",
+			"condition": "",
+			"definition": "1677874489-648",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Verne lends you a genuine smile betraying his cynicism, and promptly resumes his work.[/i]"
+		},
+		{
+			"character": "character-1676890283.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Is that sarcasm? Either way don’t mention it. We’ve been on the workforce together for, what, 4 years now? We’ve gotta look after each other, man. God forbid they crack down on the union someday soon."
+		},
+		{
+			"definition": "1677874489-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
 		},
 		{
 			"event_id": "dialogic_013"

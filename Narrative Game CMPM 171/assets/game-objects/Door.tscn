@@ -45,7 +45,6 @@ collision_layer = 0
 shape = SubResource( 3 )
 
 [node name="Icon" type="Sprite" parent="."]
-visible = false
 position = Vector2( 0, -75 )
 texture = ExtResource( 4 )
 

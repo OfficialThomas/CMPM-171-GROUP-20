@@ -14,7 +14,7 @@
 			"condition": ">",
 			"definition": "1676157374-146",
 			"event_id": "dialogic_012",
-			"value": "2"
+			"value": "10"
 		},
 		{
 			"character": "",
@@ -33,7 +33,7 @@
 			"condition": ">",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "6"
+			"value": "12"
 		},
 		{
 			"character": "",
@@ -138,7 +138,7 @@
 			"condition": ">",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "3"
+			"value": "7"
 		},
 		{
 			"character": "",
@@ -183,7 +183,7 @@
 			"condition": ">",
 			"definition": "1676157388-918",
 			"event_id": "dialogic_012",
-			"value": "5"
+			"value": "7"
 		},
 		{
 			"character": "",
@@ -229,7 +229,7 @@
 			"condition": ">",
 			"definition": "1677095932-529",
 			"event_id": "dialogic_012",
-			"value": "6"
+			"value": "7"
 		},
 		{
 			"character": "",
@@ -258,10 +258,10 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"condition": "<=",
+			"condition": "<",
 			"definition": "1676157388-918",
 			"event_id": "dialogic_012",
-			"value": "5"
+			"value": "7"
 		},
 		{
 			"character": "",
@@ -329,19 +329,19 @@
 			"text": "[i][Culture - Easy] Almost a quarter of the country is unemployed, and it’s only looking worse from here.[/i]"
 		},
 		{
-			"event_id": "dialogic_013"
-		},
-		{
 			"condition": ">",
 			"definition": "1676157318-648",
 			"event_id": "dialogic_012",
-			"value": "10"
+			"value": "12"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i][Logic] Forget a riot. These are the conditions for a revolt.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"
