@@ -152,6 +152,15 @@
 			"text": "[i]Phone: *ring*[/i]"
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/sound/Phone_Ringing_V2.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
