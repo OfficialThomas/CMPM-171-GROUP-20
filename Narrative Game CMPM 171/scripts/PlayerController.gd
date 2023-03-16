@@ -29,7 +29,7 @@ onready var _sfx_output := $SFXPlayer
 onready var _bgm_output := $BGMPlayer
 var walkSound = preload("res://assets/sound/Walking_V3.wav")
 var squishSound = preload("res://assets/sound/Walking_Squish_V2.wav")
-var startBGM = preload("res://assets/sound/Machines_V2.wav")
+var startBGM = preload("res://assets/music/Ambience_PickUp_Final.mp3")
 var walking = false
 
 func _ready():
@@ -58,6 +58,7 @@ func get_input():
 #	if Input.is_action_pressed("up"):
 #		velocity.y -= 1
 	
+	# audio
 	if walking:
 		if !_sfx_output.is_playing():
 			_sfx_output.stream = walkSound
