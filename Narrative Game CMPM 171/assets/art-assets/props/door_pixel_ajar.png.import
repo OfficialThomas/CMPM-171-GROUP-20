@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door pixel closed.png-a1ae289460f94e9b9382051808455e23.stex"
+path="res://.import/door_pixel_ajar.png-a83bc854db30f0bd63ddc8bd056af0c7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art-assets/props/door pixel closed.png"
-dest_files=[ "res://.import/door pixel closed.png-a1ae289460f94e9b9382051808455e23.stex" ]
+source_file="res://assets/art-assets/props/door_pixel_ajar.png"
+dest_files=[ "res://.import/door_pixel_ajar.png-a83bc854db30f0bd63ddc8bd056af0c7.stex" ]
 
 [params]
 

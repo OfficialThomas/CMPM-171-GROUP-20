@@ -4,6 +4,10 @@ var player = null
 export (bool) var enabled = false
 export (int) var pos_x = 30
 
+#scene transition
+onready var _transition_rect = get_node("../TransitionLayer/SceneTransitionRect")
+export(String, FILE, "*.tscn") var next_scene_path
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -31,9 +35,11 @@ func dialogic_signal(arguement):
 	match arguement:
 		'end_game':
 			get_tree().paused = false
-			get_tree().quit()
+			_transition_rect.transition_to("res://play-scenes/EndCard.tscn")
 		'no':
 			player.position += Vector2(pos_x, 0)
 
 func toggle_enable():
-	enabled = !enabled
+	if !enabled:
+		enabled = true
+	print("Exit Border Enabled: " + str(enabled))

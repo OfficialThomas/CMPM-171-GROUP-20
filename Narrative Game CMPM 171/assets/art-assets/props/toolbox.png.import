@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dead body pixel sideways.png-0101971285e26c6a1013078edc1524a2.stex"
+path="res://.import/toolbox.png-d40463c17962c4a19c8afa9b12abd2c4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art-assets/props/dead body pixel sideways.png"
-dest_files=[ "res://.import/dead body pixel sideways.png-0101971285e26c6a1013078edc1524a2.stex" ]
+source_file="res://assets/art-assets/props/toolbox.png"
+dest_files=[ "res://.import/toolbox.png-d40463c17962c4a19c8afa9b12abd2c4.stex" ]
 
 [params]
 
