@@ -2,12 +2,13 @@ extends Area2D
 
 var active = false
 onready var player = get_node("../Player")
+onready var border = get_node("../Border")
 # rolling
 var rng = RandomNumberGenerator.new()
 
 # the 2d list of dialogue
 var d_default = ["Test"]
-var d_guide = ["Guide"]
+var d_guide = ["GuideNew"]
 var d_start = ["Opening"]
 var d_brother = ["Meeting Brother"]
 var d_worker = ["Meeting Worker"]
@@ -103,6 +104,12 @@ func dialogic_signal(arguement):
 			pass
 		'reflex_set':
 			set_val("reflex", player.reflex)
+			pass
+		'level_up':
+			player.level_up()
+			pass
+		'enable_border':
+			border.toggle_enable()
 			pass
 
 func dice_roll(type, bonus): # the universal dice roll check

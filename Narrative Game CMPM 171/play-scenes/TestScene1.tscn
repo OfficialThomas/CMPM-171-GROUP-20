@@ -12,7 +12,7 @@
 [ext_resource path="res://assets/game-objects/NPCManager.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/game-objects/NPCMechanic.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/game-objects/NPCMobleader.tscn" type="PackedScene" id=12]
-[ext_resource path="res://assets/game-objects/transition/Transition.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/game-objects/gui-system/transition/Transition.tscn" type="PackedScene" id=13]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )

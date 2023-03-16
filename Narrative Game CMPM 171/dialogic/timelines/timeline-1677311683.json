@@ -1,6 +1,15 @@
 {
 	"events": [
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/dream_sequence.mp3",
+			"volume": -6
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -48,7 +57,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Empathy - Easy] He shifts his stance as he begins to speak, eyes darting up as if trying to remember something.[/i]\n[i]He’s going off a script, one he hasn’t had time to commit to memory yet.[/i]"
+			"text": "[Empathy - Easy] [i]He shifts his stance as he begins to speak, eyes darting up as if trying to remember something.[/i]\n[i]He’s going off a script, one he hasn’t had time to commit to memory yet.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -152,6 +161,10 @@
 			"value": "7"
 		},
 		{
+			"emit_signal": "level_up",
+			"event_id": "dialogic_040"
+		},
+		{
 			"character": "character-1676811545.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -194,6 +207,15 @@
 			"text": "[i]You give your word.[/i]\n[i]He sighs and steps aside, opening the door for you.[/i]"
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		},
@@ -231,6 +253,15 @@
 			"text": "Get the fuck out of here."
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		},
@@ -264,6 +295,15 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]He steps aside and opens the door for you.[/i]"
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"event_id": "dialogic_022",

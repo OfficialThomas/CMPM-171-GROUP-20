@@ -1,6 +1,15 @@
 {
 	"events": [
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/wake_up.mp3",
+			"volume": -12
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -105,7 +114,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i] [Culture - Easy] Honestly, this might be jealousy talking. [/i]\n[i] People still have a roof to sleep under here, unlike a lot of people can say, and you don’t have to deal with all the gang violence or other crazies out there.[/i]"
+			"text": "[Culture - Easy] [i] Honestly, this might be jealousy talking. [/i]\n[i] People still have a roof to sleep under here, unlike a lot of people can say, and you don’t have to deal with all the gang violence or other crazies out there.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -166,13 +175,7 @@
 			"character": "character-1676812558.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Well, it’s never a bad time to come see your brother. \nI won’t lie to you though, I did hear  amazing reviews about this place and remembered you said something about it a while ago."
-		},
-		{
-			"character": "character-1676812558.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Well, it’s never a bad time to come see your brother.\n I won’t lie to you though, things haven’t been going well out there and seeing you was something I know would bring both of our energy up."
+			"text": "Well, it’s never a bad time to come see your brother.\n I won’t lie to you though, things haven’t been going well out there and seeing you was something I know would bring both of our spirits up."
 		},
 		{
 			"definition": "1677286412-366",
@@ -194,6 +197,15 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I planned on just staying for the day. I hope you don’t mind."
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"event_id": "dialogic_022",

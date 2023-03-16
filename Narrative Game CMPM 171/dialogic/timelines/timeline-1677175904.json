@@ -1,6 +1,15 @@
 {
 	"events": [
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/wake_up.mp3",
+			"volume": -11
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -20,7 +29,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Perception - Easy] But this morning, he is obviously disheveled.[/i]\n[i]His shirt is only partly tucked in. The lower buttons of his jacket are undone. His hair looks like it was done with only his hands, no comb or even a mirror.[/i]"
+			"text": "[Perception - Easy][i]But this morning, he is obviously disheveled.[/i]\n[i]His shirt is only partly tucked in. The lower buttons of his jacket are undone. His hair looks like it was done with only his hands, no comb or even a mirror.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -39,7 +48,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Empathy] This was a bad morning for him, and you feel like it’s not going to be much better for you, either.[/i]"
+			"text": "[Empathy] [i]This was a bad morning for him, and you feel like it’s not going to be much better for you, either.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -99,18 +108,10 @@
 		},
 		{
 			"choice": "Can I check if the switchboard room is the problem?",
-			"condition": "==",
+			"condition": ">=",
 			"definition": "1677176778-648",
 			"event_id": "dialogic_011",
 			"value": "1"
-		},
-		{
-			"definition": "1677176778-648",
-			"event_id": "dialogic_014",
-			"operation": "=",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "2"
 		},
 		{
 			"character": "character-1677176249.json",
@@ -125,36 +126,75 @@
 			"text": "[i]He furrows his brow and holds his forehead in his hand as if to relieve a headache.[/i]"
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
 			"character": "character-1677176249.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "We have a big enough mess as it is."
 		},
 		{
-			"emit_signal": "empathy_roll",
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/dream_sequence.mp3",
+			"volume": -7
+		},
+		{
+			"emit_signal": "empathy_set",
 			"event_id": "dialogic_040"
+		},
+		{
+			"condition": "<",
+			"definition": "1677176778-648",
+			"event_id": "dialogic_012",
+			"value": "3"
+		},
+		{
+			"definition": "1677176778-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "2"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"condition": ">",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
-			"value": "7"
+			"value": "11"
 		},
 		{
 			"character": "",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
+			"event_id": "dialogic_001",
 			"portrait": "",
-			"question": "[i][Empathy - Medium] That last bit there. The change in the tone of his voice. The light in his eyes subtly dimming. The smallest crack in his professional demeanor. There’s something wrong with the telegraph room, and it’s worse than he’s letting you know.[/i]"
+			"text": "[i]That last bit there. The change in the tone of his voice. The light in his eyes subtly dimming. The smallest crack in his professional demeanor. [/p\n [i]There’s something wrong with the telegraph room, and it’s worse than he’s letting you know. [/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1677179286",
+			"event_id": "dialogic_016"
 		},
 		{
 			"choice": "When was the last time a telephone call went through?",
-			"condition": "",
-			"definition": "",
+			"condition": ">=",
+			"definition": "1677176778-648",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "2"
 		},
 		{
 			"character": "character-1677176249.json",
@@ -169,11 +209,15 @@
 			"text": "[i]It seems as though that’s all he’s willing to say.[/i]"
 		},
 		{
+			"anchor_id": "anchor-1677179286",
+			"event_id": "dialogic_016"
+		},
+		{
 			"choice": "[Charisma - Medium] Convince him to let you into the switchboard room.",
 			"condition": "",
-			"definition": "",
+			"definition": "1677176778-648",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "2"
 		},
 		{
 			"emit_signal": "charisma_roll",
@@ -181,21 +225,167 @@
 		},
 		{
 			"condition": ">",
+			"definition": "1677168976-483",
+			"event_id": "dialogic_012",
+			"value": "11"
+		},
+		{
+			"condition": ">=",
 			"definition": "1676157388-918",
 			"event_id": "dialogic_012",
-			"value": "7"
+			"value": "9"
+		},
+		{
+			"emit_signal": "level_up",
+			"event_id": "dialogic_040"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][PASS] There’s only one or two guys who work the switchboards here, and even then they were only hired to operate them, not fix them. I’m sure they’d appreciate the hand” you say with a winning smile.[/i]\nHis expression only gets grimmer."
+			"text": "[PASS] [i]There’s only one or two guys who work the switchboards here, and even then they were only hired to operate them, not fix them. I’m sure they’d appreciate the hand” you say with a winning smile.[/i]\n[i]His expression only gets grimmer.[/i]"
 		},
 		{
 			"character": "character-1677176249.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "“I…I can’t let anybody in there. If people knew what happened, it’d cause a worse panic than if it were just the supplies being delayed.\nThe truth is that one of our operators, Abe Long, trashed the equipment. We don’t know why.\nCathie, the other operator, said he got a message from New York and went berserk.\nShe tried to stop him, but ran out when he lashed out at her. \nI took some of my men to try and get him back to his room or something, but by the time we got there…"
+			"text": "I…I can’t let anybody in there. If people knew what happened, it’d cause a worse panic than if it were just the supplies being delayed.\nThe truth is that one of our operators, Abe Long, trashed the equipment. We don’t know why.\nCathie, the other operator, said he got a message from New York and went berserk.\nShe tried to stop him, but ran out when he lashed out at her. \nI took some of my men to try and get him back to his room or something, but by the time we got there…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]It’s like he swallows a rock in between breaths. Hands trembling, eyes looking everywhere but you.[/i]"
+		},
+		{
+			"character": "character-1677176249.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He was dead. Self-inflicted. Blood everywhere."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]He’s pale and seems to be on the verge of collapsing.[/i]"
+		},
+		{
+			"character": "character-1677176249.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What sort of message makes a man do that?\nI have Bobby from the factory looking over the room now so that nobody gets in. \nIf you must take a look, tell him you know what’s in there and that I gave you permission to enter. \nBut don’t go and try fixing the equipment. I have other things I need you to do, and I don’t even want to think about the kinds of things…"
+		},
+		{
+			"emit_signal": "dream_set",
+			"event_id": "dialogic_040"
+		},
+		{
+			"condition": ">",
+			"definition": "1677095932-529",
+			"event_id": "dialogic_012",
+			"value": "11"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[Dream - Medium] [i]The kinds of things that could be sending those messages.[/i]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]He shakes his head. No use continuing this line of questioning.[/i]"
+		},
+		{
+			"definition": "1677663088-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"definition": "1677176778-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "3"
+		},
+		{
+			"anchor_id": "anchor-1677179286",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1676157388-918",
+			"event_id": "dialogic_012",
+			"value": "9"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.\nThe manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare."
+		},
+		{
+			"character": "character-1677176249.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Absolutely. Not. I have good people working on it. I just need you to do your job before I kick you out of this building myself."
+		},
+		{
+			"definition": "1677176778-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "3"
+		},
+		{
+			"anchor_id": "anchor-1677179286",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1677168976-483",
+			"event_id": "dialogic_012",
+			"value": "12"
+		},
+		{
+			"condition": ">",
+			"definition": "1676157388-918",
+			"event_id": "dialogic_012",
+			"value": "10"
+		},
+		{
+			"emit_signal": "level_up",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[PASS] [i]There’s only one or two guys who work the switchboards here, and even then they were only hired to operate them, not fix them. I’m sure they’d appreciate the hand” you say with a winning smile.[/i]\n[i]His expression only gets grimmer.[/i]"
+		},
+		{
+			"character": "character-1677176249.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I…I can’t let anybody in there. If people knew what happened, it’d cause a worse panic than if it were just the supplies being delayed.\nThe truth is that one of our operators, Abe Long, trashed the equipment. We don’t know why.\nCathie, the other operator, said he got a message from New York and went berserk.\nShe tried to stop him, but ran out when he lashed out at her. \nI took some of my men to try and get him back to his room or something, but by the time we got there…"
 		},
 		{
 			"character": "",
@@ -235,7 +425,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Dream - Medium] The kinds of things that could be sending those messages.[/i]"
+			"text": "[Dream - Medium] [i]The kinds of things that could be sending those messages.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -255,45 +445,55 @@
 			"set_value": "1"
 		},
 		{
+			"definition": "1677176778-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "3"
+		},
+		{
+			"anchor_id": "anchor-1677179286",
+			"event_id": "dialogic_016"
+		},
+		{
 			"event_id": "dialogic_013"
 		},
 		{
 			"condition": "<",
 			"definition": "1676157388-918",
 			"event_id": "dialogic_012",
-			"value": "7"
+			"value": "10"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][FAIL] Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.[/i]\n[i]The manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare.[/i]"
+			"text": "“Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.\nThe manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare."
 		},
 		{
 			"character": "character-1677176249.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Absolutely not. I have good people working on it. I just need you to do your job before I kick you out of this building myself."
+			"text": "Absolutely. Not. I have good people working on it. I just need you to do your job before I kick you out of this building myself."
 		},
 		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"choice": "Don’t ask anything for now.",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
+			"definition": "1677176778-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "3"
 		},
 		{
 			"anchor_id": "anchor-1677179286",
 			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"choice": "What do you need me to do?",
@@ -309,7 +509,7 @@
 			"text": "I need you to head to San Francisco. Either find where the monorail last stopped, or get all the way there to reestablish communication if you need to. \nWe need to get those supplies, fast. Ever since the market crash, we’ve had a lot more mouths to feed, and our own farms keep turning up short.\nSo if the supplies don’t come, people will either start moving out en masse, or worse, we start having riots."
 		},
 		{
-			"emit_signal": "culture_roll",
+			"emit_signal": "culture_set",
 			"event_id": "dialogic_040"
 		},
 		{
@@ -320,13 +520,13 @@
 			"condition": ">",
 			"definition": "1676157393-483",
 			"event_id": "dialogic_012",
-			"value": "4"
+			"value": "11"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Culture - Easy] Almost a quarter of the country is unemployed, and it’s only looking worse from here.[/i]"
+			"text": "[Culture - Easy] [i]Almost a quarter of the country is unemployed, and it’s only looking worse from here.[/i]"
 		},
 		{
 			"condition": ">",
@@ -338,7 +538,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Logic] Forget a riot. These are the conditions for a revolt.[/i]"
+			"text": "[Logic] [i]Forget a riot. These are the conditions for a revolt.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -399,6 +599,15 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Godspeed, son."
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"event_id": "dialogic_022",

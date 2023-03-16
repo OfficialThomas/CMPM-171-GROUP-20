@@ -1,6 +1,15 @@
 {
 	"events": [
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/dream_sequence.mp3",
+			"volume": -7
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -20,7 +29,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Dream - Easy] You need to get out of here *now*. There is nothing for you here.[/i]\n[i]There is nothing for *anyone* here.[/i]\n[i]Going in here was a mistake and there’s still time to turn around and leave before you see something you can’t unsee.[/i]"
+			"text": "[Dream - Easy] [i]You need to get out of here *now*. There is nothing for you here.[/i]\n[i]There is nothing for *anyone* here.[/i]\n[i]Going in here was a mistake and there’s still time to turn around and leave before you see something you can’t unsee.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -67,7 +76,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Dream] This is your last chance.[/i]\n[i]Turn away now.[/i]\n[i]You don’t need to know what’s in here.[/i]"
+			"text": "[Dream] [i]This is your last chance.[/i]\n[i]Turn away now.[/i]\n[i]You don’t need to know what’s in here.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -101,10 +110,28 @@
 			"event_id": "dialogic_040"
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]It’s too late now.[/i]\n[i]You pull the string.[/i]\n[i]The lights flicker on.[/i]"
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/body_reveal.mp3",
+			"volume": -3
 		},
 		{
 			"character": "",
@@ -128,7 +155,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Dream - Easy] You stare at it, almost like you expect it to move at any second, like it’s all some horrible prank just for you.[/i]"
+			"text": "[Dream - Easy] [i]You stare at it, almost like you expect it to move at any second, like it’s all some horrible prank just for you.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -143,7 +170,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Perception] The stillness is broken when you notice something on the sheet.[/i]\n[i]A small, black fly crawls along, looking for a way to get to the meat underneath.[/i]"
+			"text": "[Perception] [i]The stillness is broken when you notice something on the sheet.[/i]\n[i]A small, black fly crawls along, looking for a way to get to the meat underneath.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -158,7 +185,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Logic] The body has already begun decomposing, and the parasites have found a new space to feast and breed.[/i]"
+			"text": "[Logic] [i]The body has already begun decomposing, and the parasites have found a new space to feast and breed.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -209,10 +236,23 @@
 			"event_id": "dialogic_013"
 		},
 		{
+			"emit_signal": "level_up",
+			"event_id": "dialogic_040"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][PASS] You immediately jolt your hand back from the body.[/i]\n[i]Your better judgment prevails: this is not something you need to take with you.[/i]\n[i] You take a moment, breathe in the putrid air, and decide that the rest of the room warrants more investigation than the form beneath you.[/i]"
+			"text": "[PASS] [i]You immediately jolt your hand back from the body.[/i]\n[i]Your better judgment prevails: this is not something you need to take with you.[/i]\n[i] You take a moment, breathe in the putrid air, and decide that the rest of the room warrants more investigation than the form beneath you.[/i]"
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"choice": "Continue",
@@ -260,6 +300,10 @@
 			"value": "10"
 		},
 		{
+			"emit_signal": "level_up",
+			"event_id": "dialogic_040"
+		},
+		{
 			"emit_signal": "perception_set",
 			"event_id": "dialogic_040"
 		},
@@ -267,7 +311,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][PASS] You close your eyes.  Try to distance yourself from where you are.[/i]\n[i]Forget about the blood on your hands. Forget about the body by your feet.[/i]\n[i]Forget about the scent in your nose. Pretend you’re anywhere but here.[/i]"
+			"text": "[PASS] [i]You close your eyes.  Try to distance yourself from where you are.[/i]\n[i]Forget about the blood on your hands. Forget about the body by your feet.[/i]\n[i]Forget about the scent in your nose. Pretend you’re anywhere but here.[/i]"
 		},
 		{
 			"character": "",
@@ -291,7 +335,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Perception - Hard] But not before you see something. In the rigid right fist of the body, a piece of metal is jutting out.[/i]\n[i]It’s a plug cord, important for connecting calls with the switchboard. A trickle of blood slides down the metal.[/i]\n[i]You kneel, and after struggling against the rigor mortis, you yank the cord away from the corpse. [/i]"
+			"text": "[Perception - Hard] [i]But not before you see something. In the rigid right fist of the body, a piece of metal is jutting out.[/i]\n[i]It’s a plug cord, important for connecting calls with the switchboard. A trickle of blood slides down the metal.[/i]\n[i]You kneel, and after struggling against the rigor mortis, you yank the cord away from the corpse. [/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -301,6 +345,15 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]Now it’s time to investigate the rest of the room.[/i]"
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"event_id": "dialogic_022",
@@ -323,7 +376,24 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][FAIL] You try to wipe away the image, but it’s burned into your eyes. You try to forget about the blood, but you can feel it on your palms.[/i]\n [i]You try to stop the rot, but its scent is all-consuming.[/i]\n[i]You’re hyperventilating, taking in more of the filth with each breath.[/i]\n[i]There is no end to this that you can see. The bile is rising to your throat. All you can do is let out a scream.[/i]\n// -1 Sanity"
+			"text": "[FAIL] [i]You try to wipe away the image, but it’s burned into your eyes. You try to forget about the blood, but you can feel it on your palms.[/i]\n[i]You try to stop the rot, but its scent is all-consuming.[/i]\n[i]You’re hyperventilating, taking in more of the filth with each breath.[/i]\n[i]There is no end to this that you can see. The bile is rising to your throat. All you can do is let out a scream.[/i]\n// -1 Sanity"
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 0.5,
+			"file": "",
+			"volume": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://assets/sound/Door_Slam_V1.wav",
+			"volume": 0
 		},
 		{
 			"character": "",
@@ -350,6 +420,15 @@
 			"text": "*sigh* I know. It’s an ugly scene here.\n Poor bastard. Don’t know what drives someone to do that, let alone what they were thinking."
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/dream_sequence.mp3",
+			"volume": -6
+		},
+		{
 			"condition": ">=",
 			"definition": "1677168976-483",
 			"event_id": "dialogic_012",
@@ -359,7 +438,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": " [i][Empathy - Hard] There’s a softness in his voice. A moisture in his eyes. He’s been here before.[/i]"
+			"text": "[Empathy - Hard] [i]There’s a softness in his voice. A moisture in his eyes. He’s been here before.[/i]"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -425,6 +504,15 @@
 			"text": "[i]He opens the door and just as quickly exits it, minimizing the time the room is exposed to those outside.You’re alone in here again. With it.[/i]\n[i]Time to investigate.[/i]"
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		},
@@ -445,6 +533,15 @@
 			"value": ""
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		},
@@ -457,6 +554,15 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"event_id": "dialogic_022",

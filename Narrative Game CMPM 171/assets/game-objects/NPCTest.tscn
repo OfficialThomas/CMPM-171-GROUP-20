@@ -4,6 +4,7 @@
 [ext_resource path="res://demo-assets/PNG/Other/blockRed.png" type="Texture" id=2]
 [ext_resource path="res://demo-assets/PNG/Players/Player Green/playerGreen_up1.png" type="Texture" id=3]
 
+
 [sub_resource type="CapsuleShape2D" id=1]
 
 [node name="NPCTest" type="Area2D"]

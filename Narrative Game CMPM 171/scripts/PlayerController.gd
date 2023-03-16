@@ -25,9 +25,17 @@ export (int) var speed = 200
 var velocity = Vector2()
 
 # audio sfx
+onready var _sfx_output := $SFXPlayer
+onready var _bgm_output := $BGMPlayer
 var walkSound = preload("res://assets/sound/Walking_V3.wav")
 var squishSound = preload("res://assets/sound/Walking_Squish_V2.wav")
+var startBGM = preload("res://assets/sound/Machines_V2.wav")
 var walking = false
+
+func _ready():
+	if !_sfx_output.is_playing():
+		_bgm_output.stream = startBGM
+		_bgm_output.play()
 
 func get_input():
 	# movement input
@@ -42,7 +50,7 @@ func get_input():
 		walking = true
 	else:
 		$AnimatedSprite.play("playerIdle")
-		$AudioStreamPlayer2D.stop()
+		_sfx_output.stop()
 		walking = false
 #	Kept this just for completedness of input tests
 #	if Input.is_action_pressed("down"):
@@ -51,9 +59,9 @@ func get_input():
 #		velocity.y -= 1
 	
 	if walking:
-		if !$AudioStreamPlayer2D.is_playing():
-			$AudioStreamPlayer2D.stream = walkSound
-			$AudioStreamPlayer2D.play()
+		if !_sfx_output.is_playing():
+			_sfx_output.stream = walkSound
+			_sfx_output.play()
 	
 	# positive is down in a 2d canvas space
 	velocity.y += GRAVITY
@@ -69,7 +77,7 @@ func _physics_process(_delta):
 
 
 func level_up():
-	stat_points += 5
+	stat_points += 3
 
 
 func unpause(_timeline_name):

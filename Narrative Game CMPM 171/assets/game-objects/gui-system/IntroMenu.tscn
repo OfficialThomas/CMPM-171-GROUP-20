@@ -1,13 +1,12 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheetCredits.tres" type="DynamicFont" id=2]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet25.tres" type="DynamicFont" id=3]
-[ext_resource path="res://demo-assets/PNG/Backgrounds/set1_background.png" type="Texture" id=5]
-[ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet80.tres" type="DynamicFont" id=6]
+[ext_resource path="res://assets/art-assets/logos/logo.png" type="Texture" id=4]
+[ext_resource path="res://assets/art-assets/UI/background.png" type="Texture" id=5]
 [ext_resource path="res://scripts/IntroMenu.gd" type="Script" id=7]
 [ext_resource path="res://assets/game-objects/gui-system/fonts/CharacterSheet30.tres" type="DynamicFont" id=8]
-[ext_resource path="res://demo-assets/PNG/Backgrounds/set2_background.png" type="Texture" id=9]
 [ext_resource path="res://assets/art-assets/UI/menubutton.png" type="Texture" id=10]
 [ext_resource path="res://assets/art-assets/UI/menubuttonpressed.png" type="Texture" id=11]
 
@@ -16,17 +15,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 7 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
 [node name="MenuScreen" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="MenuScreen"]
-self_modulate = Color( 1, 1, 1, 0.784314 )
+self_modulate = Color( 1, 1, 1, 0.588235 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 9 )
+texture = ExtResource( 5 )
 patch_margin_left = 10
 patch_margin_top = 10
 patch_margin_right = 10
@@ -51,20 +52,7 @@ margin_left = 112.0
 margin_right = 912.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 800, 200 )
-texture = ExtResource( 5 )
-patch_margin_left = 30
-patch_margin_top = 30
-patch_margin_right = 30
-patch_margin_bottom = 30
-
-[node name="Label" type="Label" parent="MenuScreen/NinePatchRect/VBoxContainer/LogoSpot/NinePatchRect"]
-modulate = Color( 0, 0, 0, 1 )
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_fonts/font = ExtResource( 6 )
-text = "Roadtown USA"
-align = 1
-valign = 1
+texture = ExtResource( 4 )
 
 [node name="StartandGuide" type="HBoxContainer" parent="MenuScreen/NinePatchRect/VBoxContainer"]
 margin_top = 325.0
@@ -182,12 +170,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Guide"]
-modulate = Color( 1, 1, 1, 0.784314 )
+self_modulate = Color( 1, 1, 1, 0.588235 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 9 )
+texture = ExtResource( 5 )
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Guide/NinePatchRect"]
 anchor_right = 1.0
@@ -216,39 +208,42 @@ custom_constants/separation = 100
 alignment = 1
 
 [node name="Directions" type="VBoxContainer" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer"]
-margin_left = 83.0
-margin_right = 641.0
+margin_left = 200.0
+margin_right = 524.0
 margin_bottom = 518.0
 custom_constants/separation = 15
 alignment = 1
 
 [node name="LeftandRight" type="Label" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer/Directions"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 206.0
-margin_right = 558.0
-margin_bottom = 231.0
+margin_top = 164.0
+margin_right = 324.0
+margin_bottom = 217.0
 custom_fonts/font = ExtResource( 8 )
-text = "Move Left and Right: Arrow Keys"
+text = "Movement: 
+Arrow Keys or WASD"
 
 [node name="Interact" type="Label" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer/Directions"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 246.0
-margin_right = 558.0
-margin_bottom = 271.0
+margin_top = 232.0
+margin_right = 324.0
+margin_bottom = 285.0
 custom_fonts/font = ExtResource( 8 )
-text = "Interact: X Key"
+text = "Interact: 
+X Key or E Key"
 
 [node name="CharacterMenu" type="Label" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer/Directions"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 286.0
-margin_right = 558.0
-margin_bottom = 311.0
+margin_top = 300.0
+margin_right = 324.0
+margin_bottom = 353.0
 custom_fonts/font = ExtResource( 8 )
-text = "Character Menu: C Key"
+text = "Character Menu: 
+C Key or Q Key"
 
 [node name="Button" type="VBoxContainer" parent="Guide/NinePatchRect/VBoxContainer/HBoxContainer"]
-margin_left = 741.0
-margin_right = 941.0
+margin_left = 624.0
+margin_right = 824.0
 margin_bottom = 518.0
 alignment = 1
 
@@ -282,12 +277,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Credits"]
-modulate = Color( 1, 1, 1, 0.784314 )
+self_modulate = Color( 1, 1, 1, 0.588235 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 9 )
+texture = ExtResource( 5 )
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Credits/NinePatchRect"]
 anchor_right = 1.0

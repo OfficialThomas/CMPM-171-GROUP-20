@@ -1,6 +1,15 @@
 {
 	"events": [
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/Music/dream_sequence.mp3",
+			"volume": -6
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -20,7 +29,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Dream - Medium] There’s someone waiting to make a call.[/i]\n[i]Someone in a forgotten room. They’re waiting to put in the number and reach the next operator.[/i]\n[i] The only sound being the dial tone mixed with their steady breathing.[/i]\n[i]Growing excited to say the words that will lead to another broken switchboard and white sheet.[/i]"
+			"text": "[Dream - Medium] [i]There’s someone waiting to make a call.[/i]\n[i]Someone in a forgotten room. They’re waiting to put in the number and reach the next operator.[/i]\n[i] The only sound being the dial tone mixed with their steady breathing.[/i]\n[i]Growing excited to say the words that will lead to another broken switchboard and white sheet.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -61,7 +70,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][Perception - Medium] You would assume something like this would have to be done with a hammer or wrench or some other tool, but there’s nothing in here that would fit that description.[/i]\n[i]There’s nothing in the room that looks like it could have helped breaking it.[/i]\n[i]There’s no way he did this with his hands, is there?[/i]"
+			"text": "[Perception - Medium] [i]You would assume something like this would have to be done with a hammer or wrench or some other tool, but there’s nothing in here that would fit that description.[/i]\n[i]There’s nothing in the room that looks like it could have helped breaking it.[/i]\n[i]There’s no way he did this with his hands, is there?[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -88,6 +97,10 @@
 			"definition": "1676157318-648",
 			"event_id": "dialogic_012",
 			"value": "10"
+		},
+		{
+			"emit_signal": "level_up",
+			"event_id": "dialogic_040"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -133,22 +146,19 @@
 			"text": "[i]Beautiful. If not for the lightbulbs that still need replacing, you would say it looks brand new. Everything in its place. Phone calls will come rolling back in no time.[/i]"
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/sound/Phone_Ringing_V2.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]Phone: *ring*[/i]"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[i]Ah! There’s someone trying to get a call in now. It must be another part of the building. Maybe you should answer it, let them know the telephones should be operational again.[/i]"
-		},
-		{
-			"condition": ">",
-			"definition": "1677095932-529",
-			"event_id": "dialogic_012",
-			"value": "12"
 		},
 		{
 			"character": "",
@@ -157,7 +167,7 @@
 
 			],
 			"portrait": "",
-			"question": "[Dream - Medium] I cannot keep warning you about this. Everything about this room has been a disaster. Don’t even look at the phone. Leave. Now."
+			"question": "[i]Ah! There’s someone trying to get a call in now. It must be another part of the building. Maybe you should answer it, let them know the telephones should be operational again.[/i]"
 		},
 		{
 			"choice": "Pick it up",
@@ -283,10 +293,23 @@
 			"value": "15"
 		},
 		{
+			"emit_signal": "level_up",
+			"event_id": "dialogic_040"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][PASS] ...[/i]\n[i]You hang the phone back on the receiver.[/i]\n[i]You should find something to do before you start to cry.[/i]"
+			"text": "[PASS] [i]...[/i]\n[i]You hang the phone back on the receiver.[/i]\n[i]You should find something to do before you start to cry.[/i]"
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"event_id": "dialogic_022",
@@ -305,7 +328,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][FAIL] It’s because of *her*.[/i]\n[i]She promised you she would help you. That she would help cover the costs. That your future was just as important to her as it was to you.[/i]"
+			"text": "[FAIL] [i]It’s because of *her*.[/i]\n[i]She promised you she would help you. That she would help cover the costs. That your future was just as important to her as it was to you.[/i]"
 		},
 		{
 			"character": "",
@@ -338,6 +361,15 @@
 			"text": "[i]You don’t even put the phone back on the receiver. You just let it hang.[/i]\n[i]There’s nothing for you to do.[/i]\n[i]Even the hate has died for you.[/i]\n(-1 Sanity)"
 		},
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		},
@@ -355,11 +387,17 @@
 			"value": ""
 		},
 		{
-			"event_id": "dialogic_022",
-			"transition_duration": 1
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
-			"event_id": "dialogic_013"
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		},
 		{
 			"event_id": "dialogic_013"
@@ -373,6 +411,15 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
 		},
 		{
 			"event_id": "dialogic_022",
