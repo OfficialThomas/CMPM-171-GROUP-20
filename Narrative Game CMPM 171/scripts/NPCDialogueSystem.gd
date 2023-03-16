@@ -3,6 +3,7 @@ extends Area2D
 var active = false
 onready var player = get_node("../Player")
 onready var border = get_node("../Border")
+onready var door = get_node("../Doors/Door5")
 # rolling
 var rng = RandomNumberGenerator.new()
 
@@ -107,6 +108,11 @@ func dialogic_signal(arguement):
 			pass
 		'level_up':
 			player.level_up()
+			pass
+		'open_door':
+			print("Enabling Door")
+			door.disabled = false
+			print("Door Disabled: " + str(door.disabled))
 			pass
 		'enable_border':
 			print("Enabling End Border")
