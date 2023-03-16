@@ -1,6 +1,10 @@
 extends Area2D
 
+export (int) var pos_x = 448
+export (int) var pos_y = 448
+
 onready var player = get_node("../Player")
+onready var bobby = get_node("../NPCMobleader")
 var active = true;
 
 # rolling
@@ -77,6 +81,14 @@ func dialogic_signal(arguement):
 			pass
 		'level_up':
 			player.level_up()
+			pass
+		'move_bobby':
+			bobby.position.x = pos_x
+			bobby.position.y = pos_y
+			pass
+		'return_bobby':
+			bobby.position.x = 1284
+			bobby.position.y = 720
 			pass
 
 func dice_roll(type, bonus): # the universal dice roll check

@@ -648,11 +648,13 @@ position = Vector2( 277, 274 )
 position = Vector2( -478, 1231 )
 
 [node name="NPCMobleader" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1284, 718 )
+position = Vector2( 1284, 720 )
 pos_y = 6
 
 [node name="SBREvent" parent="." instance=ExtResource( 18 )]
 position = Vector2( 1532, 1145 )
+pos_x = 1400
+pos_y = 1168
 
 [node name="Board" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1700, 1143 )
