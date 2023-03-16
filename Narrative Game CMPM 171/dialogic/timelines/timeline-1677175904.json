@@ -114,6 +114,12 @@
 			"value": "1"
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[i]Iit is just down the hall. It would be no issue to take a quick look.[/i]"
+		},
+		{
 			"character": "character-1677176249.json",
 			"event_id": "dialogic_001",
 			"portrait": "",

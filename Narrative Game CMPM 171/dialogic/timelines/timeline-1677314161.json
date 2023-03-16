@@ -349,7 +349,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]You don’t even put the phone back on the receiver. You just let it hang.[/i]\n[i]There’s nothing for you to do.[/i]\n[i]Even the hate has died for you.[/i]\n(-1 Sanity)"
+			"text": "[i]You don’t even put the phone back on the receiver. You just let it hang.[/i]\n[i]There’s nothing for you to do.[/i]\n[i]Even the hate has died for you.[/i]"
 		},
 		{
 			"audio_bus": "Master",

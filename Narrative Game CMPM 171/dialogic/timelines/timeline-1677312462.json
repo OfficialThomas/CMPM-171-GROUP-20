@@ -376,7 +376,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[FAIL] [i]You try to wipe away the image, but it’s burned into your eyes. You try to forget about the blood, but you can feel it on your palms.[/i]\n[i]You try to stop the rot, but its scent is all-consuming.[/i]\n[i]You’re hyperventilating, taking in more of the filth with each breath.[/i]\n[i]There is no end to this that you can see. The bile is rising to your throat. All you can do is let out a scream.[/i]\n// -1 Sanity"
+			"text": "[FAIL] [i]You try to wipe away the image, but it’s burned into your eyes. You try to forget about the blood, but you can feel it on your palms.[/i]\n[i]You try to stop the rot, but its scent is all-consuming.[/i]\n[i]You’re hyperventilating, taking in more of the filth with each breath.[/i]\n[i]There is no end to this that you can see. The bile is rising to your throat. All you can do is let out a scream.[/i]"
 		},
 		{
 			"audio_bus": "Master",
