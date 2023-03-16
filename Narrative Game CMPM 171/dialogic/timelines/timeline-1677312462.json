@@ -396,10 +396,6 @@
 			"volume": 0
 		},
 		{
-			"emit_signal": "move_bobby",
-			"event_id": "dialogic_040"
-		},
-		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -506,10 +502,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]He opens the door and just as quickly exits it, minimizing the time the room is exposed to those outside.You’re alone in here again. With it.[/i]\n[i]Time to investigate.[/i]"
-		},
-		{
-			"emit_signal": "return_bobby",
-			"event_id": "dialogic_040"
 		},
 		{
 			"audio_bus": "Master",

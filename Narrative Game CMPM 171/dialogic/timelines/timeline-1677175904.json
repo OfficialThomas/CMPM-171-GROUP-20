@@ -16,10 +16,6 @@
 			"text": "[i]You enter the manager’s office, a modest but well-kept room. Rows of tomes on business management, engineering, and farming techniques fill the bookcases set in the walls.[/i]\n[i]Charts and maps explaining the minutiae of shipping and productivity to every last second lie scattered across the floor as the next batch of papers come in to render them obsolete.[/i]\n[i]The older gentleman is standing behind an old spruce desk, worn from furious notetaking. He’s dressed in better clothes than you are, a suit fitting for a business man.[/i]"
 		},
 		{
-			"emit_signal": "enable_border",
-			"event_id": "dialogic_040"
-		},
-		{
 			"emit_signal": "perception_set",
 			"event_id": "dialogic_040"
 		},
