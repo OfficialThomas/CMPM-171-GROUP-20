@@ -13,9 +13,9 @@
 [ext_resource path="res://assets/game-objects/Board.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/game-objects/EndGameBorder.tscn" type="PackedScene" id=12]
 [ext_resource path="res://demo-assets/PNG/Backgrounds/parallax/parallax-00.png" type="Texture" id=13]
-[ext_resource path="res://demo-assets/PNG/Backgrounds/parallax/parallax-01.png" type="Texture" id=14]
-[ext_resource path="res://demo-assets/PNG/Backgrounds/parallax/parallax-02.png" type="Texture" id=15]
-[ext_resource path="res://play-scenes/CloudLayer.gd" type="Script" id=16]
+[ext_resource path="res://assets/art-assets/environment/mountain_parallax.png" type="Texture" id=14]
+[ext_resource path="res://assets/art-assets/environment/cloud_parallax.png" type="Texture" id=15]
+[ext_resource path="res://scripts/CloudLayer.gd" type="Script" id=16]
 
 [sub_resource type="OccluderPolygon2D" id=15]
 polygon = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -485,6 +485,7 @@ motion_scale = Vector2( 1, 0 )
 motion_mirroring = Vector2( 1440, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+self_modulate = Color( 0.584314, 0.584314, 0.584314, 1 )
 texture = ExtResource( 13 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -494,14 +495,15 @@ script = ExtResource( 16 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2( -6, -2 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0.1, 0 )
 motion_mirroring = Vector2( 1440, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
-texture = ExtResource( 15 )
+texture = ExtResource( 14 )
+offset = Vector2( 0, 50 )
 
 [node name="Background" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
