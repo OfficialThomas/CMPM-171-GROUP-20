@@ -1,0 +1,37 @@
+{
+	"events": [
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://assets/music/wake_up.mp3",
+			"volume": -12
+		},
+		{
+			"character": "character-1677176249.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We don’t have the time to talk, go on already."
+		},
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1679019347.json",
+		"name": "Manager End"
+	}
+}

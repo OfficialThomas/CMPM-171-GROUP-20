@@ -249,7 +249,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[PASS] [i]There’s only one or two guys who work the switchboards here, and even then they were only hired to operate them, not fix them. I’m sure they’d appreciate the hand” you say with a winning smile.[/i]\n[i]His expression only gets grimmer.[/i]"
+			"text": "[PASS] [i]\"There’s only one or two guys who work the switchboards here, and even then they were only hired to operate them, not fix them. I’m sure they’d appreciate the hand” you say with a winning smile.[/i]\n[i]His expression only gets grimmer.[/i]"
 		},
 		{
 			"character": "character-1677176249.json",
@@ -339,7 +339,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "“Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.\nThe manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare."
+			"text": "[FAIL] [i]“Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.[/i]\n[i]The manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare.[/i]"
 		},
 		{
 			"character": "character-1677176249.json",
@@ -385,7 +385,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[PASS] [i]There’s only one or two guys who work the switchboards here, and even then they were only hired to operate them, not fix them. I’m sure they’d appreciate the hand” you say with a winning smile.[/i]\n[i]His expression only gets grimmer.[/i]"
+			"text": "[PASS] [i]\"There’s only one or two guys who work the switchboards here, and even then they were only hired to operate them, not fix them. I’m sure they’d appreciate the hand” you say with a winning smile.[/i]\n[i]His expression only gets grimmer.[/i]"
 		},
 		{
 			"character": "character-1677176249.json",
@@ -418,14 +418,14 @@
 			"text": "What sort of message makes a man do that?\nI have Bobby from the factory looking over the room now so that nobody gets in. \nIf you must take a look, tell him you know what’s in there and that I gave you permission to enter. \nBut don’t go and try fixing the equipment. I have other things I need you to do, and I don’t even want to think about the kinds of things…"
 		},
 		{
-			"emit_signal": "dream_roll",
+			"emit_signal": "dream_set",
 			"event_id": "dialogic_040"
 		},
 		{
 			"condition": ">",
 			"definition": "1677095932-529",
 			"event_id": "dialogic_012",
-			"value": "7"
+			"value": "11"
 		},
 		{
 			"character": "",
@@ -475,7 +475,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "“Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.\nThe manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare."
+			"text": "[FAIL] “Those operators wouldn’t know a switchboard from a sandwich board. Let me take a look at it and I’ll get it working by lunch,” you say with as much confidence as you can muster.\nThe manager, however, seems to have mistaken your confidence for smugness, and he’s currently drilling holes in your head with his stare."
 		},
 		{
 			"character": "character-1677176249.json",
@@ -502,7 +502,7 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"choice": "What do you need me to do?",
+			"choice": "What do you need me to do? [CONTINUE]",
 			"condition": ">",
 			"definition": "1677176778-648",
 			"event_id": "dialogic_011",
@@ -594,7 +594,7 @@
 			"event_id": "dialogic_016"
 		},
 		{
-			"choice": "You can count on me.",
+			"choice": "You can count on me. [END]",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -605,6 +605,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Godspeed, son."
+		},
+		{
+			"emit_signal": "update_dialogue",
+			"event_id": "dialogic_040"
 		},
 		{
 			"audio_bus": "Master",

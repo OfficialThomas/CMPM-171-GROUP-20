@@ -84,8 +84,17 @@
 			"value": "1"
 		},
 		{
+			"condition": "==",
+			"definition": "1677874489-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
 			"anchor_id": "anchor-1634488067",
 			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -104,10 +113,10 @@
 		},
 		{
 			"choice": "What’re you up to?",
-			"condition": "",
+			"condition": "!=",
 			"definition": "1677311396-918",
 			"event_id": "dialogic_011",
-			"value": "0"
+			"value": "1"
 		},
 		{
 			"character": "character-1676890283.json",
@@ -137,10 +146,10 @@
 		},
 		{
 			"choice": "[Empathy - Medium] Ask him more about his insomnia.",
-			"condition": "",
+			"condition": "!=",
 			"definition": "1677311402-483",
 			"event_id": "dialogic_011",
-			"value": "0"
+			"value": "1"
 		},
 		{
 			"emit_signal": "empathy_roll",
@@ -232,10 +241,10 @@
 		},
 		{
 			"choice": "Thanks for looking out for me.",
-			"condition": "",
+			"condition": "!=",
 			"definition": "1677874489-648",
 			"event_id": "dialogic_011",
-			"value": "0"
+			"value": "1"
 		},
 		{
 			"character": "",
@@ -247,7 +256,7 @@
 			"character": "character-1676890283.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Is that sarcasm? Either way don’t mention it. We’ve been on the workforce together for, what, 4 years now? We’ve gotta look after each other, man. God forbid they crack down on the union someday soon."
+			"text": "Is that sarcasm? Either way don’t mention it. \nWe’ve been on the workforce together for, what, 4 years now? We’ve gotta look after each other, man. \nGod forbid they crack down on the union someday soon."
 		},
 		{
 			"definition": "1677874489-648",
@@ -293,6 +302,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]He nods with an air of finality and returns his full attention to the pipe.[/i]"
+		},
+		{
+			"emit_signal": "update_dialogue",
+			"event_id": "dialogic_040"
 		},
 		{
 			"audio_bus": "Master",
