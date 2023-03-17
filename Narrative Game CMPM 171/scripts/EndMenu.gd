@@ -5,6 +5,7 @@ onready var gui = get_node("../../GUI")
 onready var world = get_node("../../")
 onready var _audio_output := $AudioStreamPlayer2D 
 var buttonSound = preload("res://assets/sound/Button_Press_V1.wav")
+var licence = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -40,3 +41,19 @@ func _on_ReturnFCredits_pressed():
 	_audio_output.play()
 	get_node("MenuScreen").show()
 	get_node("Credits").hide()
+
+
+func _on_ToggleC_pressed():
+	_audio_output.stop()
+	_audio_output.stream = buttonSound
+	_audio_output.play()
+	if (licence):
+		get_node("Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names").show()
+		get_node("Credits/NinePatchRect/VBoxContainer/HBoxContainer/Licence").hide()
+		get_node("Credits/NinePatchRect/VBoxContainer/HBoxContainer/Button/ToggleC/Label").text = "Licences"
+		licence = !licence
+	else:
+		get_node("Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names").hide()
+		get_node("Credits/NinePatchRect/VBoxContainer/HBoxContainer/Licence").show()
+		get_node("Credits/NinePatchRect/VBoxContainer/HBoxContainer/Button/ToggleC/Label").text = "Creators"
+		licence = !licence
