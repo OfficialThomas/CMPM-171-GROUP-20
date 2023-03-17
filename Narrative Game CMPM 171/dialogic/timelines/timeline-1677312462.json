@@ -29,7 +29,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[Dream - Easy] [i]You need to get out of here *now*. There is nothing for you here.[/i]\n[i]There is nothing for *anyone* here.[/i]\n[i]Going in here was a mistake and there’s still time to turn around and leave before you see something you can’t unsee.[/i]"
+			"text": "[i]You need to get out of here[/i] [b]now[/b]. [i]There is nothing for you here.[/i]\n[i]There is nothing for[/i] [b]anyone[/b] here.[/i]\n[i]Going in here was a mistake and there’s still time to turn around and leave before you see something you can’t unsee.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -76,7 +76,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[Dream] [i]This is your last chance.[/i]\n[i]Turn away now.[/i]\n[i]You don’t need to know what’s in here.[/i]"
+			"text": "[i]This is your last chance.[/i]\n[i]Turn away now.[/i]\n[i]You don’t need to know what’s in here.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -137,7 +137,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]The scene in front of you is a nightmare.[/i]\n[i]Along the walls and on the floor are pools of blood, bathing the room in a charnel house scent.[/i]\n[i]Papers littered across the floor lie stained with the splatter. Nothing moves, not even you, as the staleness of the room sets in.[/i]"
+			"text": "[i]The scene in front of you is a nightmare.[/i]\n[i]Along the walls and on the floor are pools of blood, bathing the room in a charnel house scent.[/i]\n[i]Papers littered across the floor lie stained with the splatter.[/i]\n[i]Nothing moves, not even you, as the staleness of the room sets in.[/i]"
 		},
 		{
 			"character": "",
@@ -155,7 +155,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[Dream - Easy] [i]You stare at it, almost like you expect it to move at any second, like it’s all some horrible prank just for you.[/i]"
+			"text": "[i]You stare at it, almost like you expect it to move at any second, like it’s all some horrible prank just for you.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -170,7 +170,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[Perception] [i]The stillness is broken when you notice something on the sheet.[/i]\n[i]A small, black fly crawls along, looking for a way to get to the meat underneath.[/i]"
+			"text": "[i]The stillness is broken when you notice something on the sheet.[/i]\n[i]A small, black fly crawls along, looking for a way to get to the meat underneath.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -185,7 +185,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[Logic] [i]The body has already begun decomposing, and the parasites have found a new space to feast and breed.[/i]"
+			"text": "[i]The body has already begun decomposing, and the parasites have found a new space to feast and breed.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -226,7 +226,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i][FAIL][/i]"
+			"text": "[FAIL]"
 		},
 		{
 			"anchor_id": "anchor-1634488067",
@@ -329,13 +329,13 @@
 			"condition": ">=",
 			"definition": "1676157374-146",
 			"event_id": "dialogic_012",
-			"value": "13"
+			"value": "14"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[Perception - Hard] [i]But not before you see something. In the rigid right fist of the body, a piece of metal is jutting out.[/i]\n[i]It’s a plug cord, important for connecting calls with the switchboard. A trickle of blood slides down the metal.[/i]\n[i]You kneel, and after struggling against the rigor mortis, you yank the cord away from the corpse. [/i]"
+			"text": "[i]But not before you see something. In the rigid right fist of the body, a piece of metal is jutting out.[/i]\n[i]It’s a plug cord, important for connecting calls with the switchboard. A trickle of blood slides down the metal.[/i]\n[i]You kneel, and after struggling against the rigor mortis, you yank the cord away from the corpse. [/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -376,7 +376,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[FAIL] [i]You try to wipe away the image, but it’s burned into your eyes. You try to forget about the blood, but you can feel it on your palms.[/i]\n[i]You try to stop the rot, but its scent is all-consuming.[/i]\n[i]You’re hyperventilating, taking in more of the filth with each breath.[/i]\n[i]There is no end to this that you can see. The bile is rising to your throat. All you can do is let out a scream.[/i]\n// -1 Sanity"
+			"text": "[FAIL] [i]You try to wipe away the image, but it’s burned into your eyes.[/i]\n[i]You try to forget about the blood, but you can feel it on your palms.[/i]\n[i]You try to stop the rot, but its scent is all-consuming.[/i]\n[i]You’re hyperventilating, taking in more of the filth with each breath.[/i]\n[i]There is no end to this that you can see.[/i]\n[i]The bile is rising to your throat. All you can do is let out a scream.[/i]"
 		},
 		{
 			"audio_bus": "Master",
@@ -421,7 +421,7 @@
 			"character": "character-1677311804.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "*sigh* I know. It’s an ugly scene here.\n Poor bastard. Don’t know what drives someone to do that, let alone what they were thinking."
+			"text": "[i]sigh[/i] I know. It’s an ugly scene here.\n Poor bastard. Don’t know what drives someone to do that, let alone what they were thinking."
 		},
 		{
 			"audio_bus": "Master",
@@ -442,7 +442,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[Empathy - Hard] [i]There’s a softness in his voice. A moisture in his eyes. He’s been here before.[/i]"
+			"text": "[i]There’s a softness in his voice. A moisture in his eyes. He’s been here before.[/i]"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -505,7 +505,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]He opens the door and just as quickly exits it, minimizing the time the room is exposed to those outside.You’re alone in here again. With it.[/i]\n[i]Time to investigate.[/i]"
+			"text": "[i]He opens the door and just as quickly exits it, minimizing the time the room is exposed to those outside.[/i]\n[i]You’re alone in here again. With it.[/i]\n[i]Time to investigate.[/i]"
 		},
 		{
 			"emit_signal": "return_bobby",
@@ -534,7 +534,7 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"choice": "Leave the switchboard room",
+			"choice": "Leave the switchboard room [END]",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -557,7 +557,7 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"choice": "Leave the switchboard room",
+			"choice": "Leave the switchboard room [END]",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
