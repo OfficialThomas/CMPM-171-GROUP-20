@@ -118,6 +118,12 @@
 			"value": "1"
 		},
 		{
+			"character": "character-1676811545.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's just across the hall, it would be no trouble to go there."
+		},
+		{
 			"character": "character-1677176249.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
