@@ -1,10 +1,11 @@
 {
 	"events": [
 		{
-			"audio": "play",
 			"audio_bus": "Master",
-			"event_id": "dialogic_030",
-			"event_name": "AudioEvent",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
 			"file": "res://assets/music/dream_sequence.mp3",
 			"volume": -6
 		},
@@ -12,13 +13,14 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Looks like you can't do anything else here."
+			"text": "Looks like you can't do anything else here.\nAnd probably shouldn't."
 		},
 		{
-			"audio": "play",
 			"audio_bus": "Master",
-			"event_id": "dialogic_030",
-			"event_name": "AudioEvent",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
 			"file": "",
 			"volume": 0
 		},
