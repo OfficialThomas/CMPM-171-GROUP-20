@@ -512,6 +512,10 @@
 			"event_id": "dialogic_040"
 		},
 		{
+			"emit_signal": "return_bobby",
+			"event_id": "dialogic_040"
+		},
+		{
 			"audio_bus": "Master",
 			"background-music": "play",
 			"event_id": "dialogic_031",

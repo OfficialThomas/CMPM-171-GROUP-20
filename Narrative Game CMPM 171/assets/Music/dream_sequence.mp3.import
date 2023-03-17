@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/dream_sequence.mp3-37bbcc0b75dc298056cb90ae60128edd.mp3str"
+path="res://.import/dream_sequence.mp3-ebf467bf6de27c8488ea8c9e303947c2.mp3str"
 
 [deps]
 
-source_file="res://assets/Music/dream_sequence.mp3"
-dest_files=[ "res://.import/dream_sequence.mp3-37bbcc0b75dc298056cb90ae60128edd.mp3str" ]
+source_file="res://assets/music/dream_sequence.mp3"
+dest_files=[ "res://.import/dream_sequence.mp3-ebf467bf6de27c8488ea8c9e303947c2.mp3str" ]
 
 [params]
 

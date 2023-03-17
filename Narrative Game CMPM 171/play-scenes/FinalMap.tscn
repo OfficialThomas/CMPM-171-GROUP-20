@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=44 format=2]
+=======
+[gd_scene load_steps=37 format=2]
+>>>>>>> parent of ef6e660 (Revert "Merge branch 'main' into Sound-Daren")
 
 [ext_resource path="res://assets/art-assets/environment/tilesheet.png" type="Texture" id=1]
 [ext_resource path="res://assets/game-objects/Player.tscn" type="PackedScene" id=2]
@@ -20,6 +24,7 @@
 [ext_resource path="res://assets/game-objects/SBREvent.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/art-assets/props/dead_body_pixel_sideways.png" type="Texture" id=19]
 [ext_resource path="res://assets/art-assets/props/toolbox.png" type="Texture" id=20]
+<<<<<<< HEAD
 [ext_resource path="res://assets/art-assets/props/desk.png" type="Texture" id=21]
 [ext_resource path="res://assets/art-assets/props/coffee table pixel.png" type="Texture" id=22]
 [ext_resource path="res://assets/art-assets/props/Plant_1_pixel.png" type="Texture" id=23]
@@ -27,6 +32,8 @@
 [ext_resource path="res://assets/art-assets/props/managerdoorsign.png" type="Texture" id=25]
 [ext_resource path="res://assets/art-assets/props/couch.png" type="Texture" id=26]
 [ext_resource path="res://assets/art-assets/props/bookshelf.png" type="Texture" id=27]
+=======
+>>>>>>> parent of ef6e660 (Revert "Merge branch 'main' into Sound-Daren")
 
 [sub_resource type="OccluderPolygon2D" id=15]
 polygon = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -175,7 +182,7 @@ polygon = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 10/name = "tilesheet.png 10"
 10/texture = ExtResource( 1 )
 10/tex_offset = Vector2( 0, 0 )
-10/modulate = Color( 1, 1, 1, 0.588235 )
+10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 64, 64, 32, 32 )
 10/tile_mode = 0
 10/occluder_offset = Vector2( 0, 0 )
@@ -496,6 +503,7 @@ motion_scale = Vector2( 1, 0 )
 motion_mirroring = Vector2( 1440, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+self_modulate = Color( 0.584314, 0.584314, 0.584314, 1 )
 texture = ExtResource( 13 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -505,14 +513,15 @@ script = ExtResource( 16 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2( -6, -2 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0.1, 0 )
 motion_mirroring = Vector2( 1440, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
-texture = ExtResource( 15 )
+texture = ExtResource( 14 )
+offset = Vector2( 0, 50 )
 
 [node name="Background" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
@@ -659,6 +668,11 @@ texture = ExtResource( 23 )
 position = Vector2( 225, 682 )
 scale = Vector2( 50, 1 )
 
+[node name="AmbientPipes" parent="." instance=ExtResource( 17 )]
+visible = false
+position = Vector2( 225, 682 )
+scale = Vector2( 50, 1 )
+
 [node name="Doors" type="Node2D" parent="."]
 
 [node name="Door" parent="Doors" instance=ExtResource( 3 )]
@@ -680,6 +694,7 @@ target = NodePath("../Door3")
 [node name="Door5" parent="Doors" instance=ExtResource( 3 )]
 position = Vector2( 1376, 720 )
 target = NodePath("../Door6")
+disabled = true
 
 [node name="Door6" parent="Doors" instance=ExtResource( 3 )]
 position = Vector2( 1376, 1168 )
@@ -779,21 +794,22 @@ position = Vector2( 901, -473 )
 position = Vector2( 1025, -497 )
 
 [node name="NPCMechanic" parent="." instance=ExtResource( 9 )]
-position = Vector2( 239, 273 )
+position = Vector2( 277, 274 )
 
 [node name="NPCManager" parent="." instance=ExtResource( 8 )]
 position = Vector2( -478, 1231 )
 
 [node name="NPCMobleader" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1306, 718 )
+position = Vector2( 1284, 720 )
 pos_y = 6
 
-[node name="NPCMobleader2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1446, 1166 )
-pos_y = 7
+[node name="SBREvent" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1532, 1145 )
+pos_x = 1400
+pos_y = 1168
 
 [node name="Board" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1636, 1143 )
+position = Vector2( 1700, 1143 )
 pos_y = 8
 
 [node name="Border" parent="." instance=ExtResource( 12 )]
@@ -813,6 +829,7 @@ offset_v = -0.4
 
 [node name="FrontProps" type="Node2D" parent="."]
 
+<<<<<<< HEAD
 [node name="Plant1Pixel2" type="Sprite" parent="FrontProps"]
 position = Vector2( -570, 1244 )
 texture = ExtResource( 23 )
@@ -821,6 +838,8 @@ texture = ExtResource( 23 )
 position = Vector2( -133, 1244 )
 texture = ExtResource( 23 )
 
+=======
+>>>>>>> parent of ef6e660 (Revert "Merge branch 'main' into Sound-Daren")
 [node name="DeadBodyPixelSideways" type="Sprite" parent="FrontProps"]
 position = Vector2( 1642, 1204 )
 texture = ExtResource( 19 )
@@ -829,6 +848,7 @@ texture = ExtResource( 19 )
 position = Vector2( 1756, 1203 )
 texture = ExtResource( 20 )
 
+<<<<<<< HEAD
 [node name="Toolbox2" type="Sprite" parent="FrontProps"]
 position = Vector2( 339, 309 )
 texture = ExtResource( 20 )
@@ -841,6 +861,8 @@ texture = ExtResource( 22 )
 position = Vector2( -399, 1254 )
 texture = ExtResource( 21 )
 
+=======
+>>>>>>> parent of ef6e660 (Revert "Merge branch 'main' into Sound-Daren")
 [node name="Foreground" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
 tile_set = SubResource( 11 )
