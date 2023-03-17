@@ -13,7 +13,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]As you take your first step into the switchboard room, you see nothing.Everything is dark.[/i]\n[i]Pitch black. The last beam of light fades as Bobby closes the door behind you. You can barely see in front of you.[/i]"
+			"text": "[i]As you take your first step into the switchboard room, you see nothing. Everything is dark.[/i]\n[i]Pitch black. The last beam of light fades as Bobby closes the door behind you. You can barely see in front of you.[/i]"
 		},
 		{
 			"emit_signal": "dream_set",
