@@ -11,12 +11,12 @@ var rng = RandomNumberGenerator.new()
 var d_default = ["Test"]
 var d_guide = ["GuideNew"]
 var d_start = ["Opening"]
-var d_brother = ["Meeting Brother"]
-var d_worker = ["Meeting Worker"]
-var d_manager = ["Meeting Manager"]
-var d_outside = ["Outside Switchboard"]
+var d_brother = ["Meeting Brother", "Brother End"]
+var d_worker = ["Meeting Worker", "Worker End"]
+var d_manager = ["Meeting Manager", "Manager End"]
+var d_outside = ["Outside Switchboard", "Bobby End"]
 var d_inside = ["Inside Switchboard"]
-var d_investigate = ["Investigating Switchboard"]
+var d_investigate = ["Investigating Switchboard", "Switchboard End"]
 onready var d_events = [d_default, d_guide, d_start, d_brother, d_worker, d_manager, d_outside, d_inside, d_investigate]
 
 export (int) var pos_x = 0
@@ -117,6 +117,9 @@ func dialogic_signal(arguement):
 		'enable_border':
 			print("Enabling End Border")
 			border.toggle_enable()
+			pass
+		'update_dialogue':
+			pos_x += 1
 			pass
 
 func dice_roll(type, bonus): # the universal dice roll check

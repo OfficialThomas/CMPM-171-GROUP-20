@@ -13,7 +13,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]In front of you lies the door to the switchboard room, Roadtown’s primary method of communication, and latest in communication technology.[/i]\n[i]Here you can contact any of your friends or family, from one end of the country to another, and hear their voice.[/i]\n[i]It is currently blocked by a large, rough-and-tumble looking man in overalls and a work shirt.[/i]"
+			"text": "[i]In front of you lies the door to the switchboard room.[/i]\n[i]Roadtown’s primary method of communication, and latest in communication technology.[/i]\n[i]Here you can contact any of your friends or family, from one end of the country to another, and hear their voice.[/i]\n[i]It is currently blocked by a large, rough-and-tumble looking man in overalls and a work shirt.[/i]"
 		},
 		{
 			"character": "",
@@ -57,7 +57,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[Empathy - Easy] [i]He shifts his stance as he begins to speak, eyes darting up as if trying to remember something.[/i]\n[i]He’s going off a script, one he hasn’t had time to commit to memory yet.[/i]"
+			"text": "[i]He shifts his stance as he begins to speak, eyes darting up as if trying to remember something.[/i]\n[i]He’s going off a script, one he hasn’t had time to commit to memory yet.[/i]"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -98,10 +98,10 @@
 			"value": "12"
 		},
 		{
-			"character": "character-1676811545.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[Perception - Medium] Operator?"
+			"text": "[i]\"Operator?\" you question.[/i]"
 		},
 		{
 			"character": "character-1677176249.json",
@@ -110,10 +110,10 @@
 			"text": "What?"
 		},
 		{
-			"character": "character-1676811545.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You said operator, as in singular. We have two operators working the room."
+			"text": "[i]\"You said operator, as in singular. We have two operators working the room,\" you assert.[i]"
 		},
 		{
 			"character": "character-1677311804.json",
@@ -180,7 +180,7 @@
 			"character": "character-1677311804.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Look, the problem in here isn’t strictly *technical* if you know what I mean.\nThere’s uh, there’s been an accident. An ugly one. And boss doesn’t want people panicking and all that, so keep quiet about it, alright?"
+			"text": "Look, the problem in here isn’t strictly [b]technical[/b] if you know what I mean.\nThere’s uh, there’s been an accident. An ugly one. And boss doesn’t want people panicking and all that, so keep quiet about it, alright?"
 		},
 		{
 			"character": "character-1676811545.json",
@@ -198,7 +198,7 @@
 			"character": "character-1677311804.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The telephone lines actually are caput. Can’t get a word in or out. If I let you in the room, promise you won’t freak out and go causin’ a panic?"
+			"text": "The telephone lines actually are caput. Can’t get a word in or out.\nIf I let you in the room, promise you won’t freak out and go causin’ a panic?"
 		},
 		{
 			"character": "",
@@ -208,6 +208,10 @@
 		},
 		{
 			"emit_signal": "open_door",
+			"event_id": "dialogic_040"
+		},
+		{
+			"emit_signal": "update_dialogue",
 			"event_id": "dialogic_040"
 		},
 		{
@@ -230,7 +234,7 @@
 			"character": "character-1676811545.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[FAIL] Come on. As if those glorified secretaries know what they’re doing. Let me in, and I’ll show them how professional gets work done."
+			"text": "[FAIL] Come on. As if those glorified secretaries know what they’re doing. \nLet me in, and I’ll show them how professional gets work done."
 		},
 		{
 			"character": "",
@@ -248,13 +252,17 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[i]You barely see him pull his arm back before he thrusts it up into your stomach.[/i]\n[-1 Health]\n[i]You kneel over, trying your best to breathe again.[/i]"
+			"text": "[i]You barely see him pull his arm back before he thrusts it up into your stomach.[/i]\n[i]You kneel over, trying your best to breathe again.[/i]"
 		},
 		{
 			"character": "character-1677311804.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Get the fuck out of here."
+		},
+		{
+			"emit_signal": "update_dialogue",
+			"event_id": "dialogic_040"
 		},
 		{
 			"audio_bus": "Master",
@@ -299,6 +307,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "[i]He steps aside and opens the door for you.[/i]"
+		},
+		{
+			"emit_signal": "update_dialogue",
+			"event_id": "dialogic_040"
 		},
 		{
 			"emit_signal": "open_door",
