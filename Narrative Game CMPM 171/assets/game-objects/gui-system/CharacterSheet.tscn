@@ -165,7 +165,6 @@ margin_right = 630.0
 margin_bottom = 79.0
 grow_horizontal = 2
 rect_min_size = Vector2( 600, 55 )
-hint_tooltip = "Finding the most logical explanation for something. But when faced with the impossible, can it help or just make things worse?"
 
 [node name="StatBackground" type="TextureRect" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Logic"]
 anchor_left = 0.5
@@ -264,7 +263,6 @@ margin_top = 83.0
 margin_right = 630.0
 margin_bottom = 138.0
 rect_min_size = Vector2( 600, 55 )
-hint_tooltip = "Imagination and creativity. The subconscious mind works to make you see things another way. But will you be swept up in a waking dream?"
 
 [node name="StatBackground" type="TextureRect" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Dream"]
 anchor_left = 0.5
@@ -363,7 +361,6 @@ margin_top = 142.0
 margin_right = 630.0
 margin_bottom = 197.0
 rect_min_size = Vector2( 600, 55 )
-hint_tooltip = "You can sense the emotions of others through the way they speak and their body language. But are you too sympathetic to those who don’t deserve it?"
 
 [node name="StatBackground" type="TextureRect" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Empathy"]
 anchor_left = 0.5
@@ -462,7 +459,6 @@ margin_top = 201.0
 margin_right = 630.0
 margin_bottom = 256.0
 rect_min_size = Vector2( 600, 55 )
-hint_tooltip = "Seeing the details. Nothing gets past you, no matter how small or how fast. But are you actually seeing things, or are your eyes playing tricks on you?"
 
 [node name="StatBackground" type="TextureRect" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Perception"]
 anchor_left = 0.5
@@ -561,7 +557,6 @@ margin_top = 260.0
 margin_right = 630.0
 margin_bottom = 315.0
 rect_min_size = Vector2( 600, 55 )
-hint_tooltip = "A silver tongue. You’re used to getting your way with a few nice words, or mean ones if the situation calls for it. But will talking sweetly end on a sour note?"
 
 [node name="StatBackground" type="TextureRect" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Charisma"]
 anchor_left = 0.5
@@ -660,7 +655,6 @@ margin_top = 319.0
 margin_right = 630.0
 margin_bottom = 374.0
 rect_min_size = Vector2( 600, 55 )
-hint_tooltip = "Up to date on the latest happenings. You know all the gossip, the history, the VIPs of your time. But does knowing things help in a place like this?"
 
 [node name="StatBackground" type="TextureRect" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Culture"]
 anchor_left = 0.5
@@ -760,7 +754,6 @@ margin_right = 630.0
 margin_bottom = 433.0
 grow_horizontal = 2
 rect_min_size = Vector2( 600, 55 )
-hint_tooltip = "Like a rock. You don’t let anything bother you as you ground yourself in the moment. But does it help to bottle everything up inside?"
 
 [node name="StatBackground" type="TextureRect" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Composure"]
 anchor_left = 0.5
@@ -859,7 +852,6 @@ margin_top = 437.0
 margin_right = 630.0
 margin_bottom = 492.0
 rect_min_size = Vector2( 600, 55 )
-hint_tooltip = "Quick to the draw. Your reaction time allows you to speedily make decisions. But are you thinking of the consequences before you act?"
 
 [node name="StatBackground" type="TextureRect" parent="HBoxContainer/VBoxContainer/Stats/MainStats/Reflex"]
 anchor_left = 0.5

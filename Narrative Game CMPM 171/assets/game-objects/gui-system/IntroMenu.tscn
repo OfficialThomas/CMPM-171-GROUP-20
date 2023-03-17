@@ -309,21 +309,23 @@ valign = 1
 [node name="HBoxContainer" type="HBoxContainer" parent="Credits/NinePatchRect/VBoxContainer"]
 margin_top = 82.0
 margin_right = 1024.0
-margin_bottom = 569.0
+margin_bottom = 600.0
+size_flags_vertical = 3
 custom_constants/separation = 100
 alignment = 1
 
 [node name="Names" type="VBoxContainer" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer"]
 margin_left = 194.0
 margin_right = 530.0
-margin_bottom = 487.0
+margin_bottom = 518.0
 custom_constants/separation = 25
 alignment = 1
 
 [node name="DarenB" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names"]
 modulate = Color( 0, 0, 0, 1 )
+margin_top = 15.0
 margin_right = 336.0
-margin_bottom = 39.0
+margin_bottom = 54.0
 custom_fonts/font = ExtResource( 2 )
 text = "Daren Bartolucci:
 Director and Lead Writer"
@@ -332,9 +334,9 @@ valign = 1
 
 [node name="ThomasN" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 64.0
+margin_top = 79.0
 margin_right = 336.0
-margin_bottom = 103.0
+margin_bottom = 118.0
 custom_fonts/font = ExtResource( 2 )
 text = "Thomas Noell:
 Producer and Lead Programmer"
@@ -343,9 +345,9 @@ valign = 1
 
 [node name="DevinW" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 128.0
+margin_top = 143.0
 margin_right = 336.0
-margin_bottom = 167.0
+margin_bottom = 182.0
 custom_fonts/font = ExtResource( 2 )
 text = "Devin Wear:
 Leader Artist and Writer"
@@ -354,9 +356,9 @@ valign = 1
 
 [node name="ZacharyH" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 192.0
+margin_top = 207.0
 margin_right = 336.0
-margin_bottom = 231.0
+margin_bottom = 246.0
 custom_fonts/font = ExtResource( 2 )
 text = "Zachary Hollaway:
 Lead Musician"
@@ -365,9 +367,9 @@ valign = 1
 
 [node name="KevinK" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 256.0
+margin_top = 271.0
 margin_right = 336.0
-margin_bottom = 295.0
+margin_bottom = 310.0
 custom_fonts/font = ExtResource( 2 )
 text = "Kevin Khau:
 Programmer"
@@ -376,9 +378,9 @@ valign = 1
 
 [node name="LucasM" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 320.0
+margin_top = 335.0
 margin_right = 336.0
-margin_bottom = 359.0
+margin_bottom = 374.0
 custom_fonts/font = ExtResource( 2 )
 text = "Lucas Moore:
 Programmer"
@@ -387,9 +389,9 @@ valign = 1
 
 [node name="IsaiahR" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 384.0
+margin_top = 399.0
 margin_right = 336.0
-margin_bottom = 423.0
+margin_bottom = 438.0
 custom_fonts/font = ExtResource( 2 )
 text = "Isaiah Roberts:
 Writer and Artist"
@@ -398,25 +400,70 @@ valign = 1
 
 [node name="ZacharyT" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Names"]
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 448.0
+margin_top = 463.0
 margin_right = 336.0
-margin_bottom = 487.0
+margin_bottom = 502.0
 custom_fonts/font = ExtResource( 2 )
 text = "Zachary Thompson:
 Artist"
 align = 1
 valign = 1
 
-[node name="Button" type="VBoxContainer" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer"]
-margin_left = 630.0
-margin_right = 830.0
-margin_bottom = 487.0
+[node name="Licence" type="VBoxContainer" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer"]
+visible = false
+margin_left = 191.0
+margin_right = 533.0
+margin_bottom = 518.0
 alignment = 1
 
-[node name="ReturnFCredits" type="TextureButton" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Button"]
-margin_top = 206.0
+[node name="Label" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Licence"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 204.0
+margin_right = 342.0
+margin_bottom = 313.0
+custom_fonts/font = ExtResource( 8 )
+text = "Dialogic:
+MIT License
+Copyright (c) 2020 
+Emilio Coppola"
+
+[node name="Button" type="VBoxContainer" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer"]
+margin_left = 633.0
+margin_right = 833.0
+margin_bottom = 518.0
+custom_constants/separation = 15
+alignment = 1
+
+[node name="ToggleC" type="TextureButton" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Button"]
+margin_top = 176.0
 margin_right = 200.0
-margin_bottom = 281.0
+margin_bottom = 251.0
+rect_min_size = Vector2( 200, 75 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+expand = true
+
+[node name="Label" type="Label" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Button/ToggleC"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -90.0
+margin_top = -21.0
+margin_right = 90.0
+margin_bottom = 21.0
+custom_fonts/font = ExtResource( 8 )
+text = "Licences"
+align = 1
+valign = 1
+
+[node name="ReturnFCredits" type="TextureButton" parent="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Button"]
+margin_top = 266.0
+margin_right = 200.0
+margin_bottom = 341.0
 rect_min_size = Vector2( 200, 75 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
@@ -444,4 +491,5 @@ valign = 1
 [connection signal="pressed" from="MenuScreen/NinePatchRect/VBoxContainer/CreditsandExit/Credits" to="." method="_on_Credits_pressed"]
 [connection signal="pressed" from="MenuScreen/NinePatchRect/VBoxContainer/CreditsandExit/ExitGame" to="." method="_on_ExitGame_pressed"]
 [connection signal="pressed" from="Guide/NinePatchRect/VBoxContainer/HBoxContainer/Button/ReturnFGuide" to="." method="_on_ReturnFGuide_pressed"]
+[connection signal="pressed" from="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Button/ToggleC" to="." method="_on_ToggleC_pressed"]
 [connection signal="pressed" from="Credits/NinePatchRect/VBoxContainer/HBoxContainer/Button/ReturnFCredits" to="." method="_on_ReturnFCredits_pressed"]
