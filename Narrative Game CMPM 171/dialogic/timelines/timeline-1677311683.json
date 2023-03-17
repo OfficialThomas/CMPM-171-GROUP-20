@@ -230,10 +230,13 @@
 			"event_id": "dialogic_040"
 		},
 		{
+<<<<<<< HEAD
 			"emit_signal": "update_dialogue",
 			"event_id": "dialogic_040"
 		},
 		{
+=======
+>>>>>>> parent of ef6e660 (Revert "Merge branch 'main' into Sound-Daren")
 			"audio_bus": "Master",
 			"background-music": "play",
 			"event_id": "dialogic_031",
@@ -328,10 +331,13 @@
 			"text": "[i]He steps aside and opens the door for you.[/i]"
 		},
 		{
+<<<<<<< HEAD
 			"emit_signal": "update_dialogue",
 			"event_id": "dialogic_040"
 		},
 		{
+=======
+>>>>>>> parent of ef6e660 (Revert "Merge branch 'main' into Sound-Daren")
 			"emit_signal": "open_door",
 			"event_id": "dialogic_040"
 		},
