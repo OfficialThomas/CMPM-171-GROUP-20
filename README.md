@@ -2,7 +2,7 @@
 
 <p align="center"><em>A horror adventure game based on the book by Edgar Chambless.</em></p>
 
-<p align="center"><em>Creators: 
+<p ><em>Creators: 
 
 Daren Bartolucci - Director and Lead Writer
 
