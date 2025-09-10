@@ -1,6 +1,6 @@
 <h1 align="center">Roadtown USA</h1>
 
-<p align="center"><em>A horror adventure game based on the book by Edgar Chambless.</em></p>
+<p align="center"><em>A narrative horror adventure game based on the book by Edgar Chambless.</em></p>
 
 <p ><em>Creators: 
 
